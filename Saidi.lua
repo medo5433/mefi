@@ -11780,8 +11780,7 @@ return send(msg_chat_id,msg_id, [[*
 ❥ اختار طريقة التحميل
 *]],"md",false, false, false, false, reply_markup)
 end
-if text 
-== 'تغيير المطور الاساسي' or text == 'تغير المطور الاساسي' or text == 'تغيير المطور الاساسي❥' then
+if text == 'تغيير المطور الاساسي' or text == 'تغير المطور الاساسي' or text == 'تغيير المطور الاساسي❥' then
 if not msg.Asasy then 
 return send(msg_chat_id,msg_id,'\n*❥ عذرآ الامر يخص〘 '..Controller_Num(1)..' 〙*',"md",true)  
 end
@@ -11802,6 +11801,7 @@ data = {
 }
 }
 return bot.sendText(msg_chat_id,msg_id,'*\n❥ هل انت متأكد بتغير المطور الاساسي *',"md",false, false, false, false, reply_markup)
+end
 end
 if text == 'معلومات التنصيب' or text == 'معلومات التنصيب❥' then
 if not msg.Asasy then 
@@ -11908,7 +11908,7 @@ keyboard.inline_keyboard = {
 local msgg = msg_id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token.."/sendvideo?chat_id=" .. msg_chat_id .. "&video="..video.."&caption=".. URL.escape(T).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
  elseif text == 'المصنع' or text == 'مصنع' then
-photo = "https://t.me/RDPDDP/237"
+video = "https://t.me/RDPDDP/237"
 local Name = 'آقـوي مـصـنع بــوتآت في آلتليجـرآم سـرعهةة لآ توصـف مـمـيزآت يومـيه آدخــل جــرب بــنفسـك.. ♡'
 keyboard = {} 
 keyboard.inline_keyboard = {
