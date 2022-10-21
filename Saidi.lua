@@ -11780,7 +11780,8 @@ return send(msg_chat_id,msg_id, [[*
 ❥ اختار طريقة التحميل
 *]],"md",false, false, false, false, reply_markup)
 end
-if text == 'تغيير المطور الاساسي' or text == 'تغير المطور الاساسي' or text == 'تغيير المطور الاساسي❥' then
+if text 
+== 'تغيير المطور الاساسي' or text == 'تغير المطور الاساسي' or text == 'تغيير المطور الاساسي❥' then
 if not msg.Asasy then 
 return send(msg_chat_id,msg_id,'\n*❥ عذرآ الامر يخص〘 '..Controller_Num(1)..' 〙*',"md",true)  
 end
