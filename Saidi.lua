@@ -372,12 +372,12 @@ end
 if Redis:get(Saidi..'chsource') then
 chsource = Redis:get(Saidi..'chsource')
 else
-chsource = "VC_NE"
+chsource = "TGe_R"
 end
 if Redis:get(Saidi..'chdevolper') then
 chdevolper = Redis:get(Saidi..'chdevolper')
 else 
-chdevolper = "TR_E2S_ON_MY_MOoN"
+chdevolper = "TGe_R"
 end
 function GetAdminsSlahe(ChatId,UserId,user2,MsgId,t1,t2,t3,t4,t5,t6)
 local GetMemberStatus = bot.getChatMember(ChatId,user2).status
@@ -1003,8 +1003,8 @@ Jeka   = '\n* 𖥔 مبروك يا -> *'..UserInfousername..' \n'..TextMsg,
 lockKtm  = '\n*⇜ من *'..UserInfousername..'\n*'..TextMsg,
 lockKid  = '\n*⇜ من *'..UserInfousername..'\n*'..TextMsg,
 lockKick = '\n* ⇜ من *'..UserInfousername..'\n*'..TextMsg,
-ahkamz = '*𖥔 source valorant -> لعبـة احكـام 🎮*\n*━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━\n𖥔 اللاعـب -> *'..UserInfousername..'\n*'..TextMsg..'\n\n*𖥔 ⇜ اللي يبي يلعب يرسل كلمة ( انا )*',
-zahkamz = '*𖥔 source valorant -> لعبـة احكـام 🎮**\n*━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━\n𖥔 اللاعـب -> *'..UserInfousername..'\n*'..TextMsg..'\n\n*𖥔 ⇜ اللي عليك انت صاحب اللعبة ترسل ( تم ) اذا اكتمل العدد*',
+ahkamz = '*𖥔 source valorant -> لعبـة احكـام 🎮*\n* ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～\n𖥔 اللاعـب -> *'..UserInfousername..'\n*'..TextMsg..'\n\n*𖥔 ⇜ اللي يبي يلعب يرسل كلمة ( انا )*',
+zahkamz = '*𖥔 source valorant -> لعبـة احكـام 🎮**\n* ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～\n𖥔 اللاعـب -> *'..UserInfousername..'\n*'..TextMsg..'\n\n*𖥔 ⇜ اللي عليك انت صاحب اللعبة ترسل ( تم ) اذا اكتمل العدد*',
 Reply    = '\n* 𖥔 المستخدم -> *'..UserInfousername..'\n*'..TextMsg..'*'
 }
 end
@@ -1739,7 +1739,7 @@ Redis:srem(Saidi.."Admin:Group"..msg.chat_id,msg.sender_id.user_id)
 Redis:srem(Saidi.."Special:Group"..msg.chat_id,msg.sender_id.user_id)
 if Json_Info.ok == false and Json_Info.error_code == 400 and Json_Info.description == "Bad Request: CHAT_ADMIN_REQUIRED" then
 if #monsha ~= 0 then 
-local ListMembers = '\n* 𖥔 تاك للمالكين  \n  ━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━ *\n'
+local ListMembers = '\n* 𖥔 تاك للمالكين  \n   ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～ *\n'
 for k, v in pairs(monsha) do
 local UserInfo = bot.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -1774,7 +1774,7 @@ end
 end
 if Json_Info.ok == true and Json_Info.result == true then
 if #monsha ~= 0 then 
-local ListMembers = '\n* 𖥔 تاك للمالكين  \n  ━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━ *\n'
+local ListMembers = '\n* 𖥔 تاك للمالكين  \n   ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～ *\n'
 for k, v in pairs(monsha) do
 local UserInfo = bot.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -1819,7 +1819,7 @@ Redis:srem(Saidi.."Admin:Group"..msg.chat_id,msg.sender_id.user_id)
 Redis:srem(Saidi.."Special:Group"..msg.chat_id,msg.sender_id.user_id)
 if Json_Info.ok == false and Json_Info.error_code == 400 and Json_Info.description == "Bad Request: CHAT_ADMIN_REQUIRED" then
 if #monsha ~= 0 then 
-local ListMembers = '\n* 𖥔 تاك للمالكين  \n  ━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━ *\n'
+local ListMembers = '\n* 𖥔 تاك للمالكين  \n   ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～ *\n'
 for k, v in pairs(monsha) do
 local UserInfo = bot.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -1835,7 +1835,7 @@ end
 end
 if Json_Info.ok == false and Json_Info.error_code == 400 and Json_Info.description == "Bad Request: can't remove chat owner" then
 if #monsha ~= 0 then 
-local ListMembers = '\n* 𖥔 تاك للمالكين  \n  ━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━ *\n'
+local ListMembers = '\n* 𖥔 تاك للمالكين  \n   ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～ *\n'
 for k, v in pairs(monsha) do
 local UserInfo = bot.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -1851,7 +1851,7 @@ end
 end
 if Json_Info.ok == true and Json_Info.result == true then
 if #monsha ~= 0 then 
-local ListMembers = '\n* 𖥔 تاك للمالكين  \n  ━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━ *\n'
+local ListMembers = '\n* 𖥔 تاك للمالكين  \n   ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～ *\n'
 for k, v in pairs(monsha) do
 local UserInfo = bot.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -1897,7 +1897,7 @@ for k,v in pairs(msg.content.member_user_ids) do
 if tonumber(v) == tonumber(Saidi) then
 local idephoto = Redis:get(Saidi..':WELCOME_BOT')
 if idephoto then
-local Bot_Name = (Redis:get(Saidi.."Name:Bot") or "كينج")
+local Bot_Name = (Redis:get(Saidi.."Name:Bot") or " ميدو")
 return bot.sendPhoto(msg.chat_id, msg.id, idephoto,
 '\n* ╗ مـرحـبــا انا بــوت '..Bot_Name..''..
 '\n╣ اخـتصـاصـي  ادارة الجـروبــات'..
@@ -2849,20 +2849,20 @@ Redis:del(Saidi.."Add:Rd:Manager:video_note"..text..msg_chat_id)
 Redis:del(Saidi.."Add:Rd:Manager:Audio"..text..msg_chat_id)
 Redis:sadd(Saidi.."List:Manager"..msg_chat_id.."", text)
 send(msg_chat_id,msg_id,[[
-*━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+* ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
 , يمكنك الان ارسل لي الرد للضافه ،
 , ملصق ، متحركه ، صوره ،
 , فيديو ، بصمه الفيديو ،
 , بصمه ، صوت ، رساله ،
 , يمكنك اضافة الى النص ،
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━*
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～*
 `#username` *-> معرف المستخدم*
  `#msgs` *-> عدد الرسائل*
  `#name` *-> اسم المستخدم*
  `#id` *-> ايدي المستخدم*
  `#stast`* -> رتبة المستخدم*
  `#edit` *-> عدد التعديلات*
-*━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━*
+* ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～*
 ]],"md",true)  
 return false
 end
@@ -3038,20 +3038,20 @@ Redis:set(Saidi.."Set:Rd"..msg.sender_id.user_id..":"..msg_chat_id, "true1")
 Redis:set(Saidi.."Text:Sudo:Bot"..msg.sender_id.user_id..":"..msg_chat_id, text)
 Redis:sadd(Saidi.."List:Rd:Sudo", text)
 send(msg_chat_id,msg_id,[[
-*━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+* ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
 , يمكنك الان ارسل لي الرد للضافه ،
 , ملصق ، متحركه ، صوره ،
 , فيديو ، بصمه الفيديو ،
 , بصمه ، صوت ، رساله ،
 , يمكنك اضافة الى النص ،
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━*
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～*
 `#username` *-> معرف المستخدم*
  `#msgs` *-> عدد الرسائل*
  `#name` *-> اسم المستخدم*
  `#id` *-> ايدي المستخدم*
  `#stast`* -> رتبة المستخدم*
  `#edit` *-> عدد التعديلات*
-*━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━*
+* ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～*
 ]],"md",true)  
 return false
 end
@@ -4091,7 +4091,7 @@ local list = Redis:smembers(Saidi.."All:List:Filter")
 if #list == 0 then  
 return send(msg_chat_id,msg_id,"* 𖥔 لا يوجد كلمات ممنوعه هنا *","md",true)   
 end  
-Filter = '\n* 𖥔 قائمه المنع \n  ━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━ *\n'
+Filter = '\n* 𖥔 قائمه المنع \n   ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～ *\n'
 for k,v in pairs(list) do  
 print(v)
 if v:match('photo:(.*)') then
@@ -4265,7 +4265,7 @@ end
 return send(msg_chat_id,msg_id,' 𖥔 تم استرجاع『 '..X..' 』جروب \n 𖥔 واسترجاع『 '..Y..' 』مشترك في البوت')
 end
 end
-if text == 'رفع نسخه كينج' and msg.reply_to_message_id ~= 0 then
+if text == 'رفع نسخه  ميدو' and msg.reply_to_message_id ~= 0 then
 if not msg.Asasy then 
 return send(msg_chat_id,msg_id,'\n* 𖥔 عذرآ الامر يخص〘 '..Controller_Num(1)..' 〙*',"md",true)  
 end
@@ -4300,7 +4300,7 @@ for k,idASAS in pairs(v.ASAS) do
 Redis:sadd(Saidi.."SuperCreator:Group"..idg,idASAS)
 end;end
 end
-return send(msg_chat_id,msg_id,' 𖥔 تم استرجاع المجموعات من نسخه كينج')
+return send(msg_chat_id,msg_id,' 𖥔 تم استرجاع المجموعات من نسخه  ميدو')
 else
 return send(msg_chat_id,msg_id,' 𖥔 الملف لا يدعم هذا البوت')
 end
@@ -4358,15 +4358,15 @@ end
 if Redis:sismember(Saidi.."booob",msg.sender_id.user_id) then
 return bot.sendText(msg.chat_id,msg.id, "*𖥔 لديك حساب بنكي مسبقاً\n\n 𖥔 لعرض معلومات حسابك اكتب\n ->* `حسابي`","md",true)
 end
-local t = '*𖥔 عشان تسوي حساب لازم تختار نوع البطاقة*\n\n[𝑮𝑨𝑴𝑬 𝑩𝑨𝑵𝑲 𝑺𝑶𝑼𝑹𝑪𝑬 𝑲𝑰𝑵𝑮](t.me/VC_NE )'
-local m = "https://t.me/VC_NE/4141" 
+local t = '*𖥔 عشان تسوي حساب لازم تختار نوع البطاقة*\n\n[𝑮𝑨𝑴𝑬 𝑩𝑨𝑵𝑲 𝑺𝑶𝑼𝑹𝑪𝑬 𝑲𝑰𝑵𝑮](t.me/TGe_R )'
+local m = "https://t.me/TGe_R/4141" 
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = 'الاهلي', callback_data=msg.sender_id.user_id..'/master'},{text = 'الرافدين', callback_data=msg.sender_id.user_id..'/visaa'},{text = 'كينج', callback_data=msg.sender_id.user_id..'/express'},
+{text = 'الاهلي', callback_data=msg.sender_id.user_id..'/master'},{text = 'الرافدين', callback_data=msg.sender_id.user_id..'/visaa'},{text = ' ميدو', callback_data=msg.sender_id.user_id..'/express'},
 },
 {
-{text='• 𝑺𝒐𝑼𝒓𝑪𝒆 𝑲𝒊𝒏𝑮 •',url="t.me/VC_NE"},
+{text='• 𝙎𝙤𝙐𝙧𝘾𝙚 𝙏𝙞𝙂𝙚𝙍 •',url="t.me/TGe_R"},
 }
 }
 local rep = msg.id/2097152/0.5
@@ -4751,7 +4751,7 @@ shkseemg = "طيبة 😇"
 else
 shkseemg = "شريرة 😈"
 end
-bot.sendText(msg.chat_id,msg.id, "𖥔 الاسم -> "..news.."\n𖥔 الحساب -> `"..cccc.."`\n𖥔 بنك -> ( كينج )\n𖥔 نوع -> ( "..uuuu.." )\n𖥔 الرصيد -> ( "..convert_mony.." جنيه 💵 )\n𖥔 الزرف ( "..math.floor(pppp).." جنيه 💵 )\n𖥔 شخصيتك -> "..shkseemg.."\n✦","md",true)
+bot.sendText(msg.chat_id,msg.id, "𖥔 الاسم -> "..news.."\n𖥔 الحساب -> `"..cccc.."`\n𖥔 بنك -> (  ميدو )\n𖥔 نوع -> ( "..uuuu.." )\n𖥔 الرصيد -> ( "..convert_mony.." جنيه 💵 )\n𖥔 الزرف ( "..math.floor(pppp).." جنيه 💵 )\n𖥔 شخصيتك -> "..shkseemg.."\n✦","md",true)
 else
 bot.sendText(msg.chat_id,msg.id, "𖥔 ماعندك حساب بنكي ارسل -> ( `انشاء حساب بنكي` )","md",true)
 end
@@ -4838,7 +4838,7 @@ Redis:del(Saidi.."rotpaid"..Remsg.sender_id.user_id)
 Redis:del(Saidi.."rdddgr"..Remsg.sender_id.user_id)
 Redis:del(Saidi.."rdddid"..Remsg.sender_id.user_id)
 Redis:del(Saidi.."rdddtex"..Remsg.sender_id.user_id)
-bot.sendText(msg.chat_id,msg.id, "𖥔 الاسم -> "..news.."\n𖥔 الحساب -> `"..ccccc.."`\n𖥔 بنك -> ( كينج )\n𖥔 نوع -> ( "..uuuuu.." )\n𖥔 الرصيد -> ( "..convert_mony.." جنيه 💵 )\n𖥔 الزرف -> ( "..math.floor(ppppp).." جنيه 💵 )\n𖥔 مسكين مسحت حسابه \n✦","md",true)
+bot.sendText(msg.chat_id,msg.id, "𖥔 الاسم -> "..news.."\n𖥔 الحساب -> `"..ccccc.."`\n𖥔 بنك -> (  ميدو )\n𖥔 نوع -> ( "..uuuuu.." )\n𖥔 الرصيد -> ( "..convert_mony.." جنيه 💵 )\n𖥔 الزرف -> ( "..math.floor(ppppp).." جنيه 💵 )\n𖥔 مسكين مسحت حسابه \n✦","md",true)
 else
 bot.sendText(msg.chat_id,msg.id, "𖥔 ماعنده حساب بنكي اصلاً ","md",true)
 end
@@ -4869,7 +4869,7 @@ shkseemg = "طيبة 😇"
 else
 shkseemg = "شريرة 😈"
 end
-bot.sendText(msg.chat_id,msg.id, "𖥔 الاسم -> "..news.."\n𖥔 الحساب -> `"..ccccc.."`\n𖥔 بنك -> ( كينج )\n𖥔 نوع -> ( "..uuuuu.." )\n𖥔 الرصيد -> ( "..convert_mony.." جنيه 💵 )\n𖥔 الزرف -> ( "..math.floor(ppppp).." جنيه 💵 )\n𖥔 شخصيته -> "..shkseemg.."\n✦","md",true)
+bot.sendText(msg.chat_id,msg.id, "𖥔 الاسم -> "..news.."\n𖥔 الحساب -> `"..ccccc.."`\n𖥔 بنك -> (  ميدو )\n𖥔 نوع -> ( "..uuuuu.." )\n𖥔 الرصيد -> ( "..convert_mony.." جنيه 💵 )\n𖥔 الزرف -> ( "..math.floor(ppppp).." جنيه 💵 )\n𖥔 شخصيته -> "..shkseemg.."\n✦","md",true)
 else
 bot.sendText(msg.chat_id,msg.id, "𖥔 ماعنده حساب بنكي ","md",true)
 end
@@ -4952,7 +4952,7 @@ Redis:del(Saidi.."rotpaid"..coniss)
 Redis:del(Saidi.."rdddgr"..coniss)
 Redis:del(Saidi.."rdddid"..coniss)
 Redis:del(Saidi.."rdddtex"..coniss)
-bot.sendText(msg.chat_id,msg.id, "𖥔 الاسم -> "..news.."\n𖥔 الحساب -> `"..ccccc.."`\n𖥔 بنك -> ( كينج )\n𖥔 نوع -> ( "..uuuuu.." )\n𖥔 الرصيد -> ( "..convert_mony.." جنيه 💵 )\n𖥔 الزرف -> ( "..math.floor(ppppp).." جنيه 💵 )\n𖥔 مسكين مسحت حسابه \n✦","md",true)
+bot.sendText(msg.chat_id,msg.id, "𖥔 الاسم -> "..news.."\n𖥔 الحساب -> `"..ccccc.."`\n𖥔 بنك -> (  ميدو )\n𖥔 نوع -> ( "..uuuuu.." )\n𖥔 الرصيد -> ( "..convert_mony.." جنيه 💵 )\n𖥔 الزرف -> ( "..math.floor(ppppp).." جنيه 💵 )\n𖥔 مسكين مسحت حسابه \n✦","md",true)
 else
 bot.sendText(msg.chat_id,msg.id, "𖥔 ماعنده حساب بنكي اصلاً ","md",true)
 end
@@ -4974,7 +4974,7 @@ shkseemg = "طيبة 😇"
 else
 shkseemg = "شريرة 😈"
 end
-bot.sendText(msg.chat_id,msg.id, "𖥔 الاسم -> "..yty.."\n𖥔 الحساب -> `"..coniss.."`\n𖥔 بنك -> ( كينج )\n𖥔 نوع -> ( "..fsvhh.." )\n𖥔 الرصيد -> ( "..convert_mony.." جنيه 💵 )\n𖥔 شخصيته -> "..shkseemg.."\n✦","md",true)
+bot.sendText(msg.chat_id,msg.id, "𖥔 الاسم -> "..yty.."\n𖥔 الحساب -> `"..coniss.."`\n𖥔 بنك -> (  ميدو )\n𖥔 نوع -> ( "..fsvhh.." )\n𖥔 الرصيد -> ( "..convert_mony.." جنيه 💵 )\n𖥔 شخصيته -> "..shkseemg.."\n✦","md",true)
 else
 bot.sendText(msg.chat_id,msg.id, "𖥔 مافيه حساب بنكي كذا","md",true)
 end
@@ -5289,8 +5289,8 @@ decdecb = Redis:get(Saidi.."boob"..fsvhhh) or 0
 deccde2 = decdecb + UserNameyy
 Redis:set(Saidi.."boob"..fsvhhh , math.floor(deccde2))
 
-bot.sendText(msg.chat_id,msg.id, "𖥔 حوالة صادرة من بنك كينج\n\n𖥔 المرسل -> "..news.."\n𖥔 الحساب رقم -> `"..cccc.."`\n𖥔 نوع البطاقة -> "..uuuu.."\n𖥔 المستلم -> "..newss.."\n𖥔 الحساب رقم -> `"..text.."`\n𖥔 نوع البطاقة -> "..fsvhh.."\n𖥔 خصمت 10% رسوم تحويل\n𖥔 المبلغ -> "..convert_mony.." جنيه 💵","md",true)
-bot.sendText(fsvhhh,0, "𖥔 حوالة واردة من بنك كينج\n\n𖥔 المرسل -> "..news.."\n𖥔 الحساب رقم -> `"..cccc.."`\n𖥔 نوع البطاقة -> "..uuuu.."\n𖥔 المبلغ -> "..convert_mony.." جنيه 💵","md",true)
+bot.sendText(msg.chat_id,msg.id, "𖥔 حوالة صادرة من بنك  ميدو\n\n𖥔 المرسل -> "..news.."\n𖥔 الحساب رقم -> `"..cccc.."`\n𖥔 نوع البطاقة -> "..uuuu.."\n𖥔 المستلم -> "..newss.."\n𖥔 الحساب رقم -> `"..text.."`\n𖥔 نوع البطاقة -> "..fsvhh.."\n𖥔 خصمت 10% رسوم تحويل\n𖥔 المبلغ -> "..convert_mony.." جنيه 💵","md",true)
+bot.sendText(fsvhhh,0, "𖥔 حوالة واردة من بنك  ميدو\n\n𖥔 المرسل -> "..news.."\n𖥔 الحساب رقم -> `"..cccc.."`\n𖥔 نوع البطاقة -> "..uuuu.."\n𖥔 المبلغ -> "..convert_mony.." جنيه 💵","md",true)
 Redis:del(Saidi.."trans" .. msg.chat_id .. ":" .. msg.sender_id.user_id) 
 Redis:del(Saidi.."transn" .. msg.sender_id.user_id)
 else
@@ -5344,7 +5344,7 @@ bot.sendText(msg.chat_id,msg.id, "𖥔 ماعنده حساب بنكي","md",true
 end
 end
 if text == "توب" or text == "التوب" then
-local toptop = "𖥔 اهلين فيك في قوائم التوب\nللمزيد من التفاصيل - [@VC_NE]\n✦"
+local toptop = "𖥔 اهلين فيك في قوائم التوب\nللمزيد من التفاصيل - [@TGe_R]\n✦"
 local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
@@ -5358,7 +5358,7 @@ data = {
 {text = 'اخفاء', data = msg.sender_id.user_id..'/delAmr'}, 
 },
 {
-{text = '• 𝑺𝒐𝑼𝒓𝑪𝒆 𝑲𝒊𝒏𝑮 •', url="t.me/VC_NE"},
+{text = '• 𝙎𝙤𝙐𝙧𝘾𝙚 𝙏𝙞𝙂𝙚𝙍 •', url="t.me/TGe_R"},
 },
 }
 }
@@ -5424,7 +5424,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '• 𝑺𝒐𝑼𝒓𝑪𝒆 𝑲𝒊𝒏𝑮 •', url="t.me/VC_NE"},
+{text = '• 𝙎𝙤𝙐𝙧𝘾𝙚 𝙏𝙞𝙂𝙚𝙍 •', url="t.me/TGe_R"},
 },
 }
 }
@@ -5490,7 +5490,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '• 𝑺𝒐𝑼𝒓𝑪𝒆 𝑲𝒊𝒏𝑮 •', url="t.me/VC_NE"},
+{text = '• 𝙎𝙤𝙐𝙧𝘾𝙚 𝙏𝙞𝙂𝙚𝙍 •', url="t.me/TGe_R"},
 },
 }
 }
@@ -6193,7 +6193,7 @@ Redis:set(Saidi.."ratbtrans"..msg.sender_id.user_id,5)
 nowbalc = tonumber(ballancee) - 120000
 Redis:set(Saidi.."boob"..msg.sender_id.user_id , math.floor(nowbalc))
 local convert_mony = string.format("%.0f",nowbalc)
-bot.sendText(msg.chat_id,msg.id,"𖥔 اشعار تطوير راتب\n\n𖥔 المبلغ -> 120000 جنيه 💵\n𖥔 اصبحت وظيفتك -> عضو عصابة 🙍\n𖥔 رصيدك الان -> "..convert_mony.." جنيه 💵\n✦","md",true)
+bot.sendText(msg.chat_id,msg.id,"𖥔 اشعار تطوير راتب\n\n𖥔 المبلغ -> 120000 جنيه ??\n𖥔 اصبحت وظيفتك -> عضو عصابة 🙍\n𖥔 رصيدك الان -> "..convert_mony.." جنيه 💵\n✦","md",true)
 elseif tonumber(ratbinc) == 90 then
 if tonumber(ballanceed) < 80000 then
 return bot.sendText(msg.chat_id,msg.id, "𖥔 مايمديك تطور راتبك تحتاج مبلغ 80000 جنيه 💵","md",true)
@@ -6345,7 +6345,7 @@ end
 if text == "المعرض" or text == "معرض" then
 Redis:setex(Saidi.."marad" .. msg.chat_id .. ":" .. msg.sender_id.user_id,60, true)
 bot.sendText(msg.chat_id,msg.id,[[
-*━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━*
+* ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～*
 
 *𖥔 المعرض يقدم لكم ↑↓*
 
@@ -6356,14 +6356,14 @@ bot.sendText(msg.chat_id,msg.id,[[
 
 *- اضغط للنسخ ♡ ,,*
 
-*━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━*
+* ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～*
 ]],"md",true)  
 return false
 end
 if text == "سيارات" and Redis:get(Saidi.."marad" .. msg.chat_id .. ":" .. msg.sender_id.user_id) then
 Redis:del(Saidi.."marad" .. msg.chat_id .. ":" .. msg.sender_id.user_id) 
 bot.sendText(msg.chat_id,msg.id,[[
-*━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━*
+* ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～*
 
 *𖥔 السيارات المتوفرة لدينا حالياً ↑↓*
 
@@ -6378,14 +6378,14 @@ bot.sendText(msg.chat_id,msg.id,[[
 *𖥔 ارسل اسم السيارة والعدد*
 *𖥔 مثال -> شراء سياره فيلار 2*
 
-*━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━*
+* ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～*
 ]],"md",true)  
 return false
 end
 if text == "طيارات" and Redis:get(Saidi.."marad" .. msg.chat_id .. ":" .. msg.sender_id.user_id) then
 Redis:del(Saidi.."marad" .. msg.chat_id .. ":" .. msg.sender_id.user_id) 
 bot.sendText(msg.chat_id,msg.id,[[
-*━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━*
+* ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～*
 
 *𖥔 الطيارات المتوفرة لدينا حالياً ↑↓*
 
@@ -6396,14 +6396,14 @@ bot.sendText(msg.chat_id,msg.id,[[
 *𖥔 ارسل اسم الطائرة والعدد*
 *𖥔 مثال -> شراء طياره سفر 2*
 
-*━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━*
+* ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～*
 ]],"md",true)  
 return false
 end
 if text == "عقارات" and Redis:get(Saidi.."marad" .. msg.chat_id .. ":" .. msg.sender_id.user_id) then
 Redis:del(Saidi.."marad" .. msg.chat_id .. ":" .. msg.sender_id.user_id) 
 bot.sendText(msg.chat_id,msg.id,[[
-*━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━*
+* ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～*
 
 *𖥔 العقارات المتوفرة لدينا حالياً ↑↓*
 
@@ -6414,14 +6414,14 @@ bot.sendText(msg.chat_id,msg.id,[[
 *𖥔 ارسل اسم العقار والعدد*
 *𖥔 مثال -> شراء قصر 2*
 
-*━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━*
+* ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～*
 ]],"md",true)  
 return false
 end
 if text == "مجوهرات" and Redis:get(Saidi.."marad" .. msg.chat_id .. ":" .. msg.sender_id.user_id) then
 Redis:del(Saidi.."marad" .. msg.chat_id .. ":" .. msg.sender_id.user_id) 
 bot.sendText(msg.chat_id,msg.id,[[
-*━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━*
+* ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～*
 
 *𖥔 المجوهرات المتوفرة لدينا حالياً ↑↓*
 
@@ -6433,7 +6433,7 @@ bot.sendText(msg.chat_id,msg.id,[[
 *𖥔 ارسل الاسم والعدد*
 *𖥔 مثال -> شراء سوار 2*
 
-*━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━*
+* ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～*
 ]],"md",true)  
 return false
 end
@@ -8481,7 +8481,7 @@ gg = "\n\nملاحظة -> اي شخص مخالف للعبة بالغش او حا
 type = 'inline',
 data = {
 {
-{text = '• 𝑺𝒐𝑼𝒓𝑪𝒆 𝑲𝒊𝒏𝑮 •', url="t.me/VC_NE"},
+{text = '• 𝙎𝙤𝙐𝙧𝘾𝙚 𝙏𝙞𝙂𝙚𝙍 •', url="t.me/TGe_R"},
 },
 }
 }
@@ -8553,7 +8553,7 @@ gg = "\n\nملاحظة -> اي شخص مخالف للعبة بالغش او حا
 type = 'inline',
 data = {
 {
-{text = '• 𝑺𝒐𝑼𝒓𝑪𝒆 𝑲𝒊𝒏𝑮 •', url="t.me/VC_NE"},
+{text = '• 𝙎𝙤𝙐𝙧𝘾𝙚 𝙏𝙞𝙂𝙚𝙍 •', url="t.me/TGe_R"},
 },
 }
 }
@@ -8808,7 +8808,7 @@ local emoji ={
 "19)",
 "20)"
 }
-local msg_text = "𖥔 توب اعلى 20 شركة ↑↓ \n━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━\n"
+local msg_text = "𖥔 توب اعلى 20 شركة ↑↓ \n ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～\n"
 for k,v in pairs(top_company) do
 if num <= 20 then
 local user_name = bot.getUser(v[2]).first_name or "لا يوجد اسم"
@@ -9205,7 +9205,7 @@ local bank_users = Redis:smembers(Saidi.."taza")
 if #bank_users == 0 then
 return bot.sendText(msg.chat_id,msg.id,"𖥔 لا يوجد حسابات في البنك","md",true)
 end
-top_mony = "𖥔 توب اعلى 20 شخص بالتبرعات ↑↓\n━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━\n"
+top_mony = "𖥔 توب اعلى 20 شخص بالتبرعات ↑↓\n ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～\n"
 tabr_list = {}
 for k,v in pairs(bank_users) do
 local mony = Redis:get(Saidi.."tabbroat"..v)
@@ -9246,14 +9246,14 @@ num = num + 1
 gflos = string.format("%.0f", mony):reverse():gsub( "(%d%d%d)" , "%1," ):reverse():gsub("^,","")
 top_mony = top_mony..emo.." "..gflos.." 💵 l "..tt.." \n"
 gflous = string.format("%.0f", ballancee):reverse():gsub( "(%d%d%d)" , "%1," ):reverse():gsub("^,","")
-gg = " ━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━\n𖥔 you -> "..gflous.." 💵 l "..news.." \n\nملاحظة -> اي شخص مخالف للعبة بالغش او حاط يوزر بينحظر من اللعبه وتتصفر فلوسه"
+gg = "  ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～\n𖥔 you -> "..gflous.." 💵 l "..news.." \n\nملاحظة -> اي شخص مخالف للعبة بالغش او حاط يوزر بينحظر من اللعبه وتتصفر فلوسه"
 end
 end
 local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '• 𝑺𝒐𝑼𝒓𝑪𝒆 𝑲𝒊𝒏𝑮 •', url = 't.me/VC_NE'}, 
+{text = '• 𝙎𝙤𝙐𝙧𝘾𝙚 𝙏𝙞𝙂𝙚𝙍 •', url = 't.me/TGe_R'}, 
 },
 }
 }
@@ -9560,12 +9560,12 @@ if not msg.Asasy then
 return send(msg_chat_id,msg_id,'\n* 𖥔 هاذا الامر يخص'..Controller_Num(1)..' * ',"md",true)
 end
 if ChannelJoin(msg) == false then
-local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = 'اضغط للاشتراك', url = 't.me/VC_NE'}, },}}
+local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = 'اضغط للاشتراك', url = 't.me/TGe_R'}, },}}
 return send(msg.chat_id,msg.id,'*\n 𖥔 عليك الاشتراك في قناة البوت لاستخذام الاوامر*',"md",false, false, false, false, reply_markup)
 end
 local rtb_list = Redis:smembers(Saidi.."rowtab:")
 if #rtb_list == 0 then return send(msg_chat_id,msg_id,' 𖥔 لايوجد رتب مضافه ف البوت',"md",true)end
-rtb = "الرتب المضافه في البوت \n━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━\n"
+rtb = "الرتب المضافه في البوت \n ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～\n"
 for k,v in pairs(rtb_list) do
 rtba_type = Redis:get(Saidi..v.."type:")
 if rtba_type == "sdev" then rtba_t = "مطور ثانوي"
@@ -9586,7 +9586,7 @@ if not msg.Asasy then
 return send(msg_chat_id,msg_id,'\n* 𖥔 هاذا الامر يخص'..Controller_Num(1)..' * ',"md",true)
 end
 if ChannelJoin(msg) == false then
-local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = 'اضغط للاشتراك', url = 't.me/VC_NE'}, },}}
+local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = 'اضغط للاشتراك', url = 't.me/TGe_R'}, },}}
 return send(msg.chat_id,msg.id,'*\n 𖥔 عليك الاشتراك في قناة البوت لاستخذام الاوامر*',"md",false, false, false, false, reply_markup)
 end
 Redis:set(Saidi.."del:rtba"..msg.sender_id.user_id..":"..msg_chat_id, true)
@@ -9624,7 +9624,7 @@ if not msg.Asasy then
 return send(msg_chat_id,msg_id,'\n* 𖥔 هاذا الامر يخص'..Controller_Num(1)..' * ',"md",true)
 end
 if ChannelJoin(msg) == false then
-local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = 'اضغط للاشتراك', url = 't.me/VC_NE'}, },}}
+local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = 'اضغط للاشتراك', url = 't.me/TGe_R'}, },}}
 return send(msg.chat_id,msg.id,'*\n 𖥔 عليك الاشتراك في قناة البوت لاستخذام الاوامر*',"md",false, false, false, false, reply_markup)
 end
 Redis:set(Saidi.."Set:rtba"..msg.sender_id.user_id..":"..msg_chat_id, true)
@@ -9872,7 +9872,7 @@ if not msg.Devss then
 return send(msg_chat_id,msg_id,'\n* 𖥔 هاذا الامر يخص'..Controller_Num(7)..' * ',"md",true)
 end
 if ChannelJoin(msg) == false then
-local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = 'اضغط للاشتراك', url = 't.me/VC_NE'}, },}}
+local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = 'اضغط للاشتراك', url = 't.me/TGe_R'}, },}}
 return send(msg.chat_id,msg.id,'*\n 𖥔 عليك الاشتراك في قناة البوت لاستخذام الاوامر*',"md",false, false, false, false, reply_markup)
 end
 local reply_markup = bot.replyMarkup{
@@ -9902,7 +9902,7 @@ if not msg.Devss then
 return send(msg_chat_id,msg_id,'\n* 𖥔 هاذا الامر يخص'..Controller_Num(6)..' * ',"md",true)
 end
 if ChannelJoin(msg) == false then
-local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = 'اضغط للاشتراك', url = 't.me/VC_NE'}, },}}
+local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = 'اضغط للاشتراك', url = 't.me/TGe_R'}, },}}
 return send(msg.chat_id,msg.id,'*\n 𖥔 عليك الاشتراك في قناة البوت لاستخذام الاوامر*',"md",false, false, false, false, reply_markup)
 end
 local list = Redis:smembers(Saidi.."List:Sections:inline")
@@ -9937,15 +9937,15 @@ Redis:del(Saidi.."Add:Sections:Text:inline"..text)
 Redis:del(Saidi.."Sections:inline:text"..text)
 Redis:sadd(Saidi.."List:Sections:inline", text)
 send(msg_chat_id,msg_id,[[
-*━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+* ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
 , 𖥔 ارسل الان كليشه القسم ،
 , 𖥔ارسل نص فقط ،
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━*
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～*
 `#username` *-> معرف المستخدم*
  `#name` *-> اسم المستخدم*
  `#id` *-> ايدي المستخدم*
  `#stast`* -> رتبة المستخدم*
-*━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━*
+* ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～*
 ]],"md",true)
 return false
 end
@@ -10020,11 +10020,11 @@ if not msg.Devss then
 return send(msg_chat_id,msg_id,'\n* 𖥔 هاذا الامر يخص'..Controller_Num(6)..' * ',"md",true)
 end
 if ChannelJoin(msg) == false then
-local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = 'اضغط للاشتراك', url = 't.me/VC_NE'}, },}}
+local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = 'اضغط للاشتراك', url = 't.me/TGe_R'}, },}}
 return send(msg.chat_id,msg.id,'*\n 𖥔 عليك الاشتراك في قناة البوت لاستخذام الاوامر*',"md",false, false, false, false, reply_markup)
 end
 local list = Redis:smembers(Saidi.."List:Sections:inline")
-text = " 𖥔 قائمه الاقسام ↑↓ \n━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━\n"
+text = " 𖥔 قائمه الاقسام ↑↓ \n ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～\n"
 for k,v in pairs(list) do
 text = text..""..k.." -> "..v.."\n"
 end
@@ -10111,7 +10111,7 @@ local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = Redis:get(
 return send(msg.chat_id,msg.id,'*\n 𖥔 عليك الاشتراك في قناة البوت لأستخدام الاوامر*',"md",false, false, false, false, reply_markup)
 end
 local list = Redis:smembers(Saidi.."All:Get:Reides:Jabwa:Group"..msg_chat_id.."")
-Command = " 𖥔 قائمه الاوامر المضافه عام  \n ━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━ \n"
+Command = " 𖥔 قائمه الاوامر المضافه عام  \n  ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～ \n"
 for k,v in pairs(list) do
 Jabwa = Redis:get(Saidi.."All:Get:Reides:Jabwa:Group"..msg_chat_id..":"..v)
 if Jabwa then 
@@ -10302,7 +10302,7 @@ local photo = bot.getUserProfilePhotos(Message_Reply.sender_id.user_id)
 local UserInfo = bot.getUser(Message_Reply.sender_id.user_id)
 if photo and photo.total_count and photo.total_count > 0 then
 local Text = " 𖥔 عدد صوره هو -> "..photo.total_count.." صوره"
-local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = ' '..UserInfo.first_name..' ', url = 't.me/'..UserInfo.username}, },{{text = '• 𝑺𝒐𝑼𝒓𝑪𝒆 𝑲𝒊𝒏𝑮 •', url = 't.me/VC_NE'},},}}
+local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = ' '..UserInfo.first_name..' ', url = 't.me/'..UserInfo.username}, },{{text = '• 𝙎𝙤𝙐𝙧𝘾𝙚 𝙏𝙞𝙂𝙚𝙍 •', url = 't.me/TGe_R'},},}}
 bot.sendPhoto(msg_chat_id, msg_id, photo.photos[1].sizes[#photo.photos[1].sizes].photo.remote.id, Text, "md", true, nil, nil, nil, nil, nil, nil, nil, nil, reply_markup)
 else
 return bot.sendText(msg_chat_id,msg_id,'* 𖥔 لا توجد صوره ف حسابك*',"md",true) 
@@ -10318,7 +10318,7 @@ local UserInfo = bot.getUser(UserId)
 local photo = bot.getUserProfilePhotos(UserId)
 if photo and photo.total_count and photo.total_count > 0 then
 local Text = " 𖥔 عدد صوره هو -> "..photo.total_count.." صوره"
-local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = ' '..UserInfo.first_name..' ', url = 't.me/'..UserInfo.username}, },{{text = '• 𝑺𝒐𝑼𝒓𝑪𝒆 𝑲𝒊𝒏𝑮 •', url = 't.me/VC_NE'},},}}
+local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = ' '..UserInfo.first_name..' ', url = 't.me/'..UserInfo.username}, },{{text = '• 𝙎𝙤𝙐𝙧𝘾𝙚 𝙏𝙞𝙂𝙚𝙍 •', url = 't.me/TGe_R'},},}}
 bot.sendPhoto(msg_chat_id, msg_id, photo.photos[1].sizes[#photo.photos[1].sizes].photo.remote.id, Text, "md", true, nil, nil, nil, nil, nil, nil, nil, nil, reply_markup)
 else
 return bot.sendText(msg_chat_id,msg_id,'* 𖥔 لا توجد صوره ف حسابك*',"md",true) 
@@ -10335,7 +10335,7 @@ local photo = bot.getUserProfilePhotos(UserId_Info.id)
 local UserInfo = bot.getUser(UserId_Info.id)
 if photo and photo.total_count and photo.total_count > 0 then
 local Text = " 𖥔 عدد صوره هو -> "..photo.total_count.." صوره"
-local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = ' '..UserInfo.first_name..' ', url = 't.me/'..UserInfo.username}, },{{text = '• 𝑺𝒐𝑼𝒓𝑪𝒆 𝑲𝒊𝒏𝑮 •', url = 't.me/VC_NE'},},}}
+local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = ' '..UserInfo.first_name..' ', url = 't.me/'..UserInfo.username}, },{{text = '• 𝙎𝙤𝙐𝙧𝘾𝙚 𝙏𝙞𝙂𝙚𝙍 •', url = 't.me/TGe_R'},},}}
 bot.sendPhoto(msg_chat_id, msg_id, photo.photos[1].sizes[#photo.photos[1].sizes].photo.remote.id, Text, "md", true, nil, nil, nil, nil, nil, nil, nil, nil, reply_markup)
 else
 return bot.sendText(msg_chat_id,msg_id,'* 𖥔 لا توجد صوره ف حسابك*',"md",true) 
@@ -10354,7 +10354,7 @@ type = 'inline',
 data = {
 {{text="• الغاء •",data="/DelChannelVip:"..msg.sender_id.user_id}},
 {{text="• اخفاء •",data="/HideChannelVip:"..msg.sender_id.user_id}},
-{{text='• 𝑺𝒐𝑼𝒓𝑪𝒆 𝑲𝒊𝒏𝑮 •',url="t.me/VC_NE"}}, 
+{{text='• 𝙎𝙤𝙐𝙧𝘾𝙚 𝙏𝙞𝙂𝙚𝙍 •',url="t.me/TGe_R"}}, 
 }
 }
 bot.sendText(msg_chat_id,msg_id,Text,"md",false, false, false, false, reply_markup)
@@ -10371,7 +10371,7 @@ type = 'inline',
 data = {
 {{text="• وضع قناتي •",data="/ChangeChannelVip:"..msg.sender_id.user_id}},
 {{text="• اخفاء •",data="/HideChannelVip:"..msg.sender_id.user_id}},
-{{text='• 𝑺𝒐𝑼𝒓𝑪𝒆 𝑲𝒊𝒏𝑮 •',url="t.me/VC_NE"}},
+{{text='• 𝙎𝙤𝙐𝙧𝘾𝙚 𝙏𝙞𝙂𝙚𝙍 •',url="t.me/TGe_R"}},
 }
 }
 bot.sendText(msg_chat_id,msg_id,Text,"md",false, false, false, false, reply_markup)
@@ -10384,7 +10384,7 @@ type = 'inline',
 data = {
 {{text="• وضع قناتي •",data="/ChangeChannelVip:"..msg.sender_id.user_id}},
 {{text="• اخفاء •",data="/HideChannelVip:"..msg.sender_id.user_id}},
-{{text='• 𝑺𝒐𝑼𝒓𝑪𝒆 𝑲𝒊𝒏𝑮 •',url="t.me/VC_NE"}},
+{{text='• 𝙎𝙤𝙐𝙧𝘾𝙚 𝙏𝙞𝙂𝙚𝙍 •',url="t.me/TGe_R"}},
 }
 }
 bot.sendText(msg_chat_id,msg_id,Text,"md",false, false, false, false, reply_markup)
@@ -10405,7 +10405,7 @@ type = 'inline',
 data = {
 {{text="• تغيير قناتي •",data="/ChangeChannelVip:"..msg.sender_id.user_id},{text="• حذف قناتي •",callback_data="/DelChannelVip:"..msg.sender_id.user_id}},
 {{text="• اخفاء •",data="/HideChannelVip:"..msg.sender_id.user_id}},
-{{text='• 𝑺𝒐𝑼𝒓𝑪𝒆 𝑲𝒊𝒏𝑮 •',url="t.me/VC_NE"}},
+{{text='• 𝙎𝙤𝙐𝙧𝘾𝙚 𝙏𝙞𝙂𝙚𝙍 •',url="t.me/TGe_R"}},
 }
 }
 bot.sendText(msg_chat_id,msg_id,text,"md",false, false, false, false, reply_markup)
@@ -10420,7 +10420,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {{text="• الغاء •",data="/CancelChannelVip:"..msg.sender_id.user_id}},
-{{text='• 𝑺𝒐𝑼𝒓𝑪𝒆 𝑲𝒊𝒏𝑮 •',url="t.me/VC_NE"}},
+{{text='• 𝙎𝙤𝙐𝙧𝘾𝙚 𝙏𝙞𝙂𝙚𝙍 •',url="t.me/TGe_R"}},
 }
 }
 bot.sendText(msg_chat_id,msg_id,text,"md",false, false, false, false, reply_markup)
@@ -10451,42 +10451,42 @@ end
 local Text =' 𖥔 قم باستعمال الازرار لرفع العضو ↑↓ \n 𖥔 العضو -> ['..UserInfo.first_name..'](t.me/'..(UserInfo.username or 'SrcDrg')..')'
 if msg.Asasy then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="رفع مميز",data=msg.sender_id.user_id..":SetMem:"..Message_Reply.sender_id.user_id},{text="رفع ادمن",data=msg.sender_id.user_id..":SetAdmin:"..Message_Reply.sender_id.user_id}},{{text="رفع منشئ",data=msg.sender_id.user_id..":SetConstructor:"..Message_Reply.sender_id.user_id},{text="رفع مدير",data=msg.sender_id.user_id..":SetManager:"..Message_Reply.sender_id.user_id}},{{text="رفع منشئ اساسي",data=msg.sender_id.user_id..":SetBasicConstructor:"..Message_Reply.sender_id.user_id}},{{text="رفع مالك",data=msg.sender_id.user_id..":SetOwner:"..Message_Reply.sender_id.user_id},{text="رفع مطور",data=msg.sender_id.user_id..":SetSudoBot:"..Message_Reply.sender_id.user_id}},{{text="رفع مطور ثانوي",data=msg.sender_id.user_id..":SetSecondSudo:"..Message_Reply.sender_id.user_id}},{{text='• قناة السورس •',url="https://t.me/VC_NE"}},
+{{text="رفع مميز",data=msg.sender_id.user_id..":SetMem:"..Message_Reply.sender_id.user_id},{text="رفع ادمن",data=msg.sender_id.user_id..":SetAdmin:"..Message_Reply.sender_id.user_id}},{{text="رفع منشئ",data=msg.sender_id.user_id..":SetConstructor:"..Message_Reply.sender_id.user_id},{text="رفع مدير",data=msg.sender_id.user_id..":SetManager:"..Message_Reply.sender_id.user_id}},{{text="رفع منشئ اساسي",data=msg.sender_id.user_id..":SetBasicConstructor:"..Message_Reply.sender_id.user_id}},{{text="رفع مالك",data=msg.sender_id.user_id..":SetOwner:"..Message_Reply.sender_id.user_id},{text="رفع مطور",data=msg.sender_id.user_id..":SetSudoBot:"..Message_Reply.sender_id.user_id}},{{text="رفع مطور ثانوي",data=msg.sender_id.user_id..":SetSecondSudo:"..Message_Reply.sender_id.user_id}},{{text='• قناة السورس •',url="https://t.me/TGe_R"}},
 }}
 bot.sendText(msg_chat_id, msg_id, Text, 'md', true, false, false, false, reply_markup)
 elseif msg.Devss then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="رفع مميز",data=msg.sender_id.user_id..":SetMem:"..Message_Reply.sender_id.user_id},{text="رفع ادمن",data=msg.sender_id.user_id..":SetAdmin:"..Message_Reply.sender_id.user_id}},{{text="رفع منشئ",data=msg.sender_id.user_id..":SetConstructor:"..Message_Reply.sender_id.user_id},{text="رفع مدير",data=msg.sender_id.user_id..":SetManager:"..Message_Reply.sender_id.user_id}},{{text="رفع منشئ اساسي",data=msg.sender_id.user_id..":SetBasicConstructor:"..Message_Reply.sender_id.user_id}},{{text="رفع مالك",data=msg.sender_id.user_id..":SetOwner:"..Message_Reply.sender_id.user_id},{text="رفع مطور",data=msg.sender_id.user_id..":SetSudoBot:"..Message_Reply.sender_id.user_id}},{{text='• قناة السورس •',url="https://t.me/VC_NE"}},
+{{text="رفع مميز",data=msg.sender_id.user_id..":SetMem:"..Message_Reply.sender_id.user_id},{text="رفع ادمن",data=msg.sender_id.user_id..":SetAdmin:"..Message_Reply.sender_id.user_id}},{{text="رفع منشئ",data=msg.sender_id.user_id..":SetConstructor:"..Message_Reply.sender_id.user_id},{text="رفع مدير",data=msg.sender_id.user_id..":SetManager:"..Message_Reply.sender_id.user_id}},{{text="رفع منشئ اساسي",data=msg.sender_id.user_id..":SetBasicConstructor:"..Message_Reply.sender_id.user_id}},{{text="رفع مالك",data=msg.sender_id.user_id..":SetOwner:"..Message_Reply.sender_id.user_id},{text="رفع مطور",data=msg.sender_id.user_id..":SetSudoBot:"..Message_Reply.sender_id.user_id}},{{text='• قناة السورس •',url="https://t.me/TGe_R"}},
 }}
 return bot.sendText(msg_chat_id, msg_id, Text, 'md', true, false, false, false, reply_markup)
 elseif msg.Dev then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="رفع مميز",data=msg.sender_id.user_id..":SetMem:"..Message_Reply.sender_id.user_id},{text="رفع ادمن",data=msg.sender_id.user_id..":SetAdmin:"..Message_Reply.sender_id.user_id}},{{text="رفع منشئ",data=msg.sender_id.user_id..":SetConstructor:"..Message_Reply.sender_id.user_id},{text="رفع مدير",data=msg.sender_id.user_id..":SetManager:"..Message_Reply.sender_id.user_id}},{{text="رفع منشئ اساسي",data=msg.sender_id.user_id..":SetBasicConstructor:"..Message_Reply.sender_id.user_id}},{{text="رفع مالك",data=msg.sender_id.user_id..":SetOwner:"..Message_Reply.sender_id.user_id}},{{text='• قناة السورس •',url="https://t.me/VC_NE"}},
+{{text="رفع مميز",data=msg.sender_id.user_id..":SetMem:"..Message_Reply.sender_id.user_id},{text="رفع ادمن",data=msg.sender_id.user_id..":SetAdmin:"..Message_Reply.sender_id.user_id}},{{text="رفع منشئ",data=msg.sender_id.user_id..":SetConstructor:"..Message_Reply.sender_id.user_id},{text="رفع مدير",data=msg.sender_id.user_id..":SetManager:"..Message_Reply.sender_id.user_id}},{{text="رفع منشئ اساسي",data=msg.sender_id.user_id..":SetBasicConstructor:"..Message_Reply.sender_id.user_id}},{{text="رفع مالك",data=msg.sender_id.user_id..":SetOwner:"..Message_Reply.sender_id.user_id}},{{text='• قناة السورس •',url="https://t.me/TGe_R"}},
 }}
 return bot.sendText(msg_chat_id, msg_id, Text, 'md', true, false, false, false, reply_markup)
 elseif msg.Ownerss then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="رفع مميز",data=msg.sender_id.user_id..":SetMem:"..Message_Reply.sender_id.user_id},{text="رفع ادمن",data=msg.sender_id.user_id..":SetAdmin:"..Message_Reply.sender_id.user_id}},{{text="رفع منشئ",data=msg.sender_id.user_id..":SetConstructor:"..Message_Reply.sender_id.user_id},{text="رفع مدير",data=msg.sender_id.user_id..":SetManager:"..Message_Reply.sender_id.user_id}},{{text="رفع منشئ اساسي",data=msg.sender_id.user_id..":SetBasicConstructor:"..Message_Reply.sender_id.user_id}},{{text='• قناة السورس •',url="https://t.me/VC_NE"}},
+{{text="رفع مميز",data=msg.sender_id.user_id..":SetMem:"..Message_Reply.sender_id.user_id},{text="رفع ادمن",data=msg.sender_id.user_id..":SetAdmin:"..Message_Reply.sender_id.user_id}},{{text="رفع منشئ",data=msg.sender_id.user_id..":SetConstructor:"..Message_Reply.sender_id.user_id},{text="رفع مدير",data=msg.sender_id.user_id..":SetManager:"..Message_Reply.sender_id.user_id}},{{text="رفع منشئ اساسي",data=msg.sender_id.user_id..":SetBasicConstructor:"..Message_Reply.sender_id.user_id}},{{text='• قناة السورس •',url="https://t.me/TGe_R"}},
 }}
 return bot.sendText(msg_chat_id, msg_id, Text, 'md', true, false, false, false, reply_markup)
 elseif msg.SuperCreator then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="رفع مميز",data=msg.sender_id.user_id..":SetMem:"..Message_Reply.sender_id.user_id},{text="رفع ادمن",data=msg.sender_id.user_id..":SetAdmin:"..Message_Reply.sender_id.user_id}},{{text="رفع منشئ",data=msg.sender_id.user_id..":SetConstructor:"..Message_Reply.sender_id.user_id},{text="رفع مدير",data=msg.sender_id.user_id..":SetManager:"..Message_Reply.sender_id.user_id}},{{text='• قناة السورس •',url="https://t.me/VC_NE"}},
+{{text="رفع مميز",data=msg.sender_id.user_id..":SetMem:"..Message_Reply.sender_id.user_id},{text="رفع ادمن",data=msg.sender_id.user_id..":SetAdmin:"..Message_Reply.sender_id.user_id}},{{text="رفع منشئ",data=msg.sender_id.user_id..":SetConstructor:"..Message_Reply.sender_id.user_id},{text="رفع مدير",data=msg.sender_id.user_id..":SetManager:"..Message_Reply.sender_id.user_id}},{{text='• قناة السورس •',url="https://t.me/TGe_R"}},
 }}
 return bot.sendText(msg_chat_id, msg_id, Text, 'md', true, false, false, false, reply_markup)
 elseif msg.Creator then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="رفع مميز",data=msg.sender_id.user_id..":SetMem:"..Message_Reply.sender_id.user_id},{text="رفع ادمن",data=msg.sender_id.user_id..":SetAdmin:"..Message_Reply.sender_id.user_id}},{{text="رفع مدير",data=msg.sender_id.user_id..":SetManager:"..Message_Reply.sender_id.user_id}},{{text='• قناة السورس •',url="https://t.me/VC_NE"}},
+{{text="رفع مميز",data=msg.sender_id.user_id..":SetMem:"..Message_Reply.sender_id.user_id},{text="رفع ادمن",data=msg.sender_id.user_id..":SetAdmin:"..Message_Reply.sender_id.user_id}},{{text="رفع مدير",data=msg.sender_id.user_id..":SetManager:"..Message_Reply.sender_id.user_id}},{{text='• قناة السورس •',url="https://t.me/TGe_R"}},
 }}
 return bot.sendText(msg_chat_id, msg_id, Text, 'md', true, false, false, false, reply_markup)
 elseif msg.Manger then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="رفع مميز",data=msg.sender_id.user_id..":SetMem:"..Message_Reply.sender_id.user_id},{text="رفع ادمن",data=msg.sender_id.user_id..":SetAdmin:"..Message_Reply.sender_id.user_id}},{{text='• قناة السورس •',url="https://t.me/VC_NE"}},
+{{text="رفع مميز",data=msg.sender_id.user_id..":SetMem:"..Message_Reply.sender_id.user_id},{text="رفع ادمن",data=msg.sender_id.user_id..":SetAdmin:"..Message_Reply.sender_id.user_id}},{{text='• قناة السورس •',url="https://t.me/TGe_R"}},
 }}
 return bot.sendText(msg_chat_id, msg_id, Text, 'md', true, false, false, false, reply_markup)
 elseif msg.Admin then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="رفع مميز",data=msg.sender_id.user_id..":SetMem:"..Message_Reply.sender_id.user_id}},{{text='• قناة السورس •',url="https://t.me/VC_NE"}},
+{{text="رفع مميز",data=msg.sender_id.user_id..":SetMem:"..Message_Reply.sender_id.user_id}},{{text='• قناة السورس •',url="https://t.me/TGe_R"}},
 }}
 return bot.sendText(msg_chat_id, msg_id, Text, 'md', true, false, false, false, reply_markup)
 elseif not msg.Admin then
@@ -10506,42 +10506,42 @@ end
 local Text =' 𖥔 قم باستعمال الازرار لرفع العضو ↑↓ \n 𖥔 العضو -> ['..UserInfo.first_name..'](t.me/'..(UserInfo.username or 'SrcDrg')..')'
 if msg.Asasy then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="رفع مميز",data=msg.sender_id.user_id..":SetMem:"..UserId},{text="رفع ادمن",data=msg.sender_id.user_id..":SetAdmin:"..UserId}},{{text="رفع منشئ",data=msg.sender_id.user_id..":SetConstructor:"..UserId},{text="رفع مدير",data=msg.sender_id.user_id..":SetManager:"..UserId}},{{text="رفع منشئ اساسي",data=msg.sender_id.user_id..":SetBasicConstructor:"..UserId}},{{text="رفع مالك",data=msg.sender_id.user_id..":SetOwner:"..UserId},{text="رفع مطور",data=msg.sender_id.user_id..":SetSudoBot:"..UserId}},{{text="رفع مطور ثانوي",data=msg.sender_id.user_id..":SetSecondSudo:"..UserId}},{{text='• قناة السورس •',url="https://t.me/VC_NE"}},
+{{text="رفع مميز",data=msg.sender_id.user_id..":SetMem:"..UserId},{text="رفع ادمن",data=msg.sender_id.user_id..":SetAdmin:"..UserId}},{{text="رفع منشئ",data=msg.sender_id.user_id..":SetConstructor:"..UserId},{text="رفع مدير",data=msg.sender_id.user_id..":SetManager:"..UserId}},{{text="رفع منشئ اساسي",data=msg.sender_id.user_id..":SetBasicConstructor:"..UserId}},{{text="رفع مالك",data=msg.sender_id.user_id..":SetOwner:"..UserId},{text="رفع مطور",data=msg.sender_id.user_id..":SetSudoBot:"..UserId}},{{text="رفع مطور ثانوي",data=msg.sender_id.user_id..":SetSecondSudo:"..UserId}},{{text='• قناة السورس •',url="https://t.me/TGe_R"}},
 }}
 bot.sendText(msg_chat_id, msg_id, Text, 'md', true, false, false, false, reply_markup)
 elseif msg.Devss then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="رفع مميز",data=msg.sender_id.user_id..":SetMem:"..UserId},{text="رفع ادمن",data=msg.sender_id.user_id..":SetAdmin:"..UserId}},{{text="رفع منشئ",data=msg.sender_id.user_id..":SetConstructor:"..UserId},{text="رفع مدير",data=msg.sender_id.user_id..":SetManager:"..UserId}},{{text="رفع منشئ اساسي",data=msg.sender_id.user_id..":SetBasicConstructor:"..UserId}},{{text="رفع مالك",data=msg.sender_id.user_id..":SetOwner:"..UserId},{text="رفع مطور",data=msg.sender_id.user_id..":SetSudoBot:"..UserId}},{{text='• قناة السورس •',url="https://t.me/VC_NE"}},
+{{text="رفع مميز",data=msg.sender_id.user_id..":SetMem:"..UserId},{text="رفع ادمن",data=msg.sender_id.user_id..":SetAdmin:"..UserId}},{{text="رفع منشئ",data=msg.sender_id.user_id..":SetConstructor:"..UserId},{text="رفع مدير",data=msg.sender_id.user_id..":SetManager:"..UserId}},{{text="رفع منشئ اساسي",data=msg.sender_id.user_id..":SetBasicConstructor:"..UserId}},{{text="رفع مالك",data=msg.sender_id.user_id..":SetOwner:"..UserId},{text="رفع مطور",data=msg.sender_id.user_id..":SetSudoBot:"..UserId}},{{text='• قناة السورس •',url="https://t.me/TGe_R"}},
 }}
 return bot.sendText(msg_chat_id, msg_id, Text, 'md', true, false, false, false, reply_markup)
 elseif msg.Dev then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="رفع مميز",data=msg.sender_id.user_id..":SetMem:"..UserId},{text="رفع ادمن",data=msg.sender_id.user_id..":SetAdmin:"..UserId}},{{text="رفع منشئ",data=msg.sender_id.user_id..":SetConstructor:"..UserId},{text="رفع مدير",data=msg.sender_id.user_id..":SetManager:"..UserId}},{{text="رفع منشئ اساسي",data=msg.sender_id.user_id..":SetBasicConstructor:"..UserId}},{{text="رفع مالك",data=msg.sender_id.user_id..":SetOwner:"..UserId}},{{text='• قناة السورس •',url="https://t.me/VC_NE"}},
+{{text="رفع مميز",data=msg.sender_id.user_id..":SetMem:"..UserId},{text="رفع ادمن",data=msg.sender_id.user_id..":SetAdmin:"..UserId}},{{text="رفع منشئ",data=msg.sender_id.user_id..":SetConstructor:"..UserId},{text="رفع مدير",data=msg.sender_id.user_id..":SetManager:"..UserId}},{{text="رفع منشئ اساسي",data=msg.sender_id.user_id..":SetBasicConstructor:"..UserId}},{{text="رفع مالك",data=msg.sender_id.user_id..":SetOwner:"..UserId}},{{text='• قناة السورس •',url="https://t.me/TGe_R"}},
 }}
 return bot.sendText(msg_chat_id, msg_id, Text, 'md', true, false, false, false, reply_markup)
 elseif msg.Ownerss then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="رفع مميز",data=msg.sender_id.user_id..":SetMem:"..UserId},{text="رفع ادمن",data=msg.sender_id.user_id..":SetAdmin:"..UserId}},{{text="رفع منشئ",data=msg.sender_id.user_id..":SetConstructor:"..UserId},{text="رفع مدير",data=msg.sender_id.user_id..":SetManager:"..UserId}},{{text="رفع منشئ اساسي",data=msg.sender_id.user_id..":SetBasicConstructor:"..UserId}},{{text='• قناة السورس •',url="https://t.me/VC_NE"}},
+{{text="رفع مميز",data=msg.sender_id.user_id..":SetMem:"..UserId},{text="رفع ادمن",data=msg.sender_id.user_id..":SetAdmin:"..UserId}},{{text="رفع منشئ",data=msg.sender_id.user_id..":SetConstructor:"..UserId},{text="رفع مدير",data=msg.sender_id.user_id..":SetManager:"..UserId}},{{text="رفع منشئ اساسي",data=msg.sender_id.user_id..":SetBasicConstructor:"..UserId}},{{text='• قناة السورس •',url="https://t.me/TGe_R"}},
 }}
 return bot.sendText(msg_chat_id, msg_id, Text, 'md', true, false, false, false, reply_markup)
 elseif msg.SuperCreator then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="رفع مميز",data=msg.sender_id.user_id..":SetMem:"..UserId},{text="رفع ادمن",data=msg.sender_id.user_id..":SetAdmin:"..UserId}},{{text="رفع منشئ",data=msg.sender_id.user_id..":SetConstructor:"..UserId},{text="رفع مدير",data=msg.sender_id.user_id..":SetManager:"..UserId}},{{text='• قناة السورس •',url="https://t.me/VC_NE"}},
+{{text="رفع مميز",data=msg.sender_id.user_id..":SetMem:"..UserId},{text="رفع ادمن",data=msg.sender_id.user_id..":SetAdmin:"..UserId}},{{text="رفع منشئ",data=msg.sender_id.user_id..":SetConstructor:"..UserId},{text="رفع مدير",data=msg.sender_id.user_id..":SetManager:"..UserId}},{{text='• قناة السورس •',url="https://t.me/TGe_R"}},
 }}
 return bot.sendText(msg_chat_id, msg_id, Text, 'md', true, false, false, false, reply_markup)
 elseif msg.Creator then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="رفع مميز",data=msg.sender_id.user_id..":SetMem:"..UserId},{text="رفع ادمن",data=msg.sender_id.user_id..":SetAdmin:"..UserId}},{{text="رفع مدير",data=msg.sender_id.user_id..":SetManager:"..UserId}},{{text='• قناة السورس •',url="https://t.me/VC_NE"}},
+{{text="رفع مميز",data=msg.sender_id.user_id..":SetMem:"..UserId},{text="رفع ادمن",data=msg.sender_id.user_id..":SetAdmin:"..UserId}},{{text="رفع مدير",data=msg.sender_id.user_id..":SetManager:"..UserId}},{{text='• قناة السورس •',url="https://t.me/TGe_R"}},
 }}
 return bot.sendText(msg_chat_id, msg_id, Text, 'md', true, false, false, false, reply_markup)
 elseif msg.Manger then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="رفع مميز",data=msg.sender_id.user_id..":SetMem:"..UserId},{text="رفع ادمن",data=msg.sender_id.user_id..":SetAdmin:"..UserId}},{{text='• قناة السورس •',url="https://t.me/VC_NE"}},
+{{text="رفع مميز",data=msg.sender_id.user_id..":SetMem:"..UserId},{text="رفع ادمن",data=msg.sender_id.user_id..":SetAdmin:"..UserId}},{{text='• قناة السورس •',url="https://t.me/TGe_R"}},
 }}
 return bot.sendText(msg_chat_id, msg_id, Text, 'md', true, false, false, false, reply_markup)
 elseif msg.Admin then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="رفع مميز",data=msg.sender_id.user_id..":SetMem:"..UserId}},{{text='• قناة السورس •',url="https://t.me/VC_NE"}},
+{{text="رفع مميز",data=msg.sender_id.user_id..":SetMem:"..UserId}},{{text='• قناة السورس •',url="https://t.me/TGe_R"}},
 }}
 return bot.sendText(msg_chat_id, msg_id, Text, 'md', true, false, false, false, reply_markup)
 elseif not msg.Admin then
@@ -10562,42 +10562,42 @@ end
 local Text =' 𖥔 قم باستعمال الازرار لرفع العضو ↑↓ \n 𖥔 العضو -> ['..UserInfo.first_name..'](t.me/'..(UserInfo.username or 'SrcDrg')..')'
 if msg.Asasy then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="رفع مميز",data=msg.sender_id.user_id..":SetMem:"..UserId_Info.id},{text="رفع ادمن",data=msg.sender_id.user_id..":SetAdmin:"..UserId_Info.id}},{{text="رفع منشئ",data=msg.sender_id.user_id..":SetConstructor:"..UserId_Info.id},{text="رفع مدير",data=msg.sender_id.user_id..":SetManager:"..UserId_Info.id}},{{text="رفع منشئ اساسي",data=msg.sender_id.user_id..":SetBasicConstructor:"..UserId_Info.id}},{{text="رفع مالك",data=msg.sender_id.user_id..":SetOwner:"..UserId_Info.id},{text="رفع مطور",data=msg.sender_id.user_id..":SetSudoBot:"..UserId_Info.id}},{{text="رفع مطور ثانوي",data=msg.sender_id.user_id..":SetSecondSudo:"..UserId_Info.id}},{{text='• قناة السورس •',url="https://t.me/VC_NE"}},
+{{text="رفع مميز",data=msg.sender_id.user_id..":SetMem:"..UserId_Info.id},{text="رفع ادمن",data=msg.sender_id.user_id..":SetAdmin:"..UserId_Info.id}},{{text="رفع منشئ",data=msg.sender_id.user_id..":SetConstructor:"..UserId_Info.id},{text="رفع مدير",data=msg.sender_id.user_id..":SetManager:"..UserId_Info.id}},{{text="رفع منشئ اساسي",data=msg.sender_id.user_id..":SetBasicConstructor:"..UserId_Info.id}},{{text="رفع مالك",data=msg.sender_id.user_id..":SetOwner:"..UserId_Info.id},{text="رفع مطور",data=msg.sender_id.user_id..":SetSudoBot:"..UserId_Info.id}},{{text="رفع مطور ثانوي",data=msg.sender_id.user_id..":SetSecondSudo:"..UserId_Info.id}},{{text='• قناة السورس •',url="https://t.me/TGe_R"}},
 }}
 bot.sendText(msg_chat_id, msg_id, Text, 'md', true, false, false, false, reply_markup)
 elseif msg.Devss then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="رفع مميز",data=msg.sender_id.user_id..":SetMem:"..UserId_Info.id},{text="رفع ادمن",data=msg.sender_id.user_id..":SetAdmin:"..UserId_Info.id}},{{text="رفع منشئ",data=msg.sender_id.user_id..":SetConstructor:"..UserId_Info.id},{text="رفع مدير",data=msg.sender_id.user_id..":SetManager:"..UserId_Info.id}},{{text="رفع منشئ اساسي",data=msg.sender_id.user_id..":SetBasicConstructor:"..UserId_Info.id}},{{text="رفع مالك",data=msg.sender_id.user_id..":SetOwner:"..UserId_Info.id},{text="رفع مطور",data=msg.sender_id.user_id..":SetSudoBot:"..UserId_Info.id}},{{text='• قناة السورس •',url="https://t.me/VC_NE"}},
+{{text="رفع مميز",data=msg.sender_id.user_id..":SetMem:"..UserId_Info.id},{text="رفع ادمن",data=msg.sender_id.user_id..":SetAdmin:"..UserId_Info.id}},{{text="رفع منشئ",data=msg.sender_id.user_id..":SetConstructor:"..UserId_Info.id},{text="رفع مدير",data=msg.sender_id.user_id..":SetManager:"..UserId_Info.id}},{{text="رفع منشئ اساسي",data=msg.sender_id.user_id..":SetBasicConstructor:"..UserId_Info.id}},{{text="رفع مالك",data=msg.sender_id.user_id..":SetOwner:"..UserId_Info.id},{text="رفع مطور",data=msg.sender_id.user_id..":SetSudoBot:"..UserId_Info.id}},{{text='• قناة السورس •',url="https://t.me/TGe_R"}},
 }}
 return bot.sendText(msg_chat_id, msg_id, Text, 'md', true, false, false, false, reply_markup)
 elseif msg.Dev then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="رفع مميز",data=msg.sender_id.user_id..":SetMem:"..UserId_Info.id},{text="رفع ادمن",data=msg.sender_id.user_id..":SetAdmin:"..UserId_Info.id}},{{text="رفع منشئ",data=msg.sender_id.user_id..":SetConstructor:"..UserId_Info.id},{text="رفع مدير",data=msg.sender_id.user_id..":SetManager:"..UserId_Info.id}},{{text="رفع منشئ اساسي",data=msg.sender_id.user_id..":SetBasicConstructor:"..UserId_Info.id}},{{text="رفع مالك",data=msg.sender_id.user_id..":SetOwner:"..UserId_Info.id}},{{text='• قناة السورس •',url="https://t.me/VC_NE"}},
+{{text="رفع مميز",data=msg.sender_id.user_id..":SetMem:"..UserId_Info.id},{text="رفع ادمن",data=msg.sender_id.user_id..":SetAdmin:"..UserId_Info.id}},{{text="رفع منشئ",data=msg.sender_id.user_id..":SetConstructor:"..UserId_Info.id},{text="رفع مدير",data=msg.sender_id.user_id..":SetManager:"..UserId_Info.id}},{{text="رفع منشئ اساسي",data=msg.sender_id.user_id..":SetBasicConstructor:"..UserId_Info.id}},{{text="رفع مالك",data=msg.sender_id.user_id..":SetOwner:"..UserId_Info.id}},{{text='• قناة السورس •',url="https://t.me/TGe_R"}},
 }}
 return bot.sendText(msg_chat_id, msg_id, Text, 'md', true, false, false, false, reply_markup)
 elseif msg.Ownerss then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="رفع مميز",data=msg.sender_id.user_id..":SetMem:"..UserId_Info.id},{text="رفع ادمن",data=msg.sender_id.user_id..":SetAdmin:"..UserId_Info.id}},{{text="رفع منشئ",data=msg.sender_id.user_id..":SetConstructor:"..UserId_Info.id},{text="رفع مدير",data=msg.sender_id.user_id..":SetManager:"..UserId_Info.id}},{{text="رفع منشئ اساسي",data=msg.sender_id.user_id..":SetBasicConstructor:"..UserId_Info.id}},{{text='• قناة السورس •',url="https://t.me/VC_NE"}},
+{{text="رفع مميز",data=msg.sender_id.user_id..":SetMem:"..UserId_Info.id},{text="رفع ادمن",data=msg.sender_id.user_id..":SetAdmin:"..UserId_Info.id}},{{text="رفع منشئ",data=msg.sender_id.user_id..":SetConstructor:"..UserId_Info.id},{text="رفع مدير",data=msg.sender_id.user_id..":SetManager:"..UserId_Info.id}},{{text="رفع منشئ اساسي",data=msg.sender_id.user_id..":SetBasicConstructor:"..UserId_Info.id}},{{text='• قناة السورس •',url="https://t.me/TGe_R"}},
 }}
 return bot.sendText(msg_chat_id, msg_id, Text, 'md', true, false, false, false, reply_markup)
 elseif msg.SuperCreator then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="رفع مميز",data=msg.sender_id.user_id..":SetMem:"..UserId_Info.id},{text="رفع ادمن",data=msg.sender_id.user_id..":SetAdmin:"..UserId_Info.id}},{{text="رفع منشئ",data=msg.sender_id.user_id..":SetConstructor:"..UserId_Info.id},{text="رفع مدير",data=msg.sender_id.user_id..":SetManager:"..UserId_Info.id}},{{text='• قناة السورس •',url="https://t.me/VC_NE"}},
+{{text="رفع مميز",data=msg.sender_id.user_id..":SetMem:"..UserId_Info.id},{text="رفع ادمن",data=msg.sender_id.user_id..":SetAdmin:"..UserId_Info.id}},{{text="رفع منشئ",data=msg.sender_id.user_id..":SetConstructor:"..UserId_Info.id},{text="رفع مدير",data=msg.sender_id.user_id..":SetManager:"..UserId_Info.id}},{{text='• قناة السورس •',url="https://t.me/TGe_R"}},
 }}
 return bot.sendText(msg_chat_id, msg_id, Text, 'md', true, false, false, false, reply_markup)
 elseif msg.Creator then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="رفع مميز",data=msg.sender_id.user_id..":SetMem:"..UserId_Info.id},{text="رفع ادمن",data=msg.sender_id.user_id..":SetAdmin:"..UserId_Info.id}},{{text="رفع مدير",data=msg.sender_id.user_id..":SetManager:"..UserId_Info.id}},{{text='• قناة السورس •',url="https://t.me/VC_NE"}},
+{{text="رفع مميز",data=msg.sender_id.user_id..":SetMem:"..UserId_Info.id},{text="رفع ادمن",data=msg.sender_id.user_id..":SetAdmin:"..UserId_Info.id}},{{text="رفع مدير",data=msg.sender_id.user_id..":SetManager:"..UserId_Info.id}},{{text='• قناة السورس •',url="https://t.me/TGe_R"}},
 }}
 return bot.sendText(msg_chat_id, msg_id, Text, 'md', true, false, false, false, reply_markup)
 elseif msg.Manger then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="رفع مميز",data=msg.sender_id.user_id..":SetMem:"..UserId_Info.id},{text="رفع ادمن",data=msg.sender_id.user_id..":SetAdmin:"..UserId_Info.id}},{{text='• قناة السورس •',url="https://t.me/VC_NE"}},
+{{text="رفع مميز",data=msg.sender_id.user_id..":SetMem:"..UserId_Info.id},{text="رفع ادمن",data=msg.sender_id.user_id..":SetAdmin:"..UserId_Info.id}},{{text='• قناة السورس •',url="https://t.me/TGe_R"}},
 }}
 return bot.sendText(msg_chat_id, msg_id, Text, 'md', true, false, false, false, reply_markup)
 elseif msg.Admin then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="رفع مميز",data=msg.sender_id.user_id..":SetMem:"..UserId_Info.id}},{{text='• قناة السورس •',url="https://t.me/VC_NE"}},
+{{text="رفع مميز",data=msg.sender_id.user_id..":SetMem:"..UserId_Info.id}},{{text='• قناة السورس •',url="https://t.me/TGe_R"}},
 }}
 return bot.sendText(msg_chat_id, msg_id, Text, 'md', true, false, false, false, reply_markup)
 elseif not msg.Admin then
@@ -10617,42 +10617,42 @@ end
 local Text =' 𖥔 قم باستعمال الازرار لتنزيل العضو ↑↓ \n 𖥔 العضو -> ['..UserInfo.first_name..'](t.me/'..(UserInfo.username or 'SrcDrg')..')'
 if msg.Asasy then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="تنزيل مميز",data=msg.sender_id.user_id..":RemMem:"..Message_Reply.sender_id.user_id},{text="تنزيل ادمن",data=msg.sender_id.user_id..":RemAdmin:"..Message_Reply.sender_id.user_id}},{{text="تنزيل منشئ",data=msg.sender_id.user_id..":RemConstructor:"..Message_Reply.sender_id.user_id},{text="تنزيل مدير",data=msg.sender_id.user_id..":RemManager:"..Message_Reply.sender_id.user_id}},{{text="تنزيل منشئ اساسي",data=msg.sender_id.user_id..":RemBasicConstructor:"..Message_Reply.sender_id.user_id}},{{text="تنزيل مالك",data=msg.sender_id.user_id..":RemOwner:"..Message_Reply.sender_id.user_id},{text="تنزيل مطور",data=msg.sender_id.user_id..":RemSudoBot:"..Message_Reply.sender_id.user_id}},{{text="تنزيل مطور ثانوي",data=msg.sender_id.user_id..":RemSecondSudo:"..Message_Reply.sender_id.user_id}},{{text='• قناة السورس •',url="https://t.me/VC_NE"}},
+{{text="تنزيل مميز",data=msg.sender_id.user_id..":RemMem:"..Message_Reply.sender_id.user_id},{text="تنزيل ادمن",data=msg.sender_id.user_id..":RemAdmin:"..Message_Reply.sender_id.user_id}},{{text="تنزيل منشئ",data=msg.sender_id.user_id..":RemConstructor:"..Message_Reply.sender_id.user_id},{text="تنزيل مدير",data=msg.sender_id.user_id..":RemManager:"..Message_Reply.sender_id.user_id}},{{text="تنزيل منشئ اساسي",data=msg.sender_id.user_id..":RemBasicConstructor:"..Message_Reply.sender_id.user_id}},{{text="تنزيل مالك",data=msg.sender_id.user_id..":RemOwner:"..Message_Reply.sender_id.user_id},{text="تنزيل مطور",data=msg.sender_id.user_id..":RemSudoBot:"..Message_Reply.sender_id.user_id}},{{text="تنزيل مطور ثانوي",data=msg.sender_id.user_id..":RemSecondSudo:"..Message_Reply.sender_id.user_id}},{{text='• قناة السورس •',url="https://t.me/TGe_R"}},
 }}
 bot.sendText(msg_chat_id, msg_id, Text, 'md', true, false, false, false, reply_markup)
 elseif msg.Devss then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="تنزيل مميز",data=msg.sender_id.user_id..":RemMem:"..Message_Reply.sender_id.user_id},{text="تنزيل ادمن",data=msg.sender_id.user_id..":RemAdmin:"..Message_Reply.sender_id.user_id}},{{text="تنزيل منشئ",data=msg.sender_id.user_id..":RemConstructor:"..Message_Reply.sender_id.user_id},{text="تنزيل مدير",data=msg.sender_id.user_id..":RemManager:"..Message_Reply.sender_id.user_id}},{{text="تنزيل منشئ اساسي",data=msg.sender_id.user_id..":RemBasicConstructor:"..Message_Reply.sender_id.user_id}},{{text="تنزيل مالك",data=msg.sender_id.user_id..":RemOwner:"..Message_Reply.sender_id.user_id},{text="تنزيل مطور",data=msg.sender_id.user_id..":RemSudoBot:"..Message_Reply.sender_id.user_id}},{{text='• قناة السورس •',url="https://t.me/VC_NE"}},
+{{text="تنزيل مميز",data=msg.sender_id.user_id..":RemMem:"..Message_Reply.sender_id.user_id},{text="تنزيل ادمن",data=msg.sender_id.user_id..":RemAdmin:"..Message_Reply.sender_id.user_id}},{{text="تنزيل منشئ",data=msg.sender_id.user_id..":RemConstructor:"..Message_Reply.sender_id.user_id},{text="تنزيل مدير",data=msg.sender_id.user_id..":RemManager:"..Message_Reply.sender_id.user_id}},{{text="تنزيل منشئ اساسي",data=msg.sender_id.user_id..":RemBasicConstructor:"..Message_Reply.sender_id.user_id}},{{text="تنزيل مالك",data=msg.sender_id.user_id..":RemOwner:"..Message_Reply.sender_id.user_id},{text="تنزيل مطور",data=msg.sender_id.user_id..":RemSudoBot:"..Message_Reply.sender_id.user_id}},{{text='• قناة السورس •',url="https://t.me/TGe_R"}},
 }}
 return bot.sendText(msg_chat_id, msg_id, Text, 'md', true, false, false, false, reply_markup)
 elseif msg.Dev then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="تنزيل مميز",data=msg.sender_id.user_id..":RemMem:"..Message_Reply.sender_id.user_id},{text="تنزيل ادمن",data=msg.sender_id.user_id..":RemAdmin:"..Message_Reply.sender_id.user_id}},{{text="تنزيل منشئ",data=msg.sender_id.user_id..":RemConstructor:"..Message_Reply.sender_id.user_id},{text="تنزيل مدير",data=msg.sender_id.user_id..":RemManager:"..Message_Reply.sender_id.user_id}},{{text="تنزيل منشئ اساسي",data=msg.sender_id.user_id..":RemBasicConstructor:"..Message_Reply.sender_id.user_id}},{{text="تنزيل مالك",data=msg.sender_id.user_id..":RemOwner:"..Message_Reply.sender_id.user_id}},{{text='• قناة السورس •',url="https://t.me/VC_NE"}},
+{{text="تنزيل مميز",data=msg.sender_id.user_id..":RemMem:"..Message_Reply.sender_id.user_id},{text="تنزيل ادمن",data=msg.sender_id.user_id..":RemAdmin:"..Message_Reply.sender_id.user_id}},{{text="تنزيل منشئ",data=msg.sender_id.user_id..":RemConstructor:"..Message_Reply.sender_id.user_id},{text="تنزيل مدير",data=msg.sender_id.user_id..":RemManager:"..Message_Reply.sender_id.user_id}},{{text="تنزيل منشئ اساسي",data=msg.sender_id.user_id..":RemBasicConstructor:"..Message_Reply.sender_id.user_id}},{{text="تنزيل مالك",data=msg.sender_id.user_id..":RemOwner:"..Message_Reply.sender_id.user_id}},{{text='• قناة السورس •',url="https://t.me/TGe_R"}},
 }}
 return bot.sendText(msg_chat_id, msg_id, Text, 'md', true, false, false, false, reply_markup)
 elseif msg.Ownerss then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="تنزيل مميز",data=msg.sender_id.user_id..":RemMem:"..Message_Reply.sender_id.user_id},{text="تنزيل ادمن",data=msg.sender_id.user_id..":RemAdmin:"..Message_Reply.sender_id.user_id}},{{text="تنزيل منشئ",data=msg.sender_id.user_id..":RemConstructor:"..Message_Reply.sender_id.user_id},{text="تنزيل مدير",data=msg.sender_id.user_id..":RemManager:"..Message_Reply.sender_id.user_id}},{{text="تنزيل منشئ اساسي",data=msg.sender_id.user_id..":RemBasicConstructor:"..Message_Reply.sender_id.user_id}},{{text='• قناة السورس •',url="https://t.me/VC_NE"}},
+{{text="تنزيل مميز",data=msg.sender_id.user_id..":RemMem:"..Message_Reply.sender_id.user_id},{text="تنزيل ادمن",data=msg.sender_id.user_id..":RemAdmin:"..Message_Reply.sender_id.user_id}},{{text="تنزيل منشئ",data=msg.sender_id.user_id..":RemConstructor:"..Message_Reply.sender_id.user_id},{text="تنزيل مدير",data=msg.sender_id.user_id..":RemManager:"..Message_Reply.sender_id.user_id}},{{text="تنزيل منشئ اساسي",data=msg.sender_id.user_id..":RemBasicConstructor:"..Message_Reply.sender_id.user_id}},{{text='• قناة السورس •',url="https://t.me/TGe_R"}},
 }}
 return bot.sendText(msg_chat_id, msg_id, Text, 'md', true, false, false, false, reply_markup)
 elseif msg.SuperCreator then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="تنزيل مميز",data=msg.sender_id.user_id..":RemMem:"..Message_Reply.sender_id.user_id},{text="تنزيل ادمن",data=msg.sender_id.user_id..":RemAdmin:"..Message_Reply.sender_id.user_id}},{{text="تنزيل منشئ",data=msg.sender_id.user_id..":RemConstructor:"..Message_Reply.sender_id.user_id},{text="تنزيل مدير",data=msg.sender_id.user_id..":RemManager:"..Message_Reply.sender_id.user_id}},{{text='• قناة السورس •',url="https://t.me/VC_NE"}},
+{{text="تنزيل مميز",data=msg.sender_id.user_id..":RemMem:"..Message_Reply.sender_id.user_id},{text="تنزيل ادمن",data=msg.sender_id.user_id..":RemAdmin:"..Message_Reply.sender_id.user_id}},{{text="تنزيل منشئ",data=msg.sender_id.user_id..":RemConstructor:"..Message_Reply.sender_id.user_id},{text="تنزيل مدير",data=msg.sender_id.user_id..":RemManager:"..Message_Reply.sender_id.user_id}},{{text='• قناة السورس •',url="https://t.me/TGe_R"}},
 }}
 return bot.sendText(msg_chat_id, msg_id, Text, 'md', true, false, false, false, reply_markup)
 elseif msg.Creator then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="تنزيل مميز",data=msg.sender_id.user_id..":RemMem:"..Message_Reply.sender_id.user_id},{text="تنزيل ادمن",data=msg.sender_id.user_id..":RemAdmin:"..Message_Reply.sender_id.user_id}},{{text="تنزيل مدير",data=msg.sender_id.user_id..":RemManager:"..Message_Reply.sender_id.user_id}},{{text='• قناة السورس •',url="https://t.me/VC_NE"}},
+{{text="تنزيل مميز",data=msg.sender_id.user_id..":RemMem:"..Message_Reply.sender_id.user_id},{text="تنزيل ادمن",data=msg.sender_id.user_id..":RemAdmin:"..Message_Reply.sender_id.user_id}},{{text="تنزيل مدير",data=msg.sender_id.user_id..":RemManager:"..Message_Reply.sender_id.user_id}},{{text='• قناة السورس •',url="https://t.me/TGe_R"}},
 }}
 return bot.sendText(msg_chat_id, msg_id, Text, 'md', true, false, false, false, reply_markup)
 elseif msg.Manger then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="تنزيل مميز",data=msg.sender_id.user_id..":RemMem:"..Message_Reply.sender_id.user_id},{text="تنزيل ادمن",data=msg.sender_id.user_id..":RemAdmin:"..Message_Reply.sender_id.user_id}},{{text='• قناة السورس •',url="https://t.me/VC_NE"}},
+{{text="تنزيل مميز",data=msg.sender_id.user_id..":RemMem:"..Message_Reply.sender_id.user_id},{text="تنزيل ادمن",data=msg.sender_id.user_id..":RemAdmin:"..Message_Reply.sender_id.user_id}},{{text='• قناة السورس •',url="https://t.me/TGe_R"}},
 }}
 return bot.sendText(msg_chat_id, msg_id, Text, 'md', true, false, false, false, reply_markup)
 elseif msg.Admin then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="تنزيل مميز",data=msg.sender_id.user_id..":RemMem:"..Message_Reply.sender_id.user_id}},{{text='• قناة السورس •',url="https://t.me/VC_NE"}},
+{{text="تنزيل مميز",data=msg.sender_id.user_id..":RemMem:"..Message_Reply.sender_id.user_id}},{{text='• قناة السورس •',url="https://t.me/TGe_R"}},
 }}
 return bot.sendText(msg_chat_id, msg_id, Text, 'md', true, false, false, false, reply_markup)
 elseif not msg.Admin then
@@ -10672,42 +10672,42 @@ end
 local Text =' 𖥔 قم باستعمال الازرار لتنزيل العضو ↑↓ \n 𖥔 العضو -> ['..UserInfo.first_name..'](t.me/'..(UserInfo.username or 'SrcDrg')..')'
 if msg.Asasy then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="تنزيل مميز",data=msg.sender_id.user_id..":RemMem:"..UserId},{text="تنزيل ادمن",data=msg.sender_id.user_id..":RemAdmin:"..UserId}},{{text="تنزيل منشئ",data=msg.sender_id.user_id..":RemConstructor:"..UserId},{text="تنزيل مدير",data=msg.sender_id.user_id..":RemManager:"..UserId}},{{text="تنزيل منشئ اساسي",data=msg.sender_id.user_id..":RemBasicConstructor:"..UserId}},{{text="تنزيل مالك",data=msg.sender_id.user_id..":RemOwner:"..UserId},{text="تنزيل مطور",data=msg.sender_id.user_id..":RemSudoBot:"..UserId}},{{text="تنزيل مطور ثانوي",data=msg.sender_id.user_id..":RemSecondSudo:"..UserId}},{{text='• قناة السورس •',url="https://t.me/VC_NE"}},
+{{text="تنزيل مميز",data=msg.sender_id.user_id..":RemMem:"..UserId},{text="تنزيل ادمن",data=msg.sender_id.user_id..":RemAdmin:"..UserId}},{{text="تنزيل منشئ",data=msg.sender_id.user_id..":RemConstructor:"..UserId},{text="تنزيل مدير",data=msg.sender_id.user_id..":RemManager:"..UserId}},{{text="تنزيل منشئ اساسي",data=msg.sender_id.user_id..":RemBasicConstructor:"..UserId}},{{text="تنزيل مالك",data=msg.sender_id.user_id..":RemOwner:"..UserId},{text="تنزيل مطور",data=msg.sender_id.user_id..":RemSudoBot:"..UserId}},{{text="تنزيل مطور ثانوي",data=msg.sender_id.user_id..":RemSecondSudo:"..UserId}},{{text='• قناة السورس •',url="https://t.me/TGe_R"}},
 }}
 bot.sendText(msg_chat_id, msg_id, Text, 'md', true, false, false, false, reply_markup)
 elseif msg.Devss then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="تنزيل مميز",data=msg.sender_id.user_id..":RemMem:"..UserId},{text="تنزيل ادمن",data=msg.sender_id.user_id..":RemAdmin:"..UserId}},{{text="تنزيل منشئ",data=msg.sender_id.user_id..":RemConstructor:"..UserId},{text="تنزيل مدير",data=msg.sender_id.user_id..":RemManager:"..UserId}},{{text="تنزيل منشئ اساسي",data=msg.sender_id.user_id..":RemBasicConstructor:"..UserId}},{{text="تنزيل مالك",data=msg.sender_id.user_id..":RemOwner:"..UserId},{text="تنزيل مطور",data=msg.sender_id.user_id..":RemSudoBot:"..UserId}},{{text='• قناة السورس •',url="https://t.me/VC_NE"}},
+{{text="تنزيل مميز",data=msg.sender_id.user_id..":RemMem:"..UserId},{text="تنزيل ادمن",data=msg.sender_id.user_id..":RemAdmin:"..UserId}},{{text="تنزيل منشئ",data=msg.sender_id.user_id..":RemConstructor:"..UserId},{text="تنزيل مدير",data=msg.sender_id.user_id..":RemManager:"..UserId}},{{text="تنزيل منشئ اساسي",data=msg.sender_id.user_id..":RemBasicConstructor:"..UserId}},{{text="تنزيل مالك",data=msg.sender_id.user_id..":RemOwner:"..UserId},{text="تنزيل مطور",data=msg.sender_id.user_id..":RemSudoBot:"..UserId}},{{text='• قناة السورس •',url="https://t.me/TGe_R"}},
 }}
 return bot.sendText(msg_chat_id, msg_id, Text, 'md', true, false, false, false, reply_markup)
 elseif msg.Dev then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="تنزيل مميز",data=msg.sender_id.user_id..":RemMem:"..UserId},{text="تنزيل ادمن",data=msg.sender_id.user_id..":RemAdmin:"..UserId}},{{text="تنزيل منشئ",data=msg.sender_id.user_id..":RemConstructor:"..UserId},{text="تنزيل مدير",data=msg.sender_id.user_id..":RemManager:"..UserId}},{{text="تنزيل منشئ اساسي",data=msg.sender_id.user_id..":RemBasicConstructor:"..UserId}},{{text="تنزيل مالك",data=msg.sender_id.user_id..":RemOwner:"..UserId}},{{text='• قناة السورس •',url="https://t.me/VC_NE"}},
+{{text="تنزيل مميز",data=msg.sender_id.user_id..":RemMem:"..UserId},{text="تنزيل ادمن",data=msg.sender_id.user_id..":RemAdmin:"..UserId}},{{text="تنزيل منشئ",data=msg.sender_id.user_id..":RemConstructor:"..UserId},{text="تنزيل مدير",data=msg.sender_id.user_id..":RemManager:"..UserId}},{{text="تنزيل منشئ اساسي",data=msg.sender_id.user_id..":RemBasicConstructor:"..UserId}},{{text="تنزيل مالك",data=msg.sender_id.user_id..":RemOwner:"..UserId}},{{text='• قناة السورس •',url="https://t.me/TGe_R"}},
 }}
 return bot.sendText(msg_chat_id, msg_id, Text, 'md', true, false, false, false, reply_markup)
 elseif msg.Ownerss then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="تنزيل مميز",data=msg.sender_id.user_id..":RemMem:"..UserId},{text="تنزيل ادمن",data=msg.sender_id.user_id..":RemAdmin:"..UserId}},{{text="تنزيل منشئ",data=msg.sender_id.user_id..":RemConstructor:"..UserId},{text="تنزيل مدير",data=msg.sender_id.user_id..":RemManager:"..UserId}},{{text="تنزيل منشئ اساسي",data=msg.sender_id.user_id..":RemBasicConstructor:"..UserId}},{{text='• قناة السورس •',url="https://t.me/VC_NE"}},
+{{text="تنزيل مميز",data=msg.sender_id.user_id..":RemMem:"..UserId},{text="تنزيل ادمن",data=msg.sender_id.user_id..":RemAdmin:"..UserId}},{{text="تنزيل منشئ",data=msg.sender_id.user_id..":RemConstructor:"..UserId},{text="تنزيل مدير",data=msg.sender_id.user_id..":RemManager:"..UserId}},{{text="تنزيل منشئ اساسي",data=msg.sender_id.user_id..":RemBasicConstructor:"..UserId}},{{text='• قناة السورس •',url="https://t.me/TGe_R"}},
 }}
 return bot.sendText(msg_chat_id, msg_id, Text, 'md', true, false, false, false, reply_markup)
 elseif msg.SuperCreator then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="تنزيل مميز",data=msg.sender_id.user_id..":RemMem:"..UserId},{text="تنزيل ادمن",data=msg.sender_id.user_id..":RemAdmin:"..UserId}},{{text="تنزيل منشئ",data=msg.sender_id.user_id..":RemConstructor:"..UserId},{text="تنزيل مدير",data=msg.sender_id.user_id..":RemManager:"..UserId}},{{text='• قناة السورس •',url="https://t.me/VC_NE"}},
+{{text="تنزيل مميز",data=msg.sender_id.user_id..":RemMem:"..UserId},{text="تنزيل ادمن",data=msg.sender_id.user_id..":RemAdmin:"..UserId}},{{text="تنزيل منشئ",data=msg.sender_id.user_id..":RemConstructor:"..UserId},{text="تنزيل مدير",data=msg.sender_id.user_id..":RemManager:"..UserId}},{{text='• قناة السورس •',url="https://t.me/TGe_R"}},
 }}
 return bot.sendText(msg_chat_id, msg_id, Text, 'md', true, false, false, false, reply_markup)
 elseif msg.Creator then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="تنزيل مميز",data=msg.sender_id.user_id..":RemMem:"..UserId},{text="تنزيل ادمن",data=msg.sender_id.user_id..":RemAdmin:"..UserId}},{{text="تنزيل مدير",data=msg.sender_id.user_id..":RemManager:"..UserId}},{{text='• قناة السورس •',url="https://t.me/VC_NE"}},
+{{text="تنزيل مميز",data=msg.sender_id.user_id..":RemMem:"..UserId},{text="تنزيل ادمن",data=msg.sender_id.user_id..":RemAdmin:"..UserId}},{{text="تنزيل مدير",data=msg.sender_id.user_id..":RemManager:"..UserId}},{{text='• قناة السورس •',url="https://t.me/TGe_R"}},
 }}
 return bot.sendText(msg_chat_id, msg_id, Text, 'md', true, false, false, false, reply_markup)
 elseif msg.Manger then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="تنزيل مميز",data=msg.sender_id.user_id..":RemMem:"..UserId},{text="تنزيل ادمن",data=msg.sender_id.user_id..":RemAdmin:"..UserId}},{{text='• قناة السورس •',url="https://t.me/VC_NE"}},
+{{text="تنزيل مميز",data=msg.sender_id.user_id..":RemMem:"..UserId},{text="تنزيل ادمن",data=msg.sender_id.user_id..":RemAdmin:"..UserId}},{{text='• قناة السورس •',url="https://t.me/TGe_R"}},
 }}
 return bot.sendText(msg_chat_id, msg_id, Text, 'md', true, false, false, false, reply_markup)
 elseif msg.Admin then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="تنزيل مميز",data=msg.sender_id.user_id..":RemMem:"..UserId}},{{text='• قناة السورس •',url="https://t.me/VC_NE"}},
+{{text="تنزيل مميز",data=msg.sender_id.user_id..":RemMem:"..UserId}},{{text='• قناة السورس •',url="https://t.me/TGe_R"}},
 }}
 return bot.sendText(msg_chat_id, msg_id, Text, 'md', true, false, false, false, reply_markup)
 elseif not msg.Admin then
@@ -10728,49 +10728,49 @@ end
 local Text =' 𖥔 قم باستعمال الازرار لتنزيل العضو ↑↓ \n 𖥔 العضو -> ['..UserInfo.first_name..'](t.me/'..(UserInfo.username or 'SrcDrg')..')'
 if msg.Asasy then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="تنزيل مميز",data=msg.sender_id.user_id..":RemMem:"..UserId_Info.id},{text="تنزيل ادمن",data=msg.sender_id.user_id..":RemAdmin:"..UserId_Info.id}},{{text="تنزيل منشئ",data=msg.sender_id.user_id..":RemConstructor:"..UserId_Info.id},{text="تنزيل مدير",data=msg.sender_id.user_id..":RemManager:"..UserId_Info.id}},{{text="تنزيل منشئ اساسي",data=msg.sender_id.user_id..":RemBasicConstructor:"..UserId_Info.id}},{{text="تنزيل مالك",data=msg.sender_id.user_id..":RemOwner:"..UserId_Info.id},{text="تنزيل مطور",data=msg.sender_id.user_id..":RemSudoBot:"..UserId_Info.id}},{{text="تنزيل مطور ثانوي",data=msg.sender_id.user_id..":RemSecondSudo:"..UserId_Info.id}},{{text='• قناة السورس •',url="https://t.me/VC_NE"}},
+{{text="تنزيل مميز",data=msg.sender_id.user_id..":RemMem:"..UserId_Info.id},{text="تنزيل ادمن",data=msg.sender_id.user_id..":RemAdmin:"..UserId_Info.id}},{{text="تنزيل منشئ",data=msg.sender_id.user_id..":RemConstructor:"..UserId_Info.id},{text="تنزيل مدير",data=msg.sender_id.user_id..":RemManager:"..UserId_Info.id}},{{text="تنزيل منشئ اساسي",data=msg.sender_id.user_id..":RemBasicConstructor:"..UserId_Info.id}},{{text="تنزيل مالك",data=msg.sender_id.user_id..":RemOwner:"..UserId_Info.id},{text="تنزيل مطور",data=msg.sender_id.user_id..":RemSudoBot:"..UserId_Info.id}},{{text="تنزيل مطور ثانوي",data=msg.sender_id.user_id..":RemSecondSudo:"..UserId_Info.id}},{{text='• قناة السورس •',url="https://t.me/TGe_R"}},
 }}
 bot.sendText(msg_chat_id, msg_id, Text, 'md', true, false, false, false, reply_markup)
 elseif msg.Devss then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="تنزيل مميز",data=msg.sender_id.user_id..":RemMem:"..UserId_Info.id},{text="تنزيل ادمن",data=msg.sender_id.user_id..":RemAdmin:"..UserId_Info.id}},{{text="تنزيل منشئ",data=msg.sender_id.user_id..":RemConstructor:"..UserId_Info.id},{text="تنزيل مدير",data=msg.sender_id.user_id..":RemManager:"..UserId_Info.id}},{{text="تنزيل منشئ اساسي",data=msg.sender_id.user_id..":RemBasicConstructor:"..UserId_Info.id}},{{text="تنزيل مالك",data=msg.sender_id.user_id..":RemOwner:"..UserId_Info.id},{text="تنزيل مطور",data=msg.sender_id.user_id..":RemSudoBot:"..UserId_Info.id}},{{text='• قناة السورس •',url="https://t.me/VC_NE"}},
+{{text="تنزيل مميز",data=msg.sender_id.user_id..":RemMem:"..UserId_Info.id},{text="تنزيل ادمن",data=msg.sender_id.user_id..":RemAdmin:"..UserId_Info.id}},{{text="تنزيل منشئ",data=msg.sender_id.user_id..":RemConstructor:"..UserId_Info.id},{text="تنزيل مدير",data=msg.sender_id.user_id..":RemManager:"..UserId_Info.id}},{{text="تنزيل منشئ اساسي",data=msg.sender_id.user_id..":RemBasicConstructor:"..UserId_Info.id}},{{text="تنزيل مالك",data=msg.sender_id.user_id..":RemOwner:"..UserId_Info.id},{text="تنزيل مطور",data=msg.sender_id.user_id..":RemSudoBot:"..UserId_Info.id}},{{text='• قناة السورس •',url="https://t.me/TGe_R"}},
 }}
 return bot.sendText(msg_chat_id, msg_id, Text, 'md', true, false, false, false, reply_markup)
 elseif msg.Dev then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="تنزيل مميز",data=msg.sender_id.user_id..":RemMem:"..UserId_Info.id},{text="تنزيل ادمن",data=msg.sender_id.user_id..":RemAdmin:"..UserId_Info.id}},{{text="تنزيل منشئ",data=msg.sender_id.user_id..":RemConstructor:"..UserId_Info.id},{text="تنزيل مدير",data=msg.sender_id.user_id..":RemManager:"..UserId_Info.id}},{{text="تنزيل منشئ اساسي",data=msg.sender_id.user_id..":RemBasicConstructor:"..UserId_Info.id}},{{text="تنزيل مالك",data=msg.sender_id.user_id..":RemOwner:"..UserId_Info.id}},{{text='• قناة السورس •',url="https://t.me/VC_NE"}},
+{{text="تنزيل مميز",data=msg.sender_id.user_id..":RemMem:"..UserId_Info.id},{text="تنزيل ادمن",data=msg.sender_id.user_id..":RemAdmin:"..UserId_Info.id}},{{text="تنزيل منشئ",data=msg.sender_id.user_id..":RemConstructor:"..UserId_Info.id},{text="تنزيل مدير",data=msg.sender_id.user_id..":RemManager:"..UserId_Info.id}},{{text="تنزيل منشئ اساسي",data=msg.sender_id.user_id..":RemBasicConstructor:"..UserId_Info.id}},{{text="تنزيل مالك",data=msg.sender_id.user_id..":RemOwner:"..UserId_Info.id}},{{text='• قناة السورس •',url="https://t.me/TGe_R"}},
 }}
 return bot.sendText(msg_chat_id, msg_id, Text, 'md', true, false, false, false, reply_markup)
 elseif msg.Ownerss then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="تنزيل مميز",data=msg.sender_id.user_id..":RemMem:"..UserId_Info.id},{text="تنزيل ادمن",data=msg.sender_id.user_id..":RemAdmin:"..UserId_Info.id}},{{text="تنزيل منشئ",data=msg.sender_id.user_id..":RemConstructor:"..UserId_Info.id},{text="تنزيل مدير",data=msg.sender_id.user_id..":RemManager:"..UserId_Info.id}},{{text="تنزيل منشئ اساسي",data=msg.sender_id.user_id..":RemBasicConstructor:"..UserId_Info.id}},{{text='• قناة السورس •',url="https://t.me/VC_NE"}},
+{{text="تنزيل مميز",data=msg.sender_id.user_id..":RemMem:"..UserId_Info.id},{text="تنزيل ادمن",data=msg.sender_id.user_id..":RemAdmin:"..UserId_Info.id}},{{text="تنزيل منشئ",data=msg.sender_id.user_id..":RemConstructor:"..UserId_Info.id},{text="تنزيل مدير",data=msg.sender_id.user_id..":RemManager:"..UserId_Info.id}},{{text="تنزيل منشئ اساسي",data=msg.sender_id.user_id..":RemBasicConstructor:"..UserId_Info.id}},{{text='• قناة السورس •',url="https://t.me/TGe_R"}},
 }}
 return bot.sendText(msg_chat_id, msg_id, Text, 'md', true, false, false, false, reply_markup)
 elseif msg.SuperCreator then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="تنزيل مميز",data=msg.sender_id.user_id..":RemMem:"..UserId_Info.id},{text="تنزيل ادمن",data=msg.sender_id.user_id..":RemAdmin:"..UserId_Info.id}},{{text="تنزيل منشئ",data=msg.sender_id.user_id..":RemConstructor:"..UserId_Info.id},{text="تنزيل مدير",data=msg.sender_id.user_id..":RemManager:"..UserId_Info.id}},{{text='• قناة السورس •',url="https://t.me/VC_NE"}},
+{{text="تنزيل مميز",data=msg.sender_id.user_id..":RemMem:"..UserId_Info.id},{text="تنزيل ادمن",data=msg.sender_id.user_id..":RemAdmin:"..UserId_Info.id}},{{text="تنزيل منشئ",data=msg.sender_id.user_id..":RemConstructor:"..UserId_Info.id},{text="تنزيل مدير",data=msg.sender_id.user_id..":RemManager:"..UserId_Info.id}},{{text='• قناة السورس •',url="https://t.me/TGe_R"}},
 }}
 return bot.sendText(msg_chat_id, msg_id, Text, 'md', true, false, false, false, reply_markup)
 elseif msg.Creator then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="تنزيل مميز",data=msg.sender_id.user_id..":RemMem:"..UserId_Info.id},{text="تنزيل ادمن",data=msg.sender_id.user_id..":RemAdmin:"..UserId_Info.id}},{{text="تنزيل مدير",data=msg.sender_id.user_id..":RemManager:"..UserId_Info.id}},{{text='• قناة السورس •',url="https://t.me/VC_NE"}},
+{{text="تنزيل مميز",data=msg.sender_id.user_id..":RemMem:"..UserId_Info.id},{text="تنزيل ادمن",data=msg.sender_id.user_id..":RemAdmin:"..UserId_Info.id}},{{text="تنزيل مدير",data=msg.sender_id.user_id..":RemManager:"..UserId_Info.id}},{{text='• قناة السورس •',url="https://t.me/TGe_R"}},
 }}
 return bot.sendText(msg_chat_id, msg_id, Text, 'md', true, false, false, false, reply_markup)
 elseif msg.Manger then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="تنزيل مميز",data=msg.sender_id.user_id..":RemMem:"..UserId_Info.id},{text="تنزيل ادمن",data=msg.sender_id.user_id..":RemAdmin:"..UserId_Info.id}},{{text='• قناة السورس •',url="https://t.me/VC_NE"}},
+{{text="تنزيل مميز",data=msg.sender_id.user_id..":RemMem:"..UserId_Info.id},{text="تنزيل ادمن",data=msg.sender_id.user_id..":RemAdmin:"..UserId_Info.id}},{{text='• قناة السورس •',url="https://t.me/TGe_R"}},
 }}
 return bot.sendText(msg_chat_id, msg_id, Text, 'md', true, false, false, false, reply_markup)
 elseif msg.Admin then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="تنزيل مميز",data=msg.sender_id.user_id..":RemMem:"..UserId_Info.id}},{{text='• قناة السورس •',url="https://t.me/VC_NE"}},
+{{text="تنزيل مميز",data=msg.sender_id.user_id..":RemMem:"..UserId_Info.id}},{{text='• قناة السورس •',url="https://t.me/TGe_R"}},
 }}
 return bot.sendText(msg_chat_id, msg_id, Text, 'md', true, false, false, false, reply_markup)
 elseif not msg.Admin then
 return bot.sendText(msg_chat_id, msg_id, " 𖥔 هذا الامر للادمنيه في البوت فما فوق", 'md', true)
 end
 end
-if text == (Redis:get(Saidi.."Name:Bot") or 'كينج').." غادر" or text == 'غادر' or text == 'بوت غادر' then
+if text == (Redis:get(Saidi.."Name:Bot") or ' ميدو').." غادر" or text == 'غادر' or text == 'بوت غادر' then
 if not msg.Asasy then 
 return send(msg_chat_id,msg_id,'\n*𖥔 هذا الامر يخص { '..Controller_Num(1)..' }* ',"md",true)  
 end
@@ -10782,7 +10782,7 @@ if ChannelJoin(msg) == false then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = Redis:get(Saidi..'Channel:Join:Name'), url = 't.me/'..Redis:get(Saidi..'Channel:Join')}, },}}
 return send(msg.chat_id,msg.id,'*\n 𖥔 عليك الاشتراك في قناة البوت لأستخدام الاوامر*',"md",false, false, false, false, reply_markup)
 end
-local Mostafa = (Redis:get(Saidi.."Name:Bot") or "كينج")
+local Mostafa = (Redis:get(Saidi.."Name:Bot") or " ميدو")
 local Jabwa = bot.getUser(Saidi)
 local bain = bot.getUser(msg.sender_id.user_id)
 local photo = bot.getUserProfilePhotos(Saidi)
@@ -10947,7 +10947,7 @@ uuuuu = Redis:get(Saidi.."bbobb"..Remsg.sender_id.user_id)
 ppppp = Redis:get(Saidi.."rrfff"..Remsg.sender_id.user_id) or 0
 ballanceed = Redis:get(Saidi.."boob"..Remsg.sender_id.user_id) or 0
 local convert_mony = string.format("%.0f",ballanceed)
-bot.sendText(msg.chat_id,msg.id, "𖥔 الاسم -> "..news.."\n𖥔 الحساب -> "..ccccc.."\n𖥔 بنك -> ( كينج )\n𖥔 نوع -> ( "..uuuuu.." )\n𖥔 الزرف -> ( "..ppppp.." دولار 💵 )\n𖥔 صار رصيده -> ( "..convert_mony.." جنيه 💵 )\n✦","md",true)
+bot.sendText(msg.chat_id,msg.id, "𖥔 الاسم -> "..news.."\n𖥔 الحساب -> "..ccccc.."\n𖥔 بنك -> (  ميدو )\n𖥔 نوع -> ( "..uuuuu.." )\n𖥔 الزرف -> ( "..ppppp.." دولار 💵 )\n𖥔 صار رصيده -> ( "..convert_mony.." جنيه 💵 )\n✦","md",true)
 else
 bot.sendText(msg.chat_id,msg.id, "𖥔 ماعنده حساب بنكي ","md",true)
 end
@@ -11358,7 +11358,7 @@ x = x + 1
 tagname = data.first_name
 tagname = tagname:gsub("]","") 
 tagname = tagname:gsub("[[]","") 
-t = t.." ▹ ["..tagname.."](tg://user?id="..v.member_id.user_id..") \n━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━\n"
+t = t.." ▹ ["..tagname.."](tg://user?id="..v.member_id.user_id..") \n ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～\n"
 if x == 20 or x == tags or k == 0 then 
 if ttag then
 Text = t:gsub('#all '..ttag..',','#all '..ttag..'\n') 
@@ -11570,7 +11570,7 @@ local reply_markup = bot.replyMarkup{type = 'inline',data = {
 }
 }
 if photo.total_count > 0 then
-local NamesBot = (Redis:get(Saidi.."Name:Bot") or "كينج")
+local NamesBot = (Redis:get(Saidi.."Name:Bot") or " ميدو")
 local BotName = {
     'انطم',
     'وقح',
@@ -11586,7 +11586,7 @@ local BotName = {
 }
 return bot.sendPhoto(msg.chat_id, msg.id, photo.photos[1].sizes[#photo.photos[1].sizes].photo.remote.id,BotName[math.random(#BotName)], "md", true, nil, nil, nil, nil, nil, nil, nil, nil, reply_markup )
 else
-local NamesBot = (Redis:get(Saidi.."Name:Bot") or "كينج")
+local NamesBot = (Redis:get(Saidi.."Name:Bot") or " ميدو")
 local BotName = {
   'انطم',
   'وقح',
@@ -11603,7 +11603,7 @@ local BotName = {
 return send(msg_chat_id,msg_id,BotName[math.random(#BotName)],"md") 
 end 
 end
-local NamesBot = (Redis:get(Saidi.."Name:Bot") or "كينج")
+local NamesBot = (Redis:get(Saidi.."Name:Bot") or " ميدو")
 local BotName = {
   'انطم',
   'وقح',
@@ -11619,7 +11619,7 @@ local BotName = {
 }
 return send(msg_chat_id,msg_id,BotName[math.random(#BotName)],"md") 
 end
-if text == (Redis:get(Saidi.."Name:Bot") or "كينج") then
+if text == (Redis:get(Saidi.."Name:Bot") or " ميدو") then
 if Redis:get(Saidi.."Reply:Bot:Picture"..msg_chat_id) == "off" then
 return bot.sendText(msg_chat_id,msg_id,' ',"md",true)  
 end
@@ -11631,7 +11631,7 @@ for Name_User in string.gmatch(Jabwa.first_name, "[^%s]+" ) do
 Jabwa.first_name = Name_User
 break
 end 
-local NamesBot = (Redis:get(Saidi.."Name:Bot") or "كينج")
+local NamesBot = (Redis:get(Saidi.."Name:Bot") or " ميدو")
 local BotName = {
 'خلاص يا بابا',
 'زعلانه',
@@ -11712,7 +11712,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '• 𝑺𝒐𝑼𝒓𝑪𝒆 𝑲𝒊𝒏𝑮 •', url = "https://t.me/VC_NE"}
+{text = '• 𝙎𝙤𝙐𝙧𝘾𝙚 𝙏𝙞𝙂𝙚𝙍 •', url = "https://t.me/TGe_R"}
 },
 }
 }
@@ -11762,7 +11762,7 @@ os.remove(""..title..".mp4")
 end
 if text == "يوتيوب" or text == 'اليوتيوب' or text == 'YouTube' or text == 'The Youtube' or text == 'Youtube' or text == 'youtube' or text == 'You Tube' or text == 'تحميل' or text == 'بحث' then
 if ChannelJoin(msg) == false then
-local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = 'اضغط للاشتراك', url = 't.me/VC_NE '}, },}}
+local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = 'اضغط للاشتراك', url = 't.me/TGe_R '}, },}}
 return send(msg.chat_id,msg.id,'*\n 𖥔 عذرآ عليك الاشتراك في قناة السورس*',"md",false, false, false, false, reply_markup)
 end
 local reply_markup = bot.replyMarkup{
@@ -11772,7 +11772,7 @@ data = {
 {text = 'تحميل صوت 🎤', data = msg.sender_id.user_id..'/mp3'..msg_id}, {text = 'تحميل فيديو 🎬', data = msg.sender_id.user_id..'/mp4'..msg_id}, 
 },
 {
-{text = '• 𝑺𝒐𝑼𝒓𝑪𝒆 𝑲𝒊𝒏𝑮 •', url = "https://t.me/VC_NE"}
+{text = '• 𝙎𝙤𝙐𝙧𝘾𝙚 𝙏𝙞𝙂𝙚𝙍 •', url = "https://t.me/TGe_R"}
 },
 }
 }
@@ -11874,44 +11874,45 @@ data = {
 return bot.sendText(msg_chat_id,msg_id,'*اليك ازرار تغيير\nالمطور الاساسي\nاسم البوت*',"md",false, false, false, false, reply_markup)
 end
 if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'source' then
-video = "https://t.me/KING_SOURC/3"
+video = "https://t.me/TGe_R/407"
 local T =[[
-•━═━═━═━ًًٍٍٰ𝗸ٍٍَ𝗶ٍٍّّ𝗡ٍٍََ𝗴   ═━═━═━•
-⌔ [ٓ⁨𝑺𝒐𝑼𝒓𝑪𝒆 𝑲𝒊𝒏𝑮](t.me/VC_NE)
-⌔ [𝑫𝒆𝑽𝒆𝑳𝒐𝑷𝒆𝑹𝒔](t.me/TR_E2S_ON_MY_MOoN)
-⌔ [𝑲𝒊𝒏𝑮](t.me/dev_kingo0o)
-⌔ [𝑺𝒂𝑺𝒂](t.me/DEV_SASA)
-⌔ [𝑯𝑬𝑹𝑶](t.me/DEV_HeROo)
-•━═━═━═━ًًٍٍٰ𝗸ٍٍَ𝗶ٍٍّّ𝗡ٍٍََ𝗴   ═━═━═━•
- [𝑺𝒐𝑼𝒓𝑪𝒆 𝑲𝒊𝒏𝑮˼⁩](t.me/VC_NE)
+✶⊶⊷⊶⊷❍ 𝙏𝙞𝙂𝙚𝙍 ❍⊶⊷⊶⊷✶
+⌔ [ٓ⁨𝙎𝙤𝙐𝙧𝘾𝙚 𝙏𝙞𝙂𝙚𝙍](t.me/TGe_R)
+⌔ [𝑫𝒆𝑽𝒆𝑳𝒐𝑷𝒆𝑹𝒔](t.me/TGe_R)
+⌔ [𝑴𝑬𝑬𝑫𝑶](t.me/U_Y_3_M)
+⌔ [𝒀𝑶𝑶𝑺𝑬𝑭](t.me/Z0HARY)
+⌔ [𝑬𝑹𝑹𝑶𝑹](t.me/K_1_1_0)
+⌔ [𝑻𝑰𝑻𝑻𝑶](t.me/UU_TEI)
+✶⊶⊷⊶⊷❍ 𝙏𝙞𝙂𝙚𝙍 ❍⊶⊷⊶⊷✶
+ [𝙎𝙤𝙐𝙧𝘾𝙚 𝙏𝙞𝙂𝙚𝙍˼⁩](t.me/TGe_R)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '• kᎥꪀᘜ➳', url = "https://t.me/dev_kingo0o"}
+{text = '• ตҽժօ ➳', url = "https://t.me/U_Y_3_M"}
 },
 {
-{text = '•َٰ ᥉َٰᥲ️َٰ᥉َٰᥲ️➳', url = "https://t.me/DEV_SASA"},{text = '𝑯𝑬𝑹𝑶➳ ', url = "https://t.me/DEV_HeROo"} 
+{text = '•َٰ Ꭹᝪᔑᔑᗴᖴ➳', url = "https://t.me/Z0HARY"},{text = '𝑬𝑹𝑹𝑶𝑹➳ ', url = "https://t.me/K_1_1_0"} 
 },
 {
-{text = 'ঌ  • ᗰᗩK ঌ', url = "https://t.me/kingo0oO_Bot"}
+{text = 'ঌ  • ᗰᗩK ঌ', url = "https://t.me/TGe_Rbot"}
 },
 {
-{text = 'ᯓ˚₊¹·ᏴΌͲ➣', url = "https://t.me/KkINGg701_bot"},{text = 'ᯓ˚₊²·ᏴΌͲ➣ ', url = "https://t.me/Hero9683bot"}
+{text = 'ᯓ˚₊¹·ƬɨƬ០➣', url = "https://t.me/UU_TEI"},{text = 'ᯓ˚₊៣♬ᖱɨន០⩎➣ ', url = "https://t.me/MaDyY_y"}
 },
 { 
-{text = '➹ᏦᎥΝᏀ ՏΌႮᎡՏᎬ➷', url = "https://t.me/VC_NE"}
+{text = '➹𝙎𝙤𝙐𝙧𝘾𝙚 𝙏𝙞𝙂𝙚𝙍➷', url = "https://t.me/TGe_R"}
 },
 }
 local msgg = msg_id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token.."/sendvideo?chat_id=" .. msg_chat_id .. "&video="..video.."&caption=".. URL.escape(T).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
  elseif text == 'المصنع' or text == 'مصنع' then
-photo = "https://t.me/U_S_E_D3/116"
+photo = "https://t.me/TGe_R/407"
 local Name = 'آقـوي مـصـنع بــوتآت في آلتليجـرآم سـرعهةة لآ توصـف مـمـيزآت يومـيه آدخــل جــرب بــنفسـك.. ♡'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = 'ঌ • آصـنع بــوتك مـن هنآ ঌ', url = "https://t.me/kingo0oO_Bot"}
+{text = 'ঌ • آصـنع بــوتك مـن هنآ ঌ', url = "https://t.me/TGe_Rbot"}
 },
 }
 local msgg = msg_id/2097152/0.5
@@ -11943,7 +11944,7 @@ data = {
 {text = 'تعطيل all بالصوره', data = msg.sender_id.user_id..'/'.. 'picture_of'},{text = 'تفعيل all بالصوره', data = msg.sender_id.user_id..'/'.. 'picture_on'},
 },
 {
-{text = '• قناة السورس •', url = "t.me/VC_NE"}, 
+{text = '• قناة السورس •', url = "t.me/TGe_R"}, 
 },
 }
 }
@@ -11958,7 +11959,7 @@ data = {
 {{text = Get_Chat.title, url = Info_Chats.invite_link.invite_link}},
 }
 }
-bot.sendText(msg.chat_id,msg.id,'\n*𖥔 معلومات الجروب ↑↓\n━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━\n𖥔 الايدي -> '..msg.chat_id..' \n𖥔 عدد الاعضاء -> '..Info_Chats.member_count..'\n𖥔 عدد الادمنيه -> '..Info_Chats.administrator_count..'\n𖥔 عدد المطرودين -> '..Info_Chats.banned_count..'\n𖥔 عدد المقيدين -> '..Info_Chats.restricted_count..'\n𖥔 الرابط -> '..Info_Chats.invite_link.invite_link..'*',"md",true, false, false, false, reply_markup)
+bot.sendText(msg.chat_id,msg.id,'\n*𖥔 معلومات الجروب ↑↓\n ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～\n𖥔 الايدي -> '..msg.chat_id..' \n𖥔 عدد الاعضاء -> '..Info_Chats.member_count..'\n𖥔 عدد الادمنيه -> '..Info_Chats.administrator_count..'\n𖥔 عدد المطرودين -> '..Info_Chats.banned_count..'\n𖥔 عدد المقيدين -> '..Info_Chats.restricted_count..'\n𖥔 الرابط -> '..Info_Chats.invite_link.invite_link..'*',"md",true, false, false, false, reply_markup)
 return false
 end
 if text == "تفعيل ردود السورس" or text == "تفعيل ردود سورس" or text == "تفعيل الردود السورس" then
@@ -12077,7 +12078,7 @@ local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = Redis:get(
 return send(msg.chat_id,msg.id,'*\n 𖥔 عليك الاشتراك في قناة البوت لأستخدام الاوامر*',"md",false, false, false, false, reply_markup)
 end
 local app = Redis:smembers(Saidi.."app:reply:Source")
-text = "\n𖥔 قائمة ردود السورس ⇧⇩\n━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━\n"
+text = "\n𖥔 قائمة ردود السورس ⇧⇩\n ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～\n"
 for k,v in pairs(app) do
 if Redis:get(Saidi.."Add:reply:Source:Gif"..v) then
 db = "متحركه 🎭"
@@ -12108,7 +12109,7 @@ end
 if text == "افلام" or text == "فلم" or text == "الافلام" then
 local Jabwa = bot.getUser(msg.sender_id.user_id)
 local news = Jabwa.first_name
-local t = "*اليك قائمة الافلام من سورس كينج 𖥔*"
+local t = "*اليك قائمة الافلام من سورس  ميدو 𖥔*"
 local m = "https://t.me/S_a_i_d_i/1188"
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -12133,10 +12134,10 @@ if tonumber(Message_Reply.sender_id.user_id) == tonumber(msg.sender_id.user_id) 
 return bot.sendText(msg_chat_id,msg_id,"*لول عوز يقتل نفسه العبيط 😹*","md",true)  
 end
 if tonumber(Message_Reply.sender_id.user_id) == tonumber(1400467850) then
-return bot.sendText(msg_chat_id,msg_id,"*لا استطيع استخدام الأمر علي جابوا بيه*","md",true)  
+return bot.sendText(msg_chat_id,msg_id,"*لا استطيع استخدام الأمر علي ميدوا بيه*","md",true)  
 end
 if tonumber(Message_Reply.sender_id.user_id) == tonumber(5465761605) then
-return bot.sendText(msg_chat_id,msg_id,"*لا استطيع استخدام الأمر علي المطور كئابه*","md",true)  
+return bot.sendText(msg_chat_id,msg_id,"*لا استطيع استخدام الأمر علي المطور ايرور*","md",true)  
 end
 if tonumber(Message_Reply.sender_id.user_id) == tonumber(Saidi) then
 return bot.sendText(msg_chat_id,msg_id,"*لا استخدم الأمر علي نفسي يستا 😂*","md",true)  
@@ -12163,10 +12164,10 @@ if tonumber(Message_Reply.sender_id.user_id) == tonumber(msg.sender_id.user_id) 
 return bot.sendText(msg_chat_id,msg_id,"*اععع عوز يتف علي نفسه 😳*","md",true)  
 end
 if tonumber(Message_Reply.sender_id.user_id) == tonumber(1400467850) then
-return bot.sendText(msg_chat_id,msg_id,"*لا استطيع استخدام الأمر علي جابوا بيه*","md",true)  
+return bot.sendText(msg_chat_id,msg_id,"*لا استطيع استخدام الأمر علي ميدوا بيه*","md",true)  
 end
 if tonumber(Message_Reply.sender_id.user_id) == tonumber(5465761605) then
-return bot.sendText(msg_chat_id,msg_id,"*لا استطيع استخدام الأمر علي المطور كئابه*","md",true)  
+return bot.sendText(msg_chat_id,msg_id,"*لا استطيع استخدام الأمر علي المطور ايرور*","md",true)  
 end
 if tonumber(Message_Reply.sender_id.user_id) == tonumber(Saidi) then
 return bot.sendText(msg_chat_id,msg_id,"*لا استخدم الأمر علي نفسي يستا 😂*","md",true)  
@@ -12193,10 +12194,10 @@ if tonumber(Message_Reply.sender_id.user_id) == tonumber(msg.sender_id.user_id) 
 return bot.sendText(msg_chat_id,msg_id,"*اععع عوز يبوس نفسه 😳*","md",true)  
 end
 if tonumber(Message_Reply.sender_id.user_id) == tonumber(1400467850) then
-return bot.sendText(msg_chat_id,msg_id,"*لا استطيع استخدام الأمر علي جابوا بيه*","md",true)  
+return bot.sendText(msg_chat_id,msg_id,"*لا استطيع استخدام الأمر علي ميدوا بيه*","md",true)  
 end
 if tonumber(Message_Reply.sender_id.user_id) == tonumber(5465761605) then
-return bot.sendText(msg_chat_id,msg_id,"*لا استطيع استخدام الأمر علي المطور كئابه*","md",true)  
+return bot.sendText(msg_chat_id,msg_id,"*لا استطيع استخدام الأمر علي المطور ايرور*","md",true)  
 end
 if tonumber(Message_Reply.sender_id.user_id) == tonumber(Saidi) then
 return bot.sendText(msg_chat_id,msg_id,"*لا استخدم الأمر علي نفسي يستا 😂*","md",true)  
@@ -12215,8 +12216,8 @@ keyboard.inline_keyboard = {
 local msgg = msg_id/2097152/0.5
 return https.request("https://api.telegram.org/bot"..Token.."/sendvideo?chat_id=" .. msg_chat_id .. "&video=https://t.me/DEV_JABWA/199&caption=".. URL.escape(baniusername).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
-if text == '〘 مبرمج السورس 〙' or text == 'مبرمج السورس' or text == 'فوتلكس' or text == 'محمد' or text == 'اليوت' then  
-local UserId_Info = bot.searchPublicChat("TR_E2S_ON_MY_MOoN")
+if text == '〘 مبرمج السورس 〙' or text == 'مبرمج السورس' or text == 'ميدو' or text == 'محمد' or text == 'اليوت' then  
+local UserId_Info = bot.searchPublicChat("U_Y_3_M")
 if UserId_Info.id then
 local  ban = bot.getUser(UserId_Info.id)
 local InfoUser = bot.getUserFullInfo(UserId_Info.id)
@@ -12227,21 +12228,21 @@ Bio = ''
 end
 local photo = bot.getUserProfilePhotos(UserId_Info.id)
 if photo.total_count > 0 then
-local DevJabwa = "*𖥔︙ 𝒅𝒆𝒗 𝒔𝒐𝒖𝒓𝒄𝒆 𝒗𝒂𝒍𝒐𝒓𝒂𝒏𝒕  ♯*\n*𖥔︙ɴᴀᴍᴇ -› *"..ban.first_name.."\n*𖥔︙ 𝒊𝒅 -› "..UserId_Info.id.."*\n*𖥔︙ 𝒃𝒊𝒐 -›*  *"..Bio.." *"
+local DevJabwa = "*𖥔︙ 𝒅𝒆𝒗 𝒔𝒐𝒖𝒓𝒄𝒆 𝒕𝒊𝒈𝒆𝒓  ♯*\n*𖥔︙ɴᴀᴍᴇ -› *"..ban.first_name.."\n*𖥔︙ 𝒊𝒅 -› "..UserId_Info.id.."*\n*𖥔︙ 𝒃𝒊𝒐 -›*  *"..Bio.." *"
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = username, url = "https://t.me/TR_E2S_ON_MY_MOoN"}
+{text = username, url = "https://t.me/U_Y_3_M"}
 },
 }
 local msg_id = msg.id/2097152/0.5 
 https.request("https://api.telegram.org/bot"..Token..'/sendPhoto?chat_id='..msg.chat_id..'&caption='..URL.escape(DevJabwa)..'&photo='..photo.photos[1].sizes[#photo.photos[1].sizes].photo.remote.id..'&reply_to_message_id='..msg_id..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboardd))
 else
-local DevJabwa = "*𖥔︙ 𝒅𝒆𝒗 𝒔𝒐𝒖𝒓𝒄𝒆 𝒗𝒂𝒍𝒐𝒓𝒂𝒏𝒕  ♯*\n*𖥔︙𝒏𝒂𝒎𝒆  -› *"..ban.first_name.."\n*𖥔︙ 𝒊𝒅  -› "..UserId_Info.id.."*\n*𖥔︙ 𝒃𝒊𝒐 -›*  *"..Bio.." *"
+local Dev Medo = "*𖥔︙ 𝒅𝒆𝒗 𝒔𝒐𝒖𝒓𝒄𝒆 𝒕𝒊𝒈𝒆𝒓  ♯*\n*𖥔︙𝒏𝒂𝒎𝒆  -› *"..ban.first_name.."\n*𖥔︙ 𝒊𝒅  -› "..UserId_Info.id.."*\n*𖥔︙ 𝒃𝒊𝒐 -›*  *"..Bio.." *"
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = username, url = "https://t.me/TR_E2S_ON_MY_MOoN"}
+{text = username, url = "https://t.me/U_Y_3_M"}
 },
 }
 local msg_id = msg.id/2097152/0.5 
@@ -12273,7 +12274,7 @@ keyboardd.inline_keyboard = {
 {text = username, url = "https://t.me/"..chdevolper..""}
 },
 {
-{text = '• قناة السورس •', url = "https://t.me/VC_NE"},
+{text = '• قناة السورس •', url = "https://t.me/TGe_R"},
 },
 }
 local msg_id = msg.id/2097152/0.5 
@@ -12286,7 +12287,7 @@ keyboardd.inline_keyboard = {
 {text = username, url = "https://t.me/"..chdevolper..""}
 },
 {
-{text = '• قناة السورس •', url = "https://t.me/VC_NE"},
+{text = '• قناة السورس •', url = "https://t.me/TGe_R"},
 },
 }
 local msg_id = msg.id/2097152/0.5 
@@ -12294,8 +12295,8 @@ return https.request("https://api.telegram.org/bot"..Token..'/sendMessage?chat_i
 end
 end
 end
-if text == 'كئابه' or text == 'المبرمج كئابه' or text == 'المبرمج السورس 𖥔' then
-local UserId_Info = bot.searchPublicChat("K2aBa")
+if text == 'ايرور' or text == 'المبرمج ايرور' or text == 'المبرمج السورس 𖥔' then
+local UserId_Info = bot.searchPublicChat("K_1_1_0")
 if UserId_Info.id then
 local UserInfo = bot.getUser(UserId_Info.id)
 local InfoUser = bot.getUserFullInfo(UserId_Info.id)
@@ -12315,7 +12316,7 @@ local TestText = "*𖥔︙ ɴᴀᴍᴇ ->* ["..UserInfo.first_name.."](tg://user
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = username, url = "https://t.me/K2aBa"}
+{text = username, url = "https://t.me/K_1_1_0"}
 },
 }
 local msg_id = msg.id/2097152/0.5 
@@ -12325,7 +12326,7 @@ local TestText = "- معلومات مبرمج السورس : \\nn: name Dev . ["
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = username, url = "https://t.me/K2aBa"}
+{text = username, url = "https://t.me/K_1_1_0"}
 },
 }
 local msg_id = msg.id/2097152/0.5 
@@ -12333,7 +12334,7 @@ return https.request("https://api.telegram.org/bot"..Token..'/sendMessage?chat_i
 end
 end
 end
-if text == 'سنيور' or text == 'المبرمج سنيور' or text == 'المبرمج سنيور 𖥔' then
+if text == 'يوصف' or text == 'المبرمج يوصف' or text == 'المبرمج يوصف 𖥔' then
 local UserId_Info = bot.searchPublicChat("senior_66")
 if UserId_Info.id then
 local UserInfo = bot.getUser(UserId_Info.id)
@@ -12876,7 +12877,7 @@ if not msg.Devss then
 return send(msg_chat_id,msg_id,'\n* 𖥔 عذرآ الامر يخص〘 '..Controller_Num(2)..' 〙*',"md",true)  
 end
 local list = Redis:smembers(Saidi..'List:array')
-text = "  𖥔قائمه الردود المتعدده \n ━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━ \n"
+text = "  𖥔قائمه الردود المتعدده \n  ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～ \n"
 for k,v in pairs(list) do
 text = text..""..k.." -> ("..v..") -> {رساله}\n"
 end
@@ -12927,7 +12928,7 @@ local ban = bot.getUser(Saidi)
 if ban.username then
 Creator = " "..ban.first_name.." "
 else 
-Creator = " كينج\n"
+Creator = "  ميدو\n"
 end
 local news = '*• ʏᴏᴜʀ ʀᴀɴᴋ->* ['..RinkBot..'](tg://user?id='..user_info.id..')\n'
 local Grosupsw = 'الجروبات -› '..Groups..''
@@ -13200,7 +13201,7 @@ data = {
 {text="غادر 🚶",data="/LeaveBotCmd:"..msg.sender_id.user_id},{text="تفعيل 🔄",data=msg.sender_id.user_id..'/onlinebotcmd'..msg_chat_id},
 },
 {
-{text = '• قناة السورس •',url="t.me/VC_NE"},
+{text = '• قناة السورس •',url="t.me/TGe_R"},
 },
 }
 }
@@ -13256,7 +13257,7 @@ Count,Kount,i = 8 , 0 , 1
 for _ in pairs(GroupAllRtbaL) do Kount = Kount + 1 end
 table.sort(GroupAllRtbaL, function(a, b) return tonumber(a[1]) > tonumber(b[1]) end)
 if Count >= Kount then Count = Kount end
-Text = "* 𖥔 قائمه ترند التفاعل 📊 \n━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━*\n"
+Text = "* 𖥔 قائمه ترند التفاعل 📊 \n ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～*\n"
 for k,v in ipairs(GroupAllRtbaL) do
 if i <= Count then  Text = Text..i.."->『 ["..(GetAllNames[v[2]] or "خطأ بالأسـم").."](tg://user?id="..v[2]..") 』->『 *"..v[1].."* 』 \n" end ; i=i+1
 end
@@ -13274,7 +13275,7 @@ Count,Kount,i = 8 , 0 , 1
 for _ in pairs(GroupAllRtbaL) do Kount = Kount + 1 end
 table.sort(GroupAllRtbaL, function(a, b) return tonumber(a[1]) > tonumber(b[1]) end)
 if Count >= Kount then Count = Kount end
-Text = "* 𖥔 قائمه ترند الجروبات 📊 \n━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━*\n"
+Text = "* 𖥔 قائمه ترند الجروبات 📊 \n ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～*\n"
 for k,v in pairs(GroupAllRtbaL) do
 if v[2] and v[2]:match("(-100%d+)") then
 local InfoChat = bot.getChat(v[2])
@@ -13398,7 +13399,7 @@ Redis:set(Saidi..'Games:Set:Answer'..msg.chat_id,GetAnswer)
 bot.sendAudio(msg_chat_id, msg.id,quschen , '', "md") 
 return false
 end
-local Bot_Name = (Redis:get(Saidi.."Name:Bot") or "كينج")
+local Bot_Name = (Redis:get(Saidi.."Name:Bot") or " ميدو")
 if text and  text:match("^"..Bot_Name.." اتفل(.*)$") and msg.Managers then
 if ChannelJoinch(msg) == false then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = Redis:get(Saidi..'Mero:Chat:Channel:Join:Name'..msg.chat_id), url = 't.me/'..Redis:get(Saidi..'Mero:Chat:Channel:Join'..msg.chat_id)}, },}}
@@ -13937,15 +13938,15 @@ end
 Redis:set(Saidi.."Chatid","-"..Chatid) 
 Redis:setex(Saidi.."Broadcasting:Groups:Pin" .. msg.chat_id .. ":" .. msg.sender_id.user_id, 600, true) 
 bot.sendText(msg.chat_id,msg.id,[[*
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
 , حسنا ارسل الان الاذاعه ،
 , ملصق ، متحركه ، صوره ،
 , فيديو بصمه ، الفيديو ، ملف ،
 , بصمه ، صوت ، رساله ،
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
 , ليتم نشرها للجروبات ،
 , للخروج ارسل ( الغاء ) ،
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
 *]],"md",true)  
 return false
 end
@@ -14077,7 +14078,7 @@ if not msg.Devss then
 return send(msg_chat_id,msg_id,'\n* 𖥔 عذرآ الامر يخص〘 '..Controller_Num(2)..' 〙*',"md",true)  
 end
 local list = Redis:smembers(Saidi.."gamebot:new1")
-t = " 𖥔 الاسئله المضافه ↑↓ \n ━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━\n"
+t = " 𖥔 الاسئله المضافه ↑↓ \n  ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～\n"
 for k,v in pairs(list) do
 t = t..""..k.."- (["..v.."])\n"
 end
@@ -14264,7 +14265,7 @@ if not msg.Devss then
 return send(msg_chat_id,msg_id,'\n* 𖥔 عذرآ الامر يخص〘 '..Controller_Num(2)..' 〙*',"md",true)  
 end
 local list = Redis:smembers(Saidi.."lkz:gamebot:new1")
-t = " 𖥔 الالغاز ↑↓ \n━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━"
+t = " 𖥔 الالغاز ↑↓ \n ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～"
 for k,v in pairs(list) do
 t = t..""..k.."- (["..v.."])\n"
 end
@@ -14387,7 +14388,7 @@ if not msg.Devss then
 return send(msg_chat_id,msg_id,'\n* 𖥔 عذرآ الامر يخص〘 '..Controller_Num(2)..' 〙*',"md",true)  
 end
 local list = Redis:smembers(Saidi.."gamebot:List:Manager")
-t = " 𖥔 الاسئله المضافه ↑↓ \n━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━"
+t = " 𖥔 الاسئله المضافه ↑↓ \n ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～"
 for k,v in pairs(list) do
 t = t..""..k.."- (["..v.."])\n"
 end
@@ -14556,7 +14557,7 @@ return send(msg.chat_id,msg.id,'*\n𖥔 عليك الاشتراك في قناة 
 end
 if not Redis:get(Saidi.."amrthshesh"..msg.chat_id) then    
 Redis:set(Saidi..":"..msg.sender_id.user_id..":lov_Bots"..msg.chat_id,"sendlove")
-hggg = 'ارسل اسم الشخص الذي تريد قياس نسبه الحب\n مثال جابوا وجيكا'
+hggg = 'ارسل اسم الشخص الذي تريد قياس نسبه الحب\n مثال ميدوا وايرور'
 send(msg_chat_id,msg_id,hggg) 
 return false
 end
@@ -14604,7 +14605,7 @@ return send(msg.chat_id,msg.id,'*\n 𖥔 عليك الاشتراك في قناة
 end
 if not Redis:get(Saidi.."amrthshesh"..msg.chat_id) then    
 Redis:set(Saidi..":"..msg.sender_id.user_id..":krh_Bots"..msg.chat_id,"sendkrhe")
-hggg = 'ارسل اسم الشخص الذي تريد قياس نسبه الكره\n مثال جابوا وجيكا'
+hggg = 'ارسل اسم الشخص الذي تريد قياس نسبه الكره\n مثال ميدوا وايرور'
 send(msg_chat_id,msg_id,hggg) 
 return false
 end
@@ -14717,7 +14718,7 @@ Abs = math.random(2,140);
 local Text ='*𖥔 تم اختيار الشعر لك فقط*'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '• قناة السورس •',url="t.me/VC_NE"}},
+{{text = '• قناة السورس •',url="t.me/TGe_R"}},
 }
 local msg_id = msg.id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. msg.chat_id .. '&voice=https://t.me/L1BBBL/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -14732,7 +14733,7 @@ local user1 = List_Members[NumRand1].member_id.user_id
 local user2 = List_Members[NumRand2].member_id.user_id
 local UserInfo = bot.getUser(user1)
 local UserInfoo = bot.getUser(user2)
-local listTow = "* 𖥔 ثنائي اليوم ↑↓ *\n━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━\n ["..FlterBio(UserInfo.first_name).."](tg://user?id="..UserInfo.id..") \n━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━\n ["..UserInfoo.first_name.."](tg://user?id="..UserInfoo.id..")\n"
+local listTow = "* 𖥔 ثنائي اليوم ↑↓ *\n ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～\n ["..FlterBio(UserInfo.first_name).."](tg://user?id="..UserInfo.id..") \n ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～\n ["..UserInfoo.first_name.."](tg://user?id="..UserInfoo.id..")\n"
 Redis:setex(Saidi.."ThnaeeDay:ex"..msg.chat_id,43200,true)
 return send(msg.chat_id,msg.id,listTow,"md",true)  
 end
@@ -14745,7 +14746,7 @@ local user1 = List_Members[NumRand1].member_id.user_id
 local user2 = List_Members[NumRand2].member_id.user_id
 local UserInfo = bot.getUser(user1)
 local UserInfoo = bot.getUser(user2)
-local listTow = "* 𖥔 ثنائي اليوم ↑↓ *\n━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━\n ["..FlterBio(UserInfo.first_name).."](tg://user?id="..UserInfo.id..") \n━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━\n ["..UserInfoo.first_name.."](tg://user?id="..UserInfoo.id..")\n"
+local listTow = "* 𖥔 ثنائي اليوم ↑↓ *\n ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～\n ["..FlterBio(UserInfo.first_name).."](tg://user?id="..UserInfo.id..") \n ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～\n ["..UserInfoo.first_name.."](tg://user?id="..UserInfoo.id..")\n"
 Redis:setex(Saidi.."ThnaeeDay:ex"..msg.chat_id,43200,true)
 return send(msg.chat_id,0,listTow,"md",true)
 end
@@ -15297,7 +15298,7 @@ local Info_Members = Redis:smembers(Saidi.."KtmAll:Groups")
 if #Info_Members == 0 then
 return send(msg_chat_id,msg_id," 𖥔لا يوجد مكتومين عام حاليا , ","md",true)  
 end
-ListMembers = '\n* 𖥔 قائمه المكتومين عام  \n  ━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━ *\n'
+ListMembers = '\n* 𖥔 قائمه المكتومين عام  \n   ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～ *\n'
 for k, v in pairs(Info_Members) do
 local UserInfo = bot.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -15534,7 +15535,7 @@ local Info_Members = Redis:smembers(Saidi.."ControlAll:Groups")
 if #Info_Members == 0 then
 return send(msg_chat_id,msg_id," 𖥔لا يوجد مطورين اساسيين حاليا , ","md",true)  
 end
-ListMembers = '\n* 𖥔 قائمه المطورين الاساسيين  \n  ━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━ *\n'
+ListMembers = '\n* 𖥔 قائمه المطورين الاساسيين  \n   ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～ *\n'
 for k, v in pairs(Info_Members) do
 local UserInfo = bot.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -15727,7 +15728,7 @@ end
 if GetMemberStatus.can_promote_members then
 promote = '〘 ✅ 〙' else promote = '〘 ❌ 〙'
 end
-local PermissionsUserr = '*\n 𖥔 صلاحيات المستخدم :\n ━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━ '..'\n 𖥔 تغيير المعلومات -> '..change_info..'\n 𖥔 تثبيت الرسائل -> '..pin_messages..'\n 𖥔 اضافه مستخدمين -> '..invite_users..'\n 𖥔 مسح الرسائل -> '..delete_messages..'\n 𖥔 حظر المستخدمين -> '..restrict_members..'\n 𖥔 اضافه المشرفين -> '..promote..'\n\n*'
+local PermissionsUserr = '*\n 𖥔 صلاحيات المستخدم :\n  ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～ '..'\n 𖥔 تغيير المعلومات -> '..change_info..'\n 𖥔 تثبيت الرسائل -> '..pin_messages..'\n 𖥔 اضافه مستخدمين -> '..invite_users..'\n 𖥔 مسح الرسائل -> '..delete_messages..'\n 𖥔 حظر المستخدمين -> '..restrict_members..'\n 𖥔 اضافه المشرفين -> '..promote..'\n\n*'
 return send(msg_chat_id,msg_id," 𖥔 الصلاحيات -> مشرف المجموعه"..(PermissionsUserr or '') ,"md",true) 
 end
 end
@@ -15769,7 +15770,7 @@ end
 if GetMemberStatus.can_promote_members then
 promote = '〘 ✅ 〙' else promote = '〘 ❌ 〙'
 end
-local PermissionsUserr = '*\n 𖥔 صلاحيات المستخدم :\n ━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━ '..'\n 𖥔 تغيير المعلومات -> '..change_info..'\n 𖥔 تثبيت الرسائل -> '..pin_messages..'\n 𖥔 اضافه مستخدمين -> '..invite_users..'\n 𖥔 مسح الرسائل -> '..delete_messages..'\n 𖥔 حظر المستخدمين -> '..restrict_members..'\n 𖥔 اضافه المشرفين -> '..promote..'\n\n*'
+local PermissionsUserr = '*\n 𖥔 صلاحيات المستخدم :\n  ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～ '..'\n 𖥔 تغيير المعلومات -> '..change_info..'\n 𖥔 تثبيت الرسائل -> '..pin_messages..'\n 𖥔 اضافه مستخدمين -> '..invite_users..'\n 𖥔 مسح الرسائل -> '..delete_messages..'\n 𖥔 حظر المستخدمين -> '..restrict_members..'\n 𖥔 اضافه المشرفين -> '..promote..'\n\n*'
 return send(msg_chat_id,msg_id," 𖥔 الصلاحيات -> مشرف المجموعه"..(PermissionsUserr or '') ,"md",true) 
 end
 end
@@ -15823,7 +15824,7 @@ end
 if GetMemberStatus.can_promote_members then
 promote = '〘 ✅ 〙' else promote = '〘 ❌ 〙'
 end
-local PermissionsUserr = '*\n 𖥔 صلاحيات المستخدم :\n ━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━ '..'\n 𖥔 تغيير المعلومات -> '..change_info..'\n 𖥔 تثبيت الرسائل -> '..pin_messages..'\n 𖥔 اضافه مستخدمين -> '..invite_users..'\n 𖥔 مسح الرسائل -> '..delete_messages..'\n 𖥔 حظر المستخدمين -> '..restrict_members..'\n 𖥔 اضافه المشرفين -> '..promote..'\n\n*'
+local PermissionsUserr = '*\n 𖥔 صلاحيات المستخدم :\n  ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～ '..'\n 𖥔 تغيير المعلومات -> '..change_info..'\n 𖥔 تثبيت الرسائل -> '..pin_messages..'\n 𖥔 اضافه مستخدمين -> '..invite_users..'\n 𖥔 مسح الرسائل -> '..delete_messages..'\n 𖥔 حظر المستخدمين -> '..restrict_members..'\n 𖥔 اضافه المشرفين -> '..promote..'\n\n*'
 return send(msg_chat_id,msg_id," 𖥔 الصلاحيات -> مشرف المجموعه"..(PermissionsUserr or '') ,"md",true) 
 end
 end
@@ -15888,7 +15889,7 @@ end
 
 if text == 'رابط الحذف' or text == 'روابط الحذف' then
 if ChannelJoin(msg) == false then
-local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = 'اضغط للاشتراك', url = Redis:get(Saidi..'ch:admin')},},{{text = 'سـورس كينج ', url = "t.me/VC_NE"},},}}
+local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = 'اضغط للاشتراك', url = Redis:get(Saidi..'ch:admin')},},{{text = 'سـورس  ميدو ', url = "t.me/TGe_R"},},}}
 return bot.sendText(msg.chat_id,msg.id,'*\n 𖥔 𖥔 عليك الاشتراك في قناة البوت لاستخذام الاوامر*',"md",false, false, false, false, reply_markup)
 end
 local reply_markup = bot.replyMarkup{
@@ -15901,7 +15902,7 @@ data = {
 {text = 'Facebook', url = 'https://www.facebook.com/help/deleteaccount'},{text = 'Snapchat', url = 'https://accounts.snapchat.com/accounts/login?continue=https%3A%2F%2Faccounts.snapchat.com%2Faccounts%2Fdeleteaccount'}
 },
 {
-{text = '• قناة السورس •', url = "t.me/VC_NE"}, 
+{text = '• قناة السورس •', url = "t.me/TGe_R"}, 
 },
 }
 }
@@ -16792,7 +16793,7 @@ end
 if GetMemberStatus.can_promote_members then
 promote = '〘 ✅ 〙' else promote = '〘 ❌ 〙'
 end
-PermissionsUser = '*\n 𖥔 صلاحيات المستخدم :\n ━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━ '..'\n 𖥔 تغيير المعلومات -> '..change_info..'\n 𖥔 تثبيت الرسائل -> '..pin_messages..'\n 𖥔 اضافه مستخدمين -> '..invite_users..'\n 𖥔 مسح الرسائل -> '..delete_messages..'\n 𖥔 حظر المستخدمين -> '..restrict_members..'\n 𖥔 اضافه المشرفين -> '..promote..'\n\n*'
+PermissionsUser = '*\n 𖥔 صلاحيات المستخدم :\n  ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～ '..'\n 𖥔 تغيير المعلومات -> '..change_info..'\n 𖥔 تثبيت الرسائل -> '..pin_messages..'\n 𖥔 اضافه مستخدمين -> '..invite_users..'\n 𖥔 مسح الرسائل -> '..delete_messages..'\n 𖥔 حظر المستخدمين -> '..restrict_members..'\n 𖥔 اضافه المشرفين -> '..promote..'\n\n*'
 end
 return send(msg_chat_id,msg_id,
 '\n* 𖥔 ايديك -> '..UserId..
@@ -16859,7 +16860,7 @@ end
 if GetMemberStatus.can_promote_members then
 promote = '〘 ✅ 〙' else promote = '〘 ❌ 〙'
 end
-PermissionsUser = '*\n 𖥔 صلاحيات البوت -> مشرف في المجموعه :\n ━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━ '..'\n 𖥔 تغيير المعلومات -> '..change_info..'\n 𖥔 تثبيت الرسائل -> '..pin_messages..'\n 𖥔 اضافه مستخدمين -> '..invite_users..'\n 𖥔 مسح الرسائل -> '..delete_messages..'\n 𖥔 حظر المستخدمين -> '..restrict_members..'\n 𖥔 اضافه المشرفين -> '..promote..'\n\n*'
+PermissionsUser = '*\n 𖥔 صلاحيات البوت -> مشرف في المجموعه :\n  ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～ '..'\n 𖥔 تغيير المعلومات -> '..change_info..'\n 𖥔 تثبيت الرسائل -> '..pin_messages..'\n 𖥔 اضافه مستخدمين -> '..invite_users..'\n 𖥔 مسح الرسائل -> '..delete_messages..'\n 𖥔 حظر المستخدمين -> '..restrict_members..'\n 𖥔 اضافه المشرفين -> '..promote..'\n\n*'
 return send(msg_chat_id,msg_id,PermissionsUser,"md",true) 
 end
 
@@ -18533,7 +18534,7 @@ end
 
 local Info_Members = Redis:smembers(Saidi.."Ownerss:Group"..msg_chat_id) 
 if #Info_Members ~= 0 then
-local ListMembers = '\n* 𖥔 قائمه المالكين \n  ━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━ *\n'
+local ListMembers = '\n* 𖥔 قائمه المالكين \n   ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～ *\n'
 for k, v in pairs(Info_Members) do
 local UserInfo = bot.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -18546,7 +18547,7 @@ send(msg_chat_id, msg_id, ListMembers, 'md')
 end
 local Info_Members = Redis:smembers(Saidi.."SuperCreator:Group"..msg_chat_id) 
 if #Info_Members ~= 0 then
-local ListMembers = '\n* 𖥔 قائمه المنشئين الاساسيين \n  ━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━ *\n'
+local ListMembers = '\n* 𖥔 قائمه المنشئين الاساسيين \n   ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～ *\n'
 for k, v in pairs(Info_Members) do
 local UserInfo = bot.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -18559,7 +18560,7 @@ send(msg_chat_id, msg_id, ListMembers, 'md')
 end
 local Info_Members = Redis:smembers(Saidi.."Creator:Group"..msg_chat_id) 
 if #Info_Members ~= 0 then
-local ListMembers = '\n* 𖥔 قائمه المنشئين  \n  ━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━ *\n'
+local ListMembers = '\n* 𖥔 قائمه المنشئين  \n   ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～ *\n'
 for k, v in pairs(Info_Members) do
 local UserInfo = bot.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -18572,7 +18573,7 @@ send(msg_chat_id, msg_id, ListMembers, 'md')
 end
 local Info_Members = Redis:smembers(Saidi.."Manger:Group"..msg_chat_id) 
 if #Info_Members ~= 0 then
-local ListMembers = '\n* 𖥔 قائمه المدراء  \n  ━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━ *\n'
+local ListMembers = '\n* 𖥔 قائمه المدراء  \n   ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～ *\n'
 for k, v in pairs(Info_Members) do
 local UserInfo = bot.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -18585,7 +18586,7 @@ send(msg_chat_id, msg_id, ListMembers, 'md')
 end
 local Info_Members = Redis:smembers(Saidi.."Admin:Group"..msg_chat_id) 
 if #Info_Members ~= 0 then
-local ListMembers = '\n* 𖥔 قائمه الادمنيه  \n  ━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━ *\n'
+local ListMembers = '\n* 𖥔 قائمه الادمنيه  \n   ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～ *\n'
 for k, v in pairs(Info_Members) do
 local UserInfo = bot.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -18598,7 +18599,7 @@ send(msg_chat_id, msg_id, ListMembers, 'md')
 end
 local Info_Members = Redis:smembers(Saidi.."Special:Group"..msg_chat_id) 
 if #Info_Members ~= 0 then
-local ListMembers = '\n* 𖥔 قائمه المميزين  \n  ━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━ *\n'
+local ListMembers = '\n* 𖥔 قائمه المميزين  \n   ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～ *\n'
 for k, v in pairs(Info_Members) do
 local UserInfo = bot.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -18611,7 +18612,7 @@ send(msg_chat_id, msg_id, ListMembers, 'md')
 end
 local Info_Members = bot.searchChatMembers(msg_chat_id, "*", 200)
 local List_Members = Info_Members.members
-listall = '\n* 𖥔 قائمه الاعضاء \n  ━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━ *\n'
+listall = '\n* 𖥔 قائمه الاعضاء \n   ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～ *\n'
 for k, v in pairs(List_Members) do
 local UserInfo = bot.getUser(v.member_id.user_id)
 if UserInfo.username ~= "" then
@@ -18701,7 +18702,7 @@ local Info_Members = Redis:smembers(Saidi.."Ownerss:Group"..msg_chat_id)
 if #Info_Members == 0 then
 return send(msg_chat_id,msg_id," 𖥔 لا يوجد منشئين اساسيين حاليا , ","md",true)  
 end
-ListMembers = '\n* 𖥔 قائمه المالكين \n  ━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━ *\n'
+ListMembers = '\n* 𖥔 قائمه المالكين \n   ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～ *\n'
 for k, v in pairs(Info_Members) do
 local UserInfo = bot.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -18731,7 +18732,7 @@ local Info_Members = Redis:smembers(Saidi.."SuperCreator:Group"..msg_chat_id)
 if #Info_Members == 0 then
 return send(msg_chat_id,msg_id," 𖥔 لا يوجد منشئين اساسيين حاليا , ","md",true)  
 end
-ListMembers = '\n* 𖥔 قائمه المنشئين الاساسيين \n  ━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━ *\n'
+ListMembers = '\n* 𖥔 قائمه المنشئين الاساسيين \n   ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～ *\n'
 for k, v in pairs(Info_Members) do
 local UserInfo = bot.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -18761,7 +18762,7 @@ local Info_Members = Redis:smembers(Saidi.."Creator:Group"..msg_chat_id)
 if #Info_Members == 0 then
 return send(msg_chat_id,msg_id," 𖥔 لا يوجد منشئين حاليا , ","md",true)  
 end
-ListMembers = '\n* 𖥔 قائمه المنشئين  \n  ━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━ *\n'
+ListMembers = '\n* 𖥔 قائمه المنشئين  \n   ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～ *\n'
 for k, v in pairs(Info_Members) do
 local UserInfo = bot.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -18791,7 +18792,7 @@ local Info_Members = Redis:smembers(Saidi.."Manger:Group"..msg_chat_id)
 if #Info_Members == 0 then
 return send(msg_chat_id,msg_id," 𖥔 لا يوجد مدراء حاليا , ","md",true)  
 end
-ListMembers = '\n* 𖥔 قائمه المدراء  \n  ━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━ *\n'
+ListMembers = '\n* 𖥔 قائمه المدراء  \n   ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～ *\n'
 for k, v in pairs(Info_Members) do
 local UserInfo = bot.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -18821,7 +18822,7 @@ local Info_Members = Redis:smembers(Saidi.."Admin:Group"..msg_chat_id)
 if #Info_Members == 0 then
 return send(msg_chat_id,msg_id," 𖥔 لا يوجد ادمنيه حاليا , ","md",true)  
 end
-ListMembers = '\n* 𖥔 قائمه الادمنيه  \n  ━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━ *\n'
+ListMembers = '\n* 𖥔 قائمه الادمنيه  \n   ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～ *\n'
 for k, v in pairs(Info_Members) do
 local UserInfo = bot.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -18851,7 +18852,7 @@ local Info_Members = Redis:smembers(Saidi.."Special:Group"..msg_chat_id)
 if #Info_Members == 0 then
 return send(msg_chat_id,msg_id," 𖥔 لا يوجد مميزين حاليا , ","md",true)  
 end
-ListMembers = '\n* 𖥔 قائمه المميزين  \n  ━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━ *\n'
+ListMembers = '\n* 𖥔 قائمه المميزين  \n   ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～ *\n'
 for k, v in pairs(Info_Members) do
 local UserInfo = bot.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -18875,7 +18876,7 @@ local Info_Members = Redis:smembers(Saidi.."kholat:Group"..msg_chat_id)
 if #Info_Members == 0 then
 return send(msg_chat_id,msg_id," 𖥔 لا يوجد خولات حاليا , ","md",true)  
 end
-ListMembers = '\n* 𖥔 قائمه الخولات  \n  ━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━ *\n'
+ListMembers = '\n* 𖥔 قائمه الخولات  \n   ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～ *\n'
 for k, v in pairs(Info_Members) do
 local UserInfo = bot.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -18899,7 +18900,7 @@ local Info_Members = Redis:smembers(Saidi.."wtka:Group"..msg_chat_id)
 if #Info_Members == 0 then
 return send(msg_chat_id,msg_id," 𖥔 لا يوجد وتكات ناشفة زي المستشفي , ","md",true)  
 end
-ListMembers = '\n* 𖥔 قائمه الوتكات  \n  ━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━ *\n'
+ListMembers = '\n* 𖥔 قائمه الوتكات  \n   ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～ *\n'
 for k, v in pairs(Info_Members) do
 local UserInfo = bot.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -18923,7 +18924,7 @@ local Info_Members = Redis:smembers(Saidi.."twhd:Group"..msg_chat_id)
 if #Info_Members == 0 then
 return send(msg_chat_id,msg_id," 𖥔 مفيش متوحدين هنا كلهم اتعالجو 😂😂 , ","md",true)  
 end
-ListMembers = '\n* 𖥔 قائمه المتوحدين  \n  ━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━ *\n'
+ListMembers = '\n* 𖥔 قائمه المتوحدين  \n   ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～ *\n'
 for k, v in pairs(Info_Members) do
 local UserInfo = bot.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -18947,7 +18948,7 @@ local Info_Members = Redis:smembers(Saidi.."klb:Group"..msg_chat_id)
 if #Info_Members == 0 then
 return send(msg_chat_id,msg_id," 𖥔 مفيش كلاب هنا ارفعلنل شويه نضيهم عضم 😂😂 , ","md",true)  
 end
-ListMembers = '\n* 𖥔 قائمه الكلاب  \n  ━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━ *\n'
+ListMembers = '\n* 𖥔 قائمه الكلاب  \n   ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～ *\n'
 for k, v in pairs(Info_Members) do
 local UserInfo = bot.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -18971,7 +18972,7 @@ local Info_Members = Redis:smembers(Saidi.."mar:Group"..msg_chat_id)
 if #Info_Members == 0 then
 return send(msg_chat_id,msg_id," 𖥔 مفيش حمير هنا 😂😂 , ","md",true)  
 end
-ListMembers = '\n* 𖥔 قائمه الحمير  \n  ━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━ *\n'
+ListMembers = '\n* 𖥔 قائمه الحمير  \n   ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～ *\n'
 for k, v in pairs(Info_Members) do
 local UserInfo = bot.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -18995,7 +18996,7 @@ local Info_Members = Redis:smembers(Saidi.."3ra:Group"..msg_chat_id)
 if #Info_Members == 0 then
 return send(msg_chat_id,msg_id," 𖥔 مفيش عرر هنا 😂😂 , ","md",true)  
 end
-ListMembers = '\n* 𖥔 قائمه العرر  \n  ━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━ *\n'
+ListMembers = '\n* 𖥔 قائمه العرر  \n   ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～ *\n'
 for k, v in pairs(Info_Members) do
 local UserInfo = bot.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -19019,7 +19020,7 @@ local Info_Members = Redis:smembers(Saidi.."smb:Group"..msg_chat_id)
 if #Info_Members == 0 then
 return send(msg_chat_id,msg_id," 𖥔 مفيش سمباويه هنا 😂😂 , ","md",true)  
 end
-ListMembers = '\n* 𖥔 قائمه السمب  \n  ━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━ *\n'
+ListMembers = '\n* 𖥔 قائمه السمب  \n   ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～ *\n'
 for k, v in pairs(Info_Members) do
 local UserInfo = bot.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -19043,7 +19044,7 @@ local Info_Members = Redis:smembers(Saidi.."2rd:Group"..msg_chat_id)
 if #Info_Members == 0 then
 return send(msg_chat_id,msg_id," 𖥔 مفيش قرود هنا يصحبي 😂😂 , ","md",true)  
 end
-ListMembers = '\n* 𖥔 قائمه القرود  \n  ━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━ *\n'
+ListMembers = '\n* 𖥔 قائمه القرود  \n   ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～ *\n'
 for k, v in pairs(Info_Members) do
 local UserInfo = bot.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -19067,7 +19068,7 @@ local Info_Members = Redis:smembers(Saidi.."8by:Group"..msg_chat_id)
 if #Info_Members == 0 then
 return send(msg_chat_id,msg_id," 𖥔 مفيش اغبيه هنا يصحبي 😂😂 , ","md",true)  
 end
-ListMembers = '\n* 𖥔 قائمه الاغبيه  \n  ━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━ *\n'
+ListMembers = '\n* 𖥔 قائمه الاغبيه  \n   ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～ *\n'
 for k, v in pairs(Info_Members) do
 local UserInfo = bot.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -19097,7 +19098,7 @@ local Info_Members = Redis:smembers(Saidi.."BanAll:Groups")
 if #Info_Members == 0 then
 return send(msg_chat_id,msg_id," 𖥔 لا يوجد محظورين عام حاليا , ","md",true)  
 end
-ListMembers = '\n* 𖥔 قائمه المحظورين عام  \n  ━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━ *\n'
+ListMembers = '\n* 𖥔 قائمه المحظورين عام  \n   ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～ *\n'
 for k, v in pairs(Info_Members) do
 local UserInfo = bot.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -19127,7 +19128,7 @@ local Info_Members = Redis:smembers(Saidi.."BanGroup:Group"..msg_chat_id)
 if #Info_Members == 0 then
 return send(msg_chat_id,msg_id," 𖥔 لا يوجد محظورين حاليا , ","md",true)  
 end
-ListMembers = '\n* 𖥔 قائمه المحظورين  \n  ━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━ *\n'
+ListMembers = '\n* 𖥔 قائمه المحظورين  \n   ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～ *\n'
 for k, v in pairs(Info_Members) do
 local UserInfo = bot.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -19157,7 +19158,7 @@ local Info_Members = Redis:smembers(Saidi.."SilentGroup:Group"..msg_chat_id)
 if #Info_Members == 0 then
 return send(msg_chat_id,msg_id," 𖥔 لا يوجد مكتومين حاليا , ","md",true)  
 end
-ListMembers = '\n* 𖥔 قائمه المكتومين  \n  ━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━ *\n'
+ListMembers = '\n* 𖥔 قائمه المكتومين  \n   ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～ *\n'
 for k, v in pairs(Info_Members) do
 local UserInfo = bot.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -19453,7 +19454,7 @@ Abs = math.random(2,140);
 local Text ='* 𖥔 تم اختيار الاغنيه لك*'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '• قناة السورس •', url = "https://t.me/VC_NE"}},
+{{text = '• قناة السورس •', url = "https://t.me/TGe_R"}},
 }
 local MsgId = msg.id/2097152/0.5
 local MSGID = msg.id/2097152/0.5
@@ -20716,8 +20717,8 @@ end
 local Info_Chats = bot.getSupergroupFullInfo(msg_chat_id)
 local Get_Chat = bot.getChat(msg_chat_id)
 local Info_Members = bot.getSupergroupMembers(msg_chat_id, "Administrators", "", 0, 200)
-listAdmin = '\n* 𖥔 مشرفين جروب ->* ['..Get_Chat.title..']('..Info_Chats.invite_link.invite_link..')\n━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━\n'
-lislSaidi = '\n━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━'
+listAdmin = '\n* 𖥔 مشرفين جروب ->* ['..Get_Chat.title..']('..Info_Chats.invite_link.invite_link..')\n ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～\n'
+lislSaidi = '\n ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～'
 local List_Members = Info_Members.members
 for k, v in pairs(List_Members) do
 if Info_Members.members[k].status.luatele == "chatMemberStatusCreator" then
@@ -20834,7 +20835,7 @@ return send(msg_chat_id,msg_id,"\n* 𖥔 عذرآ البوت ليس ادمن ف�
 end
 local Info_Members = bot.getSupergroupMembers(msg_chat_id, "Bots", "*", 0, 200)
 local List_Members = Info_Members.members
-listBots = '\n 𖥔 قائمه البوتات المجموعه \n ━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━ \n'
+listBots = '\n 𖥔 قائمه البوتات المجموعه \n  ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～ \n'
 x = 0
 for k, v in pairs(List_Members) do
 local UserInfo = bot.getUser(v.member_id.user_id)
@@ -20846,7 +20847,7 @@ Admin = " -›〘  عضو 〙"
 end
 listBots = listBots..""..k.." -> @"..UserInfo.username.." "..Admin.."\n"
 end
-local s = '*━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━*\n*𖥔 قائمة البوتات الموجوده '..#List_Members..'\n*'
+local s = '* ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～*\n*𖥔 قائمة البوتات الموجوده '..#List_Members..'\n*'
 local t = '*𖥔 عدد البوتات التي هي ادمن〘 '..x..' 〙*'
 local reply_markup = bot.replyMarkup{
 type = 'inline',
@@ -20878,7 +20879,7 @@ local Info_Members = bot.getSupergroupMembers(msg_chat_id, "Recent", "*", 0, 200
 local List_Members = Info_Members.members
 x = 0
 local y = false
-restricted = '\n* 𖥔 قائمه المقيديين \n  ━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━ *\n'
+restricted = '\n* 𖥔 قائمه المقيديين \n   ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～ *\n'
 for k, v in pairs(List_Members) do
 if Info_Members.members[k].status.is_member == true and Info_Members.members[k].status.Saidibots == "chatMemberStatusRestricted" then
 y = true
@@ -20931,7 +20932,7 @@ return send(msg_chat_id,msg_id,'\n* 𖥔 عذرآ الامر يخص〘 '..Contro
 end
 local Info = bot.searchChatMembers(msg.chat_id, "*", 100)
 local members = Info.members
-ls = '\n*\n━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━ *\n'
+ls = '\n*\n ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～ *\n'
 for k, v in pairs(members) do
 local Textingt = {"❤️", "🧡", "💛", "💚", "💙", "💜", "🖤", "🤍", "🤎", "🙂", "🙃", "😉", "😌", "😍", "🥰", "😘", "😗", "😙", "😚", "😋", "😛", "😝", "😜", "🤪", "🤨", "🧐", "🤓", "😎", "🤩", "🥳", "😏", "😒", "😞", "😟", "😕", "🙁", "😣", "😖", "😫", "😩", "🥺", "😢", "😭", "😤", "😠", "😡", "🤯", "😳", "🥵", "🥶", "😱", "😨", "😰", "😥", "😓", "🤗", "🤔", "🤭", "🤫", "🤥", "😶", "😐", "😑", "😬", "🙄", "😯", "😦", "😧", "😮", "😲", "🥱", "😴", "🤤", "😪", "😵", "🤐", "🥴", "🤢", "🤮", "🤧", "😷", "🤒", "🤕", "🤑", "🤠", "😈", "👹", "👺", "🤡",}
 local Descriptiont = Textingt[math.random(#Textingt)]
@@ -21024,7 +21025,7 @@ return send(msg.chat_id,msg.id,'*\n 𖥔 عليك الاشتراك في قناة
 end
 local Info_Members = bot.searchChatMembers(msg_chat_id, "*", 200)
 local List_Members = Info_Members.members
-listall = '\n* 𖥔 قائمه الاعضاء \n  ━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━ *\n'
+listall = '\n* 𖥔 قائمه الاعضاء \n   ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～ *\n'
 for k, v in pairs(List_Members) do
 local UserInfo = bot.getUser(v.member_id.user_id)
 if UserInfo.username ~= "" then
@@ -21206,7 +21207,7 @@ data = {
 {text = '⛦ نعم', data = msg.sender_id.user_id..'/Nzlne'},{text = '☁ لا', data = msg.sender_id.user_id..'/noNzlne'},
 },
 {
-{text = '• قناة السورس •', url = "t.me/VC_NE"}, 
+{text = '• قناة السورس •', url = "t.me/TGe_R"}, 
 },
 }
 }
@@ -21578,7 +21579,7 @@ print(Abs)
 local Text ='* 𖥔 تم اختيار الاغنيه لك*'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '• قناة السورس •',url="t.me/VC_NE"}},
+{{text = '• قناة السورس •',url="t.me/TGe_R"}},
 }
 local MsgId = msg.id/2097152/0.5
 local MSGID = 0
@@ -24012,7 +24013,7 @@ local list = Redis:smembers(Saidi.."List:Filter"..msg_chat_id)
 if #list == 0 then  
 return send(msg_chat_id,msg_id,"* 𖥔 لا يوجد كلمات ممنوعه هنا *","md",true)   
 end  
-Filter = '\n* 𖥔 قائمه المنع \n  ━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━ *\n'
+Filter = '\n* 𖥔 قائمه المنع \n   ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～ *\n'
 for k,v in pairs(list) do  
 print(v)
 if v:match('photo:(.*)') then
@@ -24142,7 +24143,7 @@ local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = Redis:get(
 return send(msg.chat_id,msg.id,'*\n 𖥔 عليك الاشتراك في قناة البوت لأستخدام الاوامر*',"md",false, false, false, false, reply_markup)
 end
 local list = Redis:smembers(Saidi.."Command:List:Group"..msg_chat_id.."")
-Command = " 𖥔 قائمه الاوامر المضافه  \n ━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━ \n"
+Command = " 𖥔 قائمه الاوامر المضافه  \n  ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～ \n"
 for k,v in pairs(list) do
 Commands = Redis:get(Saidi.."Get:Reides:Commands:Group"..msg_chat_id..":"..v)
 if Commands then 
@@ -24345,7 +24346,7 @@ end
 if Redis:get(Saidi.."Status:AddMe"..msg.chat_id) then
 StatusAddme = '〘 ✅ 〙' else StatusAddme = '〘 ❌ 〙'
 end
-local protectionGroup = '\n* 𖥔 اعدادات حمايه المجموعه\n ━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━\n'
+local protectionGroup = '\n* 𖥔 اعدادات حمايه المجموعه\n  ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～\n'
 ..'\n 𖥔 جلب الرابط ➻ '..Statuslink
 ..'\n 𖥔 جلب الترحيب ➻ '..StatusWelcome
 ..'\n 𖥔 الايدي ➻ '..StatusId
@@ -24355,12 +24356,12 @@ local protectionGroup = '\n* 𖥔 اعدادات حمايه المجموعه\n �
 ..'\n 𖥔 الرفع ➻ '..StatusSetId
 ..'\n 𖥔 الحظر - الطرد ➻ '..StatusBanId
 ..'\n 𖥔 الالعاب ➻ '..StatusGames
-..'\n 𖥔 امر اطردني ➻ '..Statuskickme..'*\n\n ━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━ '
+..'\n 𖥔 امر اطردني ➻ '..Statuskickme..'*\n\n  ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～ '
 local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '• قناة السورس •', url = "t.me/VC_NE"}, 
+{text = '• قناة السورس •', url = "t.me/TGe_R"}, 
 },
 }
 }
@@ -24483,8 +24484,8 @@ end
 if Get_Chat.permissions.can_send_polls then
 polls = '〘 ✅ 〙' else polls = '〘 ❌ 〙'
 end
-local permissions = '*\n 𖥔 صلاحيات المجموعه :\n ━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━ '..'\n 𖥔 ارسال الويب -> '..web..'\n 𖥔 تغيير معلومات المجموعه -> '..info..'\n 𖥔 اضافه مستخدمين -> '..invite..'\n 𖥔 تثبيت الرسائل -> '..pin..'\n 𖥔 ارسال الميديا -> '..media..'\n 𖥔 ارسال الرسائل -> '..messges..'\n 𖥔 اضافه البوتات -> '..other..'\n 𖥔 ارسال استفتاء -> '..polls..'*\n\n'
-local TextChat = '*\n 𖥔 معلومات المجموعه :\n ━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━ '..' \n 𖥔 اسم المجموعه -> ❬* ['..Get_Chat.title..']('..Info_Chats.invite_link.invite_link..')* ❭\n 𖥔 عدد الادمنيه -> ❬ '..Info_Chats.administrator_count..' ❭\n 𖥔 عدد المحظورين -> ❬ '..Info_Chats.banned_count..' ❭\n 𖥔 عدد الاعضاء -> ❬ '..Info_Chats.member_count..' ❭\n 𖥔 عدد المقيديين -> ❬ '..Info_Chats.restricted_count..' ❭\n 𖥔 الايدي -> ❬ *`'..msg.chat_id..'`* ❭*\n'
+local permissions = '*\n 𖥔 صلاحيات المجموعه :\n  ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～ '..'\n 𖥔 ارسال الويب -> '..web..'\n 𖥔 تغيير معلومات المجموعه -> '..info..'\n 𖥔 اضافه مستخدمين -> '..invite..'\n 𖥔 تثبيت الرسائل -> '..pin..'\n 𖥔 ارسال الميديا -> '..media..'\n 𖥔 ارسال الرسائل -> '..messges..'\n 𖥔 اضافه البوتات -> '..other..'\n 𖥔 ارسال استفتاء -> '..polls..'*\n\n'
+local TextChat = '*\n 𖥔 معلومات المجموعه :\n  ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～ '..' \n 𖥔 اسم المجموعه -> ❬* ['..Get_Chat.title..']('..Info_Chats.invite_link.invite_link..')* ❭\n 𖥔 عدد الادمنيه -> ❬ '..Info_Chats.administrator_count..' ❭\n 𖥔 عدد المحظورين -> ❬ '..Info_Chats.banned_count..' ❭\n 𖥔 عدد الاعضاء -> ❬ '..Info_Chats.member_count..' ❭\n 𖥔 عدد المقيديين -> ❬ '..Info_Chats.restricted_count..' ❭\n 𖥔 الايدي -> ❬ *`'..msg.chat_id..'`* ❭*\n'
 if Info_Chats.photo then
 bot.sendPhoto(msg.chat_id, msg.id, Info_Chats.photo.sizes[1].photo.remote.id,TextChat..permissions, "md")
 else
@@ -25019,7 +25020,7 @@ data = {
 {text = 'تعديل صلاحياته ✨', data = msg.sender_id.user_id..'give'..UserInfo.id}, 
 },
 {
-{text = '• قناة السورس •', url = "t.me/VC_NE"},
+{text = '• قناة السورس •', url = "t.me/TGe_R"},
 },
 }
 }
@@ -25955,7 +25956,7 @@ local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = Redis:get(
 return send(msg.chat_id,msg.id,'*\n 𖥔 عليك الاشتراك في قناة البوت لأستخدام الاوامر*',"md",false, false, false, false, reply_markup)
 end
 local list = Redis:smembers(Saidi.."List:Manager"..msg_chat_id.."")
-text = " 𖥔 قائمه الردود \n ━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━ \n"
+text = " 𖥔 قائمه الردود \n  ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～ \n"
 for k,v in pairs(list) do
 if Redis:get(Saidi.."Add:Rd:Manager:Gif"..v..msg_chat_id) then
 db = "متحركه 🎭"
@@ -26069,7 +26070,7 @@ local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = Redis:get(
 return send(msg.chat_id,msg.id,'*\n 𖥔 عليك الاشتراك في قناة البوت لأستخدام الاوامر*',"md",false, false, false, false, reply_markup)
 end
 local list = Redis:smembers(Saidi.."List:Rd:Sudo")
-text = "\n𖥔 قائمة الردود العامه ⇧⇩\n━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━\n"
+text = "\n𖥔 قائمة الردود العامه ⇧⇩\n ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～\n"
 for k,v in pairs(list) do
 if Redis:get(Saidi.."Add:Rd:Sudo:Gif"..v) then
 db = "متحركه 🎭"
@@ -26157,15 +26158,15 @@ return send(msg.chat_id,msg.id,'*\n𖥔  عليك الاشتراك في قناة
 end
 Redis:setex(Saidi.."Broadcasting:Groups" .. msg_chat_id .. ":" .. msg.sender_id.user_id, 600, true) 
 send(msg_chat_id,msg_id,[[*
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
 , حسنا ارسل الان الاذاعه ،
 , ملصق ، متحركه ، صوره ،
 , فيديو بصمه ، الفيديو ، ملف ،
 , بصمه ، صوت ، رساله ،
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
 , ليتم نشرها للجروبات ،
 , للخروج ارسل ( الغاء ) ،
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
 *]],"md",true)  
 return false
 end
@@ -26184,15 +26185,15 @@ return send(msg.chat_id,msg.id,'*\n𖥔  عليك الاشتراك في قناة
 end
 Redis:setex(Saidi.."Broadcasting:Users" .. msg_chat_id .. ":" .. msg.sender_id.user_id, 600, true) 
 send(msg_chat_id,msg_id,[[*
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
 , حسنا ارسل الان الاذاعه ،
 , ملصق ، متحركه ، صوره ،
 , فيديو بصمه ، الفيديو ، ملف ،
 , بصمه ، صوت ، رساله ،
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
 , ليتم نشرها للمشتركين ،
 , للخروج ارسل ( الغاء ) ،
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
 *]],"md",true)  
 return false
 end
@@ -26211,15 +26212,15 @@ return send(msg.chat_id,msg.id,'*\n𖥔  عليك الاشتراك في قناة
 end
 Redis:setex(Saidi.."Broadcasting:Groups:Pin" .. msg_chat_id .. ":" .. msg.sender_id.user_id, 600, true) 
 send(msg_chat_id,msg_id,[[*
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
 , حسنا ارسل الان الاذاعه ،
 , ملصق ، متحركه ، صوره ،
 , فيديو بصمه ، الفيديو ، ملف ،
 , بصمه ، صوت ، رساله ،
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
 , ليتم نشرها للجروبات ،
 , للخروج ارسل ( الغاء ) ،
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
 *]],"md",true)  
 return false
 end
@@ -26301,7 +26302,7 @@ SilentGroup = 'مكتوم'
 else
 SilentGroup = 'غير مكتوم'
 end
-send(msg_chat_id,msg_id,"\n* 𖥔 معلومات الكشف \n ━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━ "..'\n 𖥔 الحظر العام -> '..BanAll..'\n 𖥔 الحظر -> '..BanGroup..'\n 𖥔 الكتم -> '..SilentGroup..'\n 𖥔 التقييد -> '..Restricted..'*',"md",true)  
+send(msg_chat_id,msg_id,"\n* 𖥔 معلومات الكشف \n  ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～ "..'\n 𖥔 الحظر العام -> '..BanAll..'\n 𖥔 الحظر -> '..BanGroup..'\n 𖥔 الكتم -> '..SilentGroup..'\n 𖥔 التقييد -> '..Restricted..'*',"md",true)  
 end
 if text and text:match('^كشف القيود @(%S+)$') then
 local UserName = text:match('^كشف القيود @(%S+)$')
@@ -26350,7 +26351,7 @@ SilentGroup = 'مكتوم'
 else
 SilentGroup = 'غير مكتوم'
 end
-send(msg_chat_id,msg_id,"\n* 𖥔 معلومات الكشف \n ━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━ "..'\n 𖥔 الحظر العام -> '..BanAll..'\n 𖥔 الحظر -> '..BanGroup..'\n 𖥔 الكتم -> '..SilentGroup..'\n 𖥔 التقييد -> '..Restricted..'*',"md",true)  
+send(msg_chat_id,msg_id,"\n* 𖥔 معلومات الكشف \n  ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～ "..'\n 𖥔 الحظر العام -> '..BanAll..'\n 𖥔 الحظر -> '..BanGroup..'\n 𖥔 الكتم -> '..SilentGroup..'\n 𖥔 التقييد -> '..Restricted..'*',"md",true)  
 end
 if text == 'رفع القيود' and msg.reply_to_message_id ~= 0 then
 local Message_Reply = bot.getMessage(msg.chat_id, msg.reply_to_message_id)
@@ -26517,7 +26518,7 @@ data = {
 },
 }
 }
-bot.sendText(Sudo_Id,0,'*\n𖥔 مرحبا سيدي المطور \nشخص ما يحتاج مساعدتك\n━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━\n𖥔 اسمه ->* '..klajq..' \n*𖥔 ايديه -> '..msg.sender_id.user_id..'\n𖥔 يوزره -> @'..basgk..'\n𖥔 الوقت -> '..os.date("%I:%M %p")..'\n𖥔 التاريخ -> '..os.date("%Y/%m/%d")..'*',"md",false, false, false, false, reply_markup)
+bot.sendText(Sudo_Id,0,'*\n𖥔 مرحبا سيدي المطور \nشخص ما يحتاج مساعدتك\n ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～\n𖥔 اسمه ->* '..klajq..' \n*𖥔 ايديه -> '..msg.sender_id.user_id..'\n𖥔 يوزره -> @'..basgk..'\n𖥔 الوقت -> '..os.date("%I:%M %p")..'\n𖥔 التاريخ -> '..os.date("%Y/%m/%d")..'*',"md",false, false, false, false, reply_markup)
 end
 ---استبدال كلمه--
 if text == "استبدال كلمه" then
@@ -26546,7 +26547,7 @@ local list = Redis:smembers(Saidi.."Words:r")
 if #list == 0 then
 return send(msg.chat_id,msg.id," 𖥔 لا توجد كلمات مستبدله")
 end
-local txx = " قائمه الكلمات المستبدله \n━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━"
+local txx = " قائمه الكلمات المستبدله \n ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～"
 for k,v in pairs(list) do 
 cmdd = Redis:get(Saidi.."Word:Replace"..v)
 txx = txx..k.." -> "..v.." 𖥔 "..cmdd.."\n"
@@ -26592,7 +26593,7 @@ local zwgat_list = Redis:smembers(Saidi..msg_chat_id.."zwgat:")
 if #zwgat_list == 0 then 
 return send(msg_chat_id,msg_id,' 𖥔 لايوجد زوجات',"md",true) 
 end 
-local zwga_list = " 𖥔 عدد الزوجات -> "..#zwgat_list.."\n 𖥔 الزوجات :\n ━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━ \n"
+local zwga_list = " 𖥔 عدد الزوجات -> "..#zwgat_list.."\n 𖥔 الزوجات :\n  ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～ \n"
 for k, v in pairs(zwgat_list) do
 local UserInfo = bot.getUser(v)
 local zwga_name = FlterBio(UserInfo.first_name)
@@ -26636,7 +26637,7 @@ local mutlqat_list = Redis:smembers(Saidi..msg_chat_id.."mutlqat:")
 if #mutlqat_list == 0 then 
 return send(msg_chat_id,msg_id,' 𖥔 لايوجد مطلقات',"md",true) 
 end 
-local mutlqa_list = " 𖥔 عدد المطلقات -> "..#mutlqat_list.."\n 𖥔 المطلقات :\n ━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━ \n"
+local mutlqa_list = " 𖥔 عدد المطلقات -> "..#mutlqat_list.."\n 𖥔 المطلقات :\n  ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～ \n"
 for k, v in pairs(mutlqat_list) do
 local UserInfo = bot.getUser(v)
 local mutlqa_name = FlterBio(UserInfo.first_name)
@@ -26689,7 +26690,7 @@ local heart_list = Redis:smembers(Saidi..msg_chat_id..msg.sender_id.user_id.."my
 if #heart_list == 0 then
 return send(msg_chat_id,msg_id,"قلبك فاضي محدش فيه","md")
 elseif #heart_list > 0 then
-your_heart = "الناس الي فقلبك \n ━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━ \n"
+your_heart = "الناس الي فقلبك \n  ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～ \n"
 for k,v in pairs(heart_list) do
 local user_info = bot.getUser(v)
 local name = user_info.first_name
@@ -26722,7 +26723,7 @@ end
 Redis:del(Saidi..'zwgnyy'..msg.chat_id)
 send(msg_chat_id,msg_id,'\n 𖥔 تم تفعيل امر جوزني')
 end
-local nnbot = (Redis:get(Saidi.."Name:Bot") or "كينج")
+local nnbot = (Redis:get(Saidi.."Name:Bot") or " ميدو")
 if text == "جوزني" or text == "زوجني" or text == nnbot.." زوجني" or text == nnbot.." جوزني" or text == "جوزوني" or text == "زوجوني"  then
 if not Redis:get(Saidi..'zwgnyy'..msg.chat_id) then 
 local Info_Chats = bot.getSupergroupFullInfo(msg_chat_id)
@@ -26838,7 +26839,7 @@ Redis:del(Saidi..msg_chat_id..msg.sender_id.user_id.."mtzwga:")
 return send(msg_chat_id,msg_id,"*تم طلاقكم ودا الشطان 👻😹*","md")
 end
 end
-local nnbot = (Redis:get(Saidi.."Name:Bot") or "كينج")
+local nnbot = (Redis:get(Saidi.."Name:Bot") or " ميدو")
 if text == "بوت طلقني" or text == "طلكني" or text == 'بوت طلكني' or text == nnbot.." طلقني" or text == nnbot.." طلكني" then
 if not Redis:get(Saidi..msg_chat_id..msg.sender_id.user_id.."mtzwga:") then 
 return send(msg_chat_id,msg_id,"انت لا متزوج ولا متصخم  علمود اطلقك","md")
@@ -27010,7 +27011,7 @@ local chinfo = Redis:get(Saidi.."ch:admin")
 local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = 'اضغط للاشتراك', url = chinfo}, },}}
 return send(msg.chat_id,msg.id,'*\n 𖥔 عليك الاشتراك في قناة البوت لاستخذام الاوامر*',"md",false, false, false, false, reply_markup)
 end
-local t = "* 𖥔 اليك قسم الالعاب من سورس كينج"
+local t = "* 𖥔 اليك قسم الالعاب من سورس  ميدو"
 local m = "https://t.me/ugfdu/2"
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -27024,7 +27025,7 @@ keyboard.inline_keyboard = {
 {text = '𖥔 اوامر لعبة البنك 𖥔', callback_data=msg.sender_id.user_id.."/bank"},
 },
 {
-{text  = '• قناة السورس •', url = "t.me/VC_NE"}, 
+{text  = '• قناة السورس •', url = "t.me/TGe_R"}, 
 },
 }
 local rep = msg.id/2097152/0.5
@@ -27098,20 +27099,20 @@ Redis:del(Saidi.."Rd:Manager:inline:text"..text..msg_chat_id)
 Redis:del(Saidi.."Rd:Manager:inline:link"..text..msg_chat_id)
 Redis:sadd(Saidi.."List:Manager:inline"..msg_chat_id.."", text)
 send(msg_chat_id,msg_id,[[
-*━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+* ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
 , يمكنك الان ارسل لي الرد للضافه ،
 , ملصق ، متحركه ، صوره ،
 , فيديو ، بصمه الفيديو ،
 , بصمه ، صوت ، رساله ،
 , يمكنك اضافة الى النص ،
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━*
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～*
 `#username` *-> معرف المستخدم*
  `#msgs` *-> عدد الرسائل*
  `#name` *-> اسم المستخدم*
  `#id` *-> ايدي المستخدم*
  `#stast`* -> رتبة المستخدم*
  `#edit` *-> عدد التعديلات*
-*━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━*
+* ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～*
 ]],"md",true)
 return false
 end
@@ -27293,7 +27294,7 @@ local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = Redis:get(
 return send(msg.chat_id,msg.id,'*\n 𖥔 عليك الاشتراك في قناة البوت لأستخدام الاوامر*',"md",false, false, false, false, reply_markup)
 end
 local list = Redis:smembers(Saidi.."List:Manager:inline"..msg_chat_id.."")
-text = " 𖥔 قائمه الردود الانلاين \n ━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━ \n"
+text = " 𖥔 قائمه الردود الانلاين \n  ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～ \n"
 for k,v in pairs(list) do
 if Redis:get(Saidi.."Add:Rd:Manager:Gif:inline"..v..msg_chat_id) then
 db = "متحركه 𖥔"
@@ -27457,20 +27458,20 @@ Redis:del(Saidi.."Rd:Manager:inline3am:text"..text)
 Redis:del(Saidi.."Rd:Manager:inline3am:link"..text)
 Redis:sadd(Saidi.."List:Manager:inline3am", text)
 send(msg_chat_id,msg_id,[[
-*━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+* ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
 , يمكنك الان ارسل لي الرد للضافه ،
 , ملصق ، متحركه ، صوره ،
 , فيديو ، بصمه الفيديو ،
 , بصمه ، صوت ، رساله ،
 , يمكنك اضافة الى النص ،
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━*
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～*
 `#username` *-> معرف المستخدم*
  `#msgs` *-> عدد الرسائل*
  `#name` *-> اسم المستخدم*
  `#id` *-> ايدي المستخدم*
  `#stast`* -> رتبة المستخدم*
  `#edit` *-> عدد التعديلات*
-*━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━*
+* ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～*
 ]],"md",true)
 return false
 end
@@ -27591,7 +27592,7 @@ local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = Redis:get(
 return send(msg.chat_id,msg.id,'*\n 𖥔 عليك الاشتراك في قناة البوت لأستخدام الاوامر*',"md",false, false, false, false, reply_markup)
 end
 local list = Redis:smembers(Saidi.."List:Manager:inline3am")
-text = " 𖥔 قائمه الردود الانلاين \n ━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━ \n"
+text = " 𖥔 قائمه الردود الانلاين \n  ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～ \n"
 for k,v in pairs(list) do
 if Redis:get(Saidi.."Add:Rd:Manager:Gif:inline3am"..v) then
 db = "متحركه 𖥔"
@@ -27608,7 +27609,7 @@ db = "فيديو 𖥔"
 elseif Redis:get(Saidi.."Add:Rd:Manager:File:inline3am"..v) then
 db = "ملف 𖥔"
 elseif Redis:get(Saidi.."Add:Rd:Manager:Audio:inline3am"..v) then
-db = "اغنيه 𖥔"
+db = "اغنيه ??"
 elseif Redis:get(Saidi.."Add:Rd:Manager:video_note:inline3am"..v) then
 db = "بصمه فيديو 𖥔"
 end
@@ -27668,20 +27669,20 @@ Redis:set(Saidi.."Set:Rd:mz"..msg.sender_id.user_id..":"..msg_chat_id, "true1")
 Redis:set(Saidi.."Text:Sudo:Bot"..msg.sender_id.user_id..":"..msg_chat_id, text)
 Redis:sadd(Saidi.."List:Rd:Sudo:mz", text)
 send(msg_chat_id,msg_id,[[
-*━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+* ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
 , يمكنك الان ارسل لي الرد للضافه ،
 , ملصق ، متحركه ، صوره ،
 , فيديو ، بصمه الفيديو ،
 , بصمه ، صوت ، رساله ،
 , يمكنك اضافة الى النص ،
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━*
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～*
 `#username` *-> معرف المستخدم*
  `#msgs` *-> عدد الرسائل*
  `#name` *-> اسم المستخدم*
  `#id` *-> ايدي المستخدم*
  `#stast`* -> رتبة المستخدم*
  `#edit` *-> عدد التعديلات*
-*━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━*
+* ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～*
 ]],"md",true)  
 return false
 end
@@ -27852,7 +27853,7 @@ local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = Redis:get(
 return send(msg.chat_id,msg.id,'*\n 𖥔 عليك الاشتراك في قناة البوت لأستخدام الاوامر*',"md",false, false, false, false, reply_markup)
 end
 local list = Redis:smembers(Saidi.."List:Rd:Sudo:mz")
-text = "\n 𖥔 قائمة الردود المميزه \n ━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━ \n"
+text = "\n 𖥔 قائمة الردود المميزه \n  ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～ \n"
 for k,v in pairs(list) do
 if Redis:get(Saidi.."Add:Rd:Sudo:mz:Gif"..v) then
 db = "متحركه 𖥔"
@@ -27932,7 +27933,7 @@ link = info.link
 os.execute("wget -O "..id..".mp3 "..link)
 bot.sendText(msg_chat_id,msg_id,"جاري الرفع","md",true) 
 os.execute("wget -O "..id..".png "..photo)
-bot.sendAudio(msg_chat_id, msg_id, "./"..id..".mp3", '['..title..']'..'('..url..')', 'md', false, title, "@VC_NE", "./"..id..".png")
+bot.sendAudio(msg_chat_id, msg_id, "./"..id..".mp3", '['..title..']'..'('..url..')', 'md', false, title, "@TGe_R", "./"..id..".png")
 end
 ---زخرفة ----
 if Redis:get(Saidi.."zhrfa"..msg.sender_id.user_id) == "sendzh" then
@@ -27950,7 +27951,7 @@ end
 if Redis:get(Saidi.."jabwa"..msg.sender_id.user_id) == "jeka" then
 zh = https.request('https://sofiplusahmed.ml/api/zkrfa.php?text='..URL.escape(text)..'')
 zx = JSON.decode(zh)
-t = "\n* 𖥔 قائمه الزخرفه ⇧⇩*\n*━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━*\n* أضغط علي الاسم لا يتم النسخ 𖥔 *\n"
+t = "\n* 𖥔 قائمه الزخرفه ⇧⇩*\n* ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～*\n* أضغط علي الاسم لا يتم النسخ 𖥔 *\n"
 i = 0
 for k,v in pairs(zx.ok) do
 i = i + 1
@@ -27983,7 +27984,7 @@ data = {
 {text = '0', data = msg.sender_id.user_id..'calc&0'},{text = '.', data = msg.sender_id.user_id..'calc&.'},{text = '+', data = msg.sender_id.user_id..'calc&+'},{text = '=', data = msg.sender_id.user_id..'equal'},
 },
 {
-{text  = '• قناة السورس •', url = "t.me/VC_NE"}, 
+{text  = '• قناة السورس •', url = "t.me/TGe_R"}, 
 },
 }
 }
@@ -28005,7 +28006,7 @@ local json = JSON.decode(url)
 if url == "null" or #json <= 1 then
 return send(msg.chat_id,msg.id,' 𖥔 لم استطيع العثور علي نتيجه في google play ')
 end
-local datar = {data = {{text = "• قناة السورس •" , url = "https://t.me/VC_NE"}}}
+local datar = {data = {{text = "• قناة السورس •" , url = "https://t.me/TGe_R"}}}
 if #json < 5 then
 for i = 1,#json do
 title = json[i].title
@@ -28396,7 +28397,7 @@ return bot.sendText(msg.chat_id,msg.id,'*\n 𖥔 عليك الاشتراك في 
 end
 local list = Redis:smembers(Saidi.."mero:kink"..msg.chat_id)
 if #list == 0 then return bot.sendText(msg_chat_id,msg_id, " 𖥔 لا يوجد ملوك") end
-t = "\n 𖥔 قائمة الملوك\n━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━\n"
+t = "\n 𖥔 قائمة الملوك\n ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～\n"
 for k,v in pairs(list) do
 local UserInfo = bot.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -28420,7 +28421,7 @@ return bot.sendText(msg.chat_id,msg.id,'*\n 𖥔 عليك الاشتراك في 
 end
 local list = Redis:smembers(Saidi.."mero:bkra"..msg.chat_id)
 if #list == 0 then return bot.sendText(msg_chat_id,msg_id, " 𖥔 لا يوجد بقرات") end
-t = "\n 𖥔 قائمة البقرات\n━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━\n"
+t = "\n 𖥔 قائمة البقرات\n ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～\n"
 for k,v in pairs(list) do
 local UserInfo = bot.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -28444,7 +28445,7 @@ return bot.sendText(msg.chat_id,msg.id,'*\n 𖥔 عليك الاشتراك في 
 end
 local list = Redis:smembers(Saidi.."mero:Quean"..msg.chat_id)
 if #list == 0 then return bot.sendText(msg_chat_id,msg_id, " 𖥔 لا يوجد ملكات") end
-t = "\n 𖥔 قائمة الملكات\n━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━\n"
+t = "\n 𖥔 قائمة الملكات\n ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～\n"
 for k,v in pairs(list) do
 local UserInfo = bot.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -28510,7 +28511,7 @@ return bot.sendText(msg.chat_id,msg.id,'*\n 𖥔 عليك الاشتراك في 
 end
 local list = Redis:smembers(Saidi.."mero:tahaath"..msg.chat_id)
 if #list == 0 then return bot.sendText(msg_chat_id,msg_id, " 𖥔 لا يوجد ثولان") end
-t = "\n 𖥔 قائمة الثولان\n━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━\n"
+t = "\n 𖥔 قائمة الثولان\n ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～\n"
 for k,v in pairs(list) do
 local UserInfo = bot.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -28548,7 +28549,7 @@ return bot.sendText(msg.chat_id,msg.id,'*\n 𖥔 عليك الاشتراك في 
 end
 local list = Redis:smembers(Saidi.."mero:tele"..msg.chat_id)
 if #list == 0 then return bot.sendText(msg_chat_id,msg_id, " 𖥔 لا يوجد طليان") end
-t = "\n 𖥔 قائمة الطليان\n━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━\n"
+t = "\n 𖥔 قائمة الطليان\n ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～\n"
 for k,v in pairs(list) do
 local UserInfo = bot.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -28572,7 +28573,7 @@ return bot.sendText(msg.chat_id,msg.id,'*\n 𖥔 عليك الاشتراك في 
 end
 local list = Redis:smembers(Saidi.."mero:taha1"..msg.chat_id)
 if #list == 0 then return bot.sendText(msg_chat_id,msg_id, " 𖥔 لا يوجد مطلقين") end
-t = "\n 𖥔 قائمة الطلاك\n━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━\n"
+t = "\n 𖥔 قائمة الطلاك\n ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～\n"
 for k,v in pairs(list) do
 local UserInfo = bot.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -28596,7 +28597,7 @@ return bot.sendText(msg.chat_id,msg.id,'*\n 𖥔 عليك الاشتراك في 
 end
 local list = Redis:smembers(Saidi.."mero:klp"..msg.chat_id)
 if #list == 0 then return bot.sendText(msg_chat_id,msg_id, " 𖥔 لا يوجد جلاب") end
-t = "\n 𖥔 قائمة الكلاب\n━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━\n"
+t = "\n 𖥔 قائمة الكلاب\n ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～\n"
 for k,v in pairs(list) do
 local UserInfo = bot.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -28620,7 +28621,7 @@ return bot.sendText(msg.chat_id,msg.id,'*\n 𖥔 عليك الاشتراك في 
 end
 local list = Redis:smembers(Saidi.."mero:donke"..msg.chat_id)
 if #list == 0 then return bot.sendText(msg_chat_id,msg_id, " 𖥔 لا يوجد مطايه") end
-t = "\n 𖥔 قائمة المطايه\n━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━\n"
+t = "\n 𖥔 قائمة المطايه\n ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～\n"
 for k,v in pairs(list) do
 local UserInfo = bot.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -28644,7 +28645,7 @@ return bot.sendText(msg.chat_id,msg.id,'*\n 𖥔 عليك الاشتراك في 
 end
 local list = Redis:smembers(Saidi.."mero:zahf"..msg.chat_id)
 if #list == 0 then return bot.sendText(msg_chat_id,msg_id, " 𖥔 لا يوجد زواحف") end
-t = "\n 𖥔 قائمة الزواحف\n━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━\n"
+t = "\n 𖥔 قائمة الزواحف\n ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～\n"
 for k,v in pairs(list) do
 local UserInfo = bot.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -28668,7 +28669,7 @@ return bot.sendText(msg.chat_id,msg.id,'*\n 𖥔 عليك الاشتراك في 
 end
 local list = Redis:smembers(Saidi.."mero:sakl"..msg.chat_id)
 if #list == 0 then return bot.sendText(msg_chat_id,msg_id, " 𖥔 لا يوجد صخول") end
-t = "\n 𖥔 قائمة الصخول\n━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━\n"
+t = "\n 𖥔 قائمة الصخول\n ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～\n"
 for k,v in pairs(list) do
 local UserInfo = bot.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -28692,7 +28693,7 @@ return bot.sendText(msg.chat_id,msg.id,'*\n 𖥔 عليك الاشتراك في 
 end
 local list = Redis:smembers(Saidi.."mero:klpe"..msg.chat_id)
 if #list == 0 then return bot.sendText(msg_chat_id,msg_id, " 𖥔 لا يوجد اعضاء بكلبي") end
-t = "\n 𖥔 قائمة كلبي\n━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━\n"
+t = "\n 𖥔 قائمة كلبي\n ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～\n"
 for k,v in pairs(list) do
 local UserInfo = bot.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -28716,7 +28717,7 @@ return bot.sendText(msg.chat_id,msg.id,'*\n 𖥔 عليك الاشتراك في 
 end
 local list = Redis:smembers(Saidi.."mero:tagge"..msg.chat_id)
 if #list == 0 then return bot.sendText(msg_chat_id,msg_id, " 𖥔 لا يوجد قائمه تاج") end
-t = "\n 𖥔 قائمة التاج\n━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━\n"
+t = "\n 𖥔 قائمة التاج\n ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～\n"
 for k,v in pairs(list) do
 local UserInfo = bot.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -28740,7 +28741,7 @@ return bot.sendText(msg.chat_id,msg.id,'*\n 𖥔 عليك الاشتراك في 
 end
 local list = Redis:smembers(Saidi.."mero:mrtee"..msg.chat_id)
 if #list == 0 then return bot.sendText(msg_chat_id,msg_id, " 𖥔 لا يوجد زوجات") end
-t = "\n 𖥔 قائمة الزوجات\n━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━\n"
+t = "\n 𖥔 قائمة الزوجات\n ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～\n"
 for k,v in pairs(list) do
 local UserInfo = bot.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -28764,7 +28765,7 @@ return bot.sendText(msg.chat_id,msg.id,'*\n 𖥔 عليك الاشتراك في 
 end
 local list = Redis:smembers(Saidi.."mero:loke"..msg.chat_id)
 if #list == 0 then return bot.sendText(msg_chat_id,msg_id, " 𖥔 لا يوجد لوكيه") end
-t = "\n 𖥔 قائمة اللوكيه\n━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━\n"
+t = "\n 𖥔 قائمة اللوكيه\n ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～\n"
 for k,v in pairs(list) do
 local UserInfo = bot.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -28788,7 +28789,7 @@ return bot.sendText(msg.chat_id,msg.id,'*\n 𖥔 عليك الاشتراك في 
 end
 local list = Redis:smembers(Saidi.."mero:stope"..msg.chat_id)
 if #list == 0 then return bot.sendText(msg_chat_id,msg_id, " 𖥔 لا يوجد اغبياء") end
-t = "\n 𖥔 قائمة الاغبياء\n━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━\n"
+t = "\n 𖥔 قائمة الاغبياء\n ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～\n"
 for k,v in pairs(list) do
 local UserInfo = bot.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -29048,13 +29049,13 @@ data = {
 {text = 'القفل والفتح ⚙️', data = msg.sender_id.user_id..'/NoNextSeting'}, {text = 'التعطيل والتفعيل 📢', data = msg.sender_id.user_id..'/listallAddorrem'}, 
 },
 {
-{text = '• 𝑺𝒐𝑼𝒓𝑪𝒆 𝑲𝒊𝒏𝑮 •', url = 't.me/VC_NE '}, 
+{text = '• 𝙎𝙤𝙐𝙧𝘾𝙚 𝙏𝙞𝙂𝙚𝙍 •', url = 't.me/TGe_R '}, 
 },
 }
 }
 return send(msg_chat_id,msg_id, [[*
 𖥔 اوامــر البــوت الرئيسيـة ⇧⇩
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
 𖥔 { م1 } -> اوامر الحمايه
 𖥔 { م2 } -> اوامر الادمنيه
 𖥔 { م3 } -> اوامر المدراء
@@ -29080,13 +29081,13 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '• 𝑺𝒐𝑼𝒓𝑪𝒆 𝑲𝒊𝒏𝑮 •', url = 't.me/VC_NE '}, 
+{text = '• 𝙎𝙤𝙐𝙧𝘾𝙚 𝙏𝙞𝙂𝙚𝙍 •', url = 't.me/TGe_R '}, 
 },
 }
 }
 local TextHelp = [[*
  𖥔 اوامر المطور الاساسي ⇧⇩
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 تفعيل  ->  تعطيل
  𖥔 رفع  تنزيل -> مطور اساسي
  𖥔 المطورين الاساسيين
@@ -29097,7 +29098,7 @@ local TextHelp = [[*
  𖥔 رفع  تنزيل -> مطور
  𖥔 المطورين -> مسح المطورين
  𖥔 تغيير المطور الاساسي
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 تفعيل الوضع المدفوع + الايدي 
  𖥔 الغاء الوضع المدفوع + الايدي
  𖥔 حظر جروب + { الايدي }
@@ -29109,13 +29110,13 @@ local TextHelp = [[*
  𖥔 تفعيل تعطيل الاشتراك الاجباري للجروب
  𖥔 الاشتراك الاجباري للجروب
  𖥔 تعيين عدد الاعضاء + {العدد}
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 حظر عام ، الغاء العام
  𖥔 قائمه العام ، مسح قائمه العام
  𖥔 كتم عام ، الغاء كتم عام
  𖥔 المكتومين عام
  𖥔 مسح المكتومين عام
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 تغيير ، مسح ->{ اسم البوت }
  𖥔 ضع صوره للترحيب 
  𖥔 الاحصائيات
@@ -29123,15 +29124,15 @@ local TextHelp = [[*
  𖥔 اذاعه ، اذاعه خاص
  𖥔 اذاعه بالتوجيه ، اذاعه بالتثبيت
  𖥔 اذاعه خاص بالتوجيه
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 تفعيل تعطيل جلب النسخه التلقائيه
  𖥔 جلب نسخه احتياطيه
  𖥔 رفع النسخه الاحتياطيه بالرد
- 𖥔 رفع نسخه  كينج  بالرد
+ 𖥔 رفع نسخه   ميدو  بالرد
  𖥔 جلب نسخه الردود 
  𖥔 رفع نسخه الردود بالرد
  𖥔 معلومات التنصيب
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 تعيين ، مسح -> { الايدي عام }
  𖥔 اضف ، مسح -> {رد عام}
  𖥔 اضف ، مسح -> {رد عام متعدد}
@@ -29144,7 +29145,7 @@ local TextHelp = [[*
  𖥔 منع عام ، الغاء منع عام
  𖥔 قائمه المنع عام
  𖥔 مسح قائمه المنع عام
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 اضف مسح -> سؤال
  𖥔 الاسئله المضافه
  𖥔 مسح الاسئله المضافه
@@ -29158,18 +29159,18 @@ local TextHelp = [[*
  𖥔 مسح موسيقى بالرد 
  𖥔 قائمة الموسيقى 
  𖥔 مسح قائمه الموسيقى 
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 تفعيل ، تعطيل -> الاوامر التاليه↓
  𖥔 البوت الخدمي ، المغادرة ، الاذاعه
  𖥔 التواصل ، الاحصائيات
  𖥔 ملف -> { اسم الملف }
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 مسح جميع الملفات 
  𖥔 المتجر ، الملفات
  𖥔 تحديث ، تحديث السورس
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 اوامر المطور في البوت 🌀
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 رفع، تنزيل -> { مالك }
  𖥔 المالكين ، مسح المالكين
  𖥔 تنزيل جميع الرتب
@@ -29192,13 +29193,13 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '• 𝑺𝒐𝑼𝒓𝑪𝒆 𝑲𝒊𝒏𝑮 •', url = 't.me/VC_NE '}, 
+{text = '• 𝙎𝙤𝙐𝙧𝘾𝙚 𝙏𝙞𝙂𝙚𝙍 •', url = 't.me/TGe_R '}, 
 },
 }
 }
 local TextHelp = [[*
  𖥔 اوامـر الـتـسـلـيـه كـالاتـي ⇧⇩
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 الامر ، تفعيل ، تعطيل  -> { الامر }
  𖥔 غنيلي ، ريمكس ، اغنيه ، شعر
  𖥔 صوره ،  متحركه
@@ -29206,7 +29207,7 @@ local TextHelp = [[*
  𖥔 مسلسل ، فلم
  𖥔 حساب العمر( احسب + تاريخ الميلاد)
  𖥔 معنى اسم + الاسم
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
 *]]
 return send(msg_chat_id,msg_id,TextHelp,"md",false, false, false, false, reply_markup)
 elseif text == 'م1' then
@@ -29225,29 +29226,29 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '• 𝑺𝒐𝑼𝒓𝑪𝒆 𝑲𝒊𝒏𝑮 •', url = 't.me/VC_NE '}, 
+{text = '• 𝙎𝙤𝙐𝙧𝘾𝙚 𝙏𝙞𝙂𝙚𝙍 •', url = 't.me/TGe_R '}, 
 },
 }
 }
 local TextHelp = [[*
  𖥔 اوامـر الـحـمـايـه كـالاتـي ⇧⇩
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 قفل ، فتح -> الامر 
  𖥔 تستطيع قفل حمايه كما يلي ...
  𖥔 -> { بالتقييد ، بالطرد ، بالكتم }
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 الكل ~ الدخول
  𖥔 الروابط ~ المعرف
  𖥔 التاك ~ الشارحه
  𖥔 التعديل ~ تعديل الميديا
  𖥔 المتحركه ~ الملفات
  𖥔 الصور ~ الفيديو 
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 الماركداون ~ البوتات
  𖥔 التكرار ~ الكلايش
  𖥔 السيلفي ~ الملصقات
  𖥔 الانلاين ~  الدردشه
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 التوجيه ~ الاغاني
  𖥔 الصوت ~ الجهات
  𖥔 الاشعارات ~ التثبيت 
@@ -29256,7 +29257,7 @@ local TextHelp = [[*
  𖥔 السب ~ الفارسيه
  𖥔 الإنكليزيه
  𖥔 الشتايم ~ الاباحي
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
 *]]
 return send(msg_chat_id,msg_id,TextHelp,"md",false, false, false, false, reply_markup)
 end
@@ -29276,51 +29277,51 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '• 𝑺𝒐𝑼𝒓𝑪𝒆 𝑲𝒊𝒏𝑮 •', url = 't.me/VC_NE '}, 
+{text = '• 𝙎𝙤𝙐𝙧𝘾𝙚 𝙏𝙞𝙂𝙚𝙍 •', url = 't.me/TGe_R '}, 
 },
 }
 }
 local TextHelp = [[*
  𖥔 اوامـر ادمـنـيـة الـجـروب ⇧⇩
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 رفع، تنزيل -> مميز
  𖥔 المميزين -> مسح المميزين 
  𖥔 رفع الادمنيه
  𖥔 تاك ، تاك للكل ، الجروب
  𖥔 منع ، الغاء منع
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 الاوامر التالية -> {بالرد ، بالمعرف}
  𖥔 حظر ، طرد -> الغاء حظر 
  𖥔 كتم -> الغاء كتم
  𖥔 تقييد -> الغاء تقييد
  𖥔 كشف ، رفع -> القيود
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 عرض القوائم كما يلي ...
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 المنشئين الاساسيين ، المنشئين 
  𖥔 المدراء ، الادمنيه ، المميزين
  𖥔 المشرفين ، المكتومين
  𖥔 قائمه المنع
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 تثبيت ، الغاء تثبيت
  𖥔 الرابط ، الاعدادات ، الحمايه
  𖥔 الترحيب ، القوانين
  𖥔 ضع رتبه  -> { اسم الرتبه } 
  𖥔 تحكم -> {بالرد ، بالمعرف}
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 تفعيل ، تعطيل -> الاوامر التاليه :
  𖥔 الترحيب ، الرابط 
  𖥔 ردود البوت ، الالعاب
  𖥔 اطردني ، التسليه
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 مسح -> الاوامر التاليه
  𖥔 القوائم ، قائمه المنع ، المميزين
  𖥔 الرابط ، القوانين ، الصوره
  𖥔 مسح -> { عدد }
  𖥔 مسح -> { بالرد }
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 اوامر الاعضاء والادمنيه 
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 ايدي ، ايدي بالرد ، رسائلي
  𖥔 تفاعلي ، لقبي ، بايو ، ترند
  𖥔 جهاتي ، تعديلاتي ، نقاطي
@@ -29356,13 +29357,13 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '• 𝑺𝒐𝑼𝒓𝑪𝒆 𝑲𝒊𝒏𝑮 •', url = 't.me/VC_NE '}, 
+{text = '• 𝙎𝙤𝙐𝙧𝘾𝙚 𝙏𝙞𝙂𝙚𝙍 •', url = 't.me/TGe_R '}, 
 },
 }
 }
 local TextHelp = [[*
  𖥔 اوامـر الـمـدراء فـي الـجـروب ⇧⇩
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 رفع ، تنزيل -> ادمن
  𖥔 الادمنيه -> مسح الادمنيه
  𖥔 تنزيل الكل -> {بالرد ، بالمعرف}
@@ -29371,24 +29372,24 @@ local TextHelp = [[*
  𖥔 فحص -> البوت
  𖥔 طرد -> المحذوفين 
  𖥔 قفل فتح -> ارسال القناة
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 لتغيير رد الرتب في البوت
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 تغيير رد -> {اسم الرتبه والنص} 
  𖥔 المطور ، المالك ، المنشئ الاساسي
  𖥔 المنشئ ، المدير ، الادمن
  𖥔 المميز ، العضو
  𖥔 مسح رد -> { اسم الرتبه }
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 وضع الرتب -> { بالرد ، بالمعرف}
  𖥔 ضع رتبه -> { اسم الرتبه }
  𖥔 مسح رتبه -> { بالرد ، بالمعرف}
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 وضع ، ضع -> الاوامر التاليه
  𖥔 اسم + اسم الجروب
  𖥔 رابط ، صوره
  𖥔 قوانين ، وصف ،الترحيب 
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 تفعيل ، تعطيل -> الاوامر التاليه :
  𖥔 الايدي ، الايدي بالصوره 
  𖥔 ايدي العضو ، البايو
@@ -29397,11 +29398,11 @@ local TextHelp = [[*
  𖥔 غنيلي ، الصيغ ، قول
  𖥔 تنبيه الاسماء ، الصوتيات 
  𖥔 الصوتيات العامه
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 مسح -> + { الامر } 
  𖥔 المحظورين ، المطرودين
  𖥔 المكتومين -> المقيدين
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 ترتيب الاوامر -> استعاده الاوامر
  𖥔 اضف ، مسح -> { رد }
  𖥔 الردود ، مسح الردود
@@ -29432,13 +29433,13 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '• 𝑺𝒐𝑼𝒓𝑪𝒆 𝑲𝒊𝒏𝑮 •', url = 't.me/VC_NE '}, 
+{text = '• 𝙎𝙤𝙐𝙧𝘾𝙚 𝙏𝙞𝙂𝙚𝙍 •', url = 't.me/TGe_R '}, 
 },
 }
 }
 local TextHelp = [[*
  𖥔 اوامـر الـمـنشـئ الاسـاسـي ⇧⇩
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 رفع ، تنزيل ->{ منشئ }
  𖥔 المنشئين ، مسح المنشئين
  𖥔 رفع ، تنزيل ->{ مشرف }
@@ -29446,9 +29447,9 @@ local TextHelp = [[*
  𖥔 صلاحيات الجروب
  𖥔 مسح نقاطه ، رسائله -> {بالرد} 
  𖥔 تفعيل ، تعطيل -> منع التصفيه
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 اوامر المنشئ الجروب
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 رفع ، تنزيل -> { مدير }
  𖥔 المدراء ، مسح المدراء
  𖥔 تغيير ، مسح ->{ الايدي }
@@ -29478,19 +29479,19 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '• 𝑺𝒐𝑼𝒓𝑪𝒆 𝑲𝒊𝒏𝑮 •', url = 't.me/VC_NE '}, 
+{text = '• 𝙎𝙤𝙐𝙧𝘾𝙚 𝙏𝙞𝙂𝙚𝙍 •', url = 't.me/TGe_R '}, 
 },
 }
 }
 local TextHelp = [[*
  𖥔 اوامــر مـالك الجـروب ⇧⇩
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 رفع ، تنزيل ->{ مالك }
  𖥔 المالكين ، مسح المالكين
  𖥔 تنزيل جميع الرتب
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 اوامر المالكين 
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 رفع ، تنزيل -> { منشئ اساسي }
  𖥔 المنشئين الاساسيين،
  𖥔 مسح المنشئين الاساسيين
@@ -29509,15 +29510,15 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '• 𝑺𝒐𝑼𝒓𝑪𝒆 𝑲𝒊𝒏𝑮 •', url = 't.me/VC_NE '}, 
+{text = '• 𝙎𝙤𝙐𝙧𝘾𝙚 𝙏𝙞𝙂𝙚𝙍 •', url = 't.me/TGe_R '}, 
 },
 }
 }
 local TextHelp = [[*
  𖥔 اوامـر الـتـسـلـيـه كـالاتـي ⇧⇩
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 رفع ، تنزيل -> الاوامر التاليه ↓
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 غبي 
  𖥔 مطي
  𖥔 اثول
@@ -29528,35 +29529,35 @@ local TextHelp = [[*
  𖥔 جلب
  𖥔 لوكي
  𖥔 زاحف
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 اوامر التاك 
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 قائمه التاج ~ المـلــوك
  𖥔 المـلـكات ~ الطامسين
  𖥔 الثولان ~  الجــلاب
  𖥔 المطايــه ~  الصخول
  𖥔 اللوكيــه ~  الاغبيـاء
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 اوامر الترفيه 
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 زخرفه + النص
- 𖥔 مثال زخرفه كينج
+ 𖥔 مثال زخرفه  ميدو
  𖥔 احسب + عمرك
  𖥔 مثال احسب 2001/8/5
  𖥔 معني + الاسم 
- 𖥔 مثال معني كينج
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ 𖥔 مثال معني  ميدو
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 نسبه الحب/ الكره
  𖥔 نسبه الرجوله/ الانوثه 
  𖥔 نسبه الذكـــــاء/ الغباء 
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 الاوامــر بالـــرد  ⇣
  𖥔 شنو رئيك بهذا
  𖥔 شنو رئيك بهاي
  𖥔 انطي هديه
  𖥔 بوســه ~  بوسـني
  𖥔 صيحـه ~  رزلـــه 
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 زواج ~ طلاك
 *]]
 return send(msg_chat_id,msg_id,TextHelp,"md",false, false, false, false, reply_markup)
@@ -29574,13 +29575,13 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '• قناة السورس •', url = "t.me/VC_NE"}, 
+{text = '• قناة السورس •', url = "t.me/TGe_R"}, 
 },
 }
 }
 local TextHelp = [[*
 𖥔 قائمــه العــاب البــوت ⇧⇩
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 لعبة المختلف -> المختلف
  𖥔 لعبة الامثله -> امثله
  𖥔 لعبة العكس -> العكس
@@ -29598,7 +29599,7 @@ local TextHelp = [[*
  𖥔 رياضيات -> مسائل رياضيه
  𖥔 انكليزي -> معاني الكلمات
  𖥔 كت تويت ،كت -> اسئله ترفيهيه
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 نقاطي -> لعرض عدد النقاط
  𖥔 بيع نقاطي + { العدد }
 لبيع كل نقطه مقابل {50} رساله
@@ -29647,7 +29648,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '• 𝑺𝒐𝑼𝒓𝑪𝒆 𝑲𝒊𝒏𝑮 •', url = 't.me/VC_NE'}, 
+{text = '• 𝙎𝙤𝙐𝙧𝘾𝙚 𝙏𝙞𝙂𝙚𝙍 •', url = 't.me/TGe_R'}, 
 },
 }
 }
@@ -30536,7 +30537,7 @@ local Name = '['..ban.first_name..'](tg://user?id='..ban.id..')' or 'لا يوج
 local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
-{{text = '• 𝑺𝒐𝑼𝒓𝑪𝒆 𝑲𝒊𝒏𝑮 •', url = 't.me/VC_NE'},},
+{{text = '• 𝙎𝙤𝙐𝙧𝘾𝙚 𝙏𝙞𝙂𝙚𝙍 •', url = 't.me/TGe_R'},},
 }
 }
 return send(msg_chat_id,msg_id,"*مرحبا ->* "..Name.." 👋\n* 𖥔 ارسل عدد اللاعبين للروليت*","md",false ,false ,false ,false ,reply_markup) 
@@ -30558,7 +30559,7 @@ return send(msg_chat_id,msg_id,' 𖥔 تم اختيار الشخص الاتي\n 
 end
 if text == 'الاعبين' then
 local list = Redis:smembers(Saidi..':List_Rolet:'..msg.chat_id) 
-local Text = '\n*━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━*\n' 
+local Text = '\n* ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～*\n' 
 if #list == 0 then 
 return send(msg_chat_id,msg_id, ' 𖥔 لا يوجد لاعبين هنا ' )
 end 
@@ -30947,7 +30948,7 @@ Redis:set(Saidi.."Get:Reides:Commands:Group"..msg_chat_id..":"..'تغ','تغيي
 Redis:set(Saidi.."Get:Reides:Commands:Group"..msg_chat_id..":"..'#','مسح قائمه العام')
 return send(msg_chat_id,msg_id,[[*
 𖥔 تم ترتيب الاوامر بالشكل التالي ⇧⇩
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
 𖥔 ايدي - ا .
 𖥔 رفع مميز - م .
 𖥔 رفع ادمن - اد .
@@ -30972,7 +30973,7 @@ return send(msg_chat_id,msg_id,[[*
 𖥔 معاني - مع.
 𖥔 تغيير الايدي - تغ .
 𖥔 مسح قائمه العام - # .
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
 *]],"md")
 end
 if text == 'استعاده الاوامر' then
@@ -31127,23 +31128,23 @@ end
 end
 end
 if text == 'السورس 𖥔' or text == 'يا سورس' or text == 'السورس' or text == 'source' then
- photo = "https://t.me/VC_NE/237"
+ photo = "https://t.me/TGe_R/237"
 local T =[[
-𖥔︙[𝑊𝐸𝐿𝐶𝑂𝑀𝐸 𝑇𝑂 𝑆𝑂𝑈𝑅𝐶𝐸 𝑲𝒊𝒏𝑮](t.me/VC_NE )
+𖥔︙[𝑊𝐸𝐿𝐶𝑂𝑀𝐸 𝑇𝑂 𝑆𝑂𝑈𝑅𝐶𝐸 𝑴𝑬𝑬𝑫𝑶](t.me/TGe_R )
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '• مبرمج السورس •', url = 't.me/TR_E2S_ON_MY_MOoN '},{text = '• مطور السورس •', url = 't.me/'..chdevolper..' '},
+{text = '• مبرمج السورس •', url = 't.me/TGe_R '},{text = '• مطور السورس •', url = 't.me/'..chdevolper..' '},
 },
 {
-{text = '• تنصيب بوت مدفوع •', url = 't.me/TR_E2S_ON_MY_MOoN'},
+{text = '• تنصيب بوت مدفوع •', url = 't.me/TGe_R'},
 },
 {
-{text = '• قناة التحديثات •', url = 't.me/VC_NE '},{text = '• قناة السورس •', url = 't.me/'..chsource..' '},
+{text = '• قناة التحديثات •', url = 't.me/TGe_R '},{text = '• قناة السورس •', url = 't.me/'..chsource..' '},
 },
 {
-{text = '• 𝑺𝒐𝑼𝒓𝑪𝒆 𝑲𝒊𝒏𝑮 •', url = 't.me/VC_NE '},
+{text = '• 𝙎𝙤𝙐𝙧𝘾𝙚 𝙏𝙞𝙂𝙚𝙍 •', url = 't.me/TGe_R '},
 },
 }
 local msgg = msg.id/2097152/0.5
@@ -31349,7 +31350,7 @@ if text == '/start' or text =='↫ رجـوع  •' then
 local photo = bot.getUserProfilePhotos(Saidi)
 local ban = bot.getUser(Saidi)
 local Jabwa = bot.getUser(Sudo_Id) 
-local Mostafa = (Redis:get(Saidi.."Name:Bot") or "كينج")
+local Mostafa = (Redis:get(Saidi.."Name:Bot") or " ميدو")
 local ban = bot.getUser(msg.sender_id.user_id)
 Participants = (Redis:scard(Saidi..'Num:User:Pv') or 0)
 Redis:sadd(Saidi..'Num:User:Pv',msg.sender_id.user_id)
@@ -31366,7 +31367,7 @@ else
 baniusername = 'لا يوجد'
 end
 local Usperos = ' '..Participants..' '
-local CmdStart = '*\n𖥔 أهلآ بك في بوت'..(Redis:get(Saidi.."Name:Bot") or "كينج")..
+local CmdStart = '*\n𖥔 أهلآ بك في بوت'..(Redis:get(Saidi.."Name:Bot") or " ميدو")..
 '\n⚙️╢• وظيفتي حماية المجموعات '..
 '\n✅╢• لتفعيل البوت عليك اتباع مايلي .'..
 '\n➕╢• أضِف البوت إلى مجموعتك '..
@@ -31383,7 +31384,7 @@ if photo.total_count > 0 then
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '• مطور البوت •', url = "https://t.me/"..Jabwa.username..""},{text = '• قناة السورس •', url = "https://t.me/VC_NE"},
+{text = '• مطور البوت •', url = "https://t.me/"..Jabwa.username..""},{text = '• قناة السورس •', url = "https://t.me/TGe_R"},
 },
 {
 {text = 'اضف البوت لمجموعتك ✅', url = 't.me/'..UserBot..'?startgroup=new'},
@@ -31424,7 +31425,7 @@ data = {
 },
 }
 }
-return bot.sendText(msg_chat_id,msg_id,'•مرحبا عزيزي المطور \n•انت المطور الاساسي هنا \n•اليك ازرار سورس كينج \n•تستطيع التحكم بكل الاوامر فقط اضغط على الامر الذي تريد تنفيذه', 'md', false, false, false, false, reply_markup)
+return bot.sendText(msg_chat_id,msg_id,'•مرحبا عزيزي المطور \n•انت المطور الاساسي هنا \n•اليك ازرار سورس  ميدو \n•تستطيع التحكم بكل الاوامر فقط اضغط على الامر الذي تريد تنفيذه', 'md', false, false, false, false, reply_markup)
 end
 end
 if text == "التفعيل والتعطيل •" and msg.Asasy then
@@ -31445,7 +31446,7 @@ data = {
 {
 {text = '↫ رجـوع•',type = 'text'},
 },}}
-return bot.sendText(msg_chat_id,msg_id,'•اهلا بك مجددا عزيزي المطور \n•اليك الازرار الخاصه ب التفعيل والتعطيل لسورس كينج فقط اضغط على الامر الذي تريد تنفيذه', 'md', false, false, false, false, reply_markup)
+return bot.sendText(msg_chat_id,msg_id,'•اهلا بك مجددا عزيزي المطور \n•اليك الازرار الخاصه ب التفعيل والتعطيل لسورس  ميدو فقط اضغط على الامر الذي تريد تنفيذه', 'md', false, false, false, false, reply_markup)
 end
 if text == "الاحصائيات •" and msg.Asasy then
 local reply_markup = bot.replyMarkup{type = 'keyboard',resize = true,is_personal = true,
@@ -31465,7 +31466,7 @@ data = {
 {
 {text = '↫ رجـوع•',type = 'text'},
 },}}
-return bot.sendText(msg_chat_id,msg_id,'𖥔اهلا بك مجددا عزيزي المطور \n•اليك الازرار الخاصه ب أحصائياتسورس كينج فقط اضغط على الامر الذي تريد تنفيذه', 'md', false, false, false, false, reply_markup)
+return bot.sendText(msg_chat_id,msg_id,'𖥔اهلا بك مجددا عزيزي المطور \n•اليك الازرار الخاصه ب أحصائياتسورس  ميدو فقط اضغط على الامر الذي تريد تنفيذه', 'md', false, false, false, false, reply_markup)
 end
 if text == "المطورين •" and msg.Asasy then
 local reply_markup = bot.replyMarkup{type = 'keyboard',resize = true,is_personal = true,
@@ -31491,7 +31492,7 @@ data = {
 {
 {text = '↫ رجـوع•',type = 'text'},
 },}}
-return bot.sendText(msg_chat_id,msg_id,'•اهلا بك مجددا عزيزي المطور \n•اليك الازرار الخاصه ب المطورين لسورس كينج فقط اضغط على الامر الذي تريد تنفيذه', 'md', false, false, false, false, reply_markup)
+return bot.sendText(msg_chat_id,msg_id,'•اهلا بك مجددا عزيزي المطور \n•اليك الازرار الخاصه ب المطورين لسورس  ميدو فقط اضغط على الامر الذي تريد تنفيذه', 'md', false, false, false, false, reply_markup)
 end
 if text == "الاذاعه •" and msg.Asasy then
 local reply_markup = bot.replyMarkup{type = 'keyboard',resize = true,is_personal = true,
@@ -31514,7 +31515,7 @@ data = {
 {
 {text = '↫ رجـوع•',type = 'text'},
 },}}
-return bot.sendText(msg_chat_id,msg_id,'•اهلا بك مجددا عزيزي المطور \n•اليك الازرار الخاصه بالاذاعه لسورس كينج فقط اضغط على الامر الذي تريد تنفيذه', 'md', false, false, false, false, reply_markup)
+return bot.sendText(msg_chat_id,msg_id,'•اهلا بك مجددا عزيزي المطور \n•اليك الازرار الخاصه بالاذاعه لسورس  ميدو فقط اضغط على الامر الذي تريد تنفيذه', 'md', false, false, false, false, reply_markup)
 end
 if text == 'الاشتراك الاجباري •' and msg.Asasy then
 local reply_markup = bot.replyMarkup{type = 'keyboard',resize = true,is_personal = true,
@@ -31531,7 +31532,7 @@ data = {
 {
 {text = '↫ رجـوع•',type = 'text'},
 },}}
-return bot.sendText(msg_chat_id,msg_id,'•اهلا بك مجددا عزيزي المطور \n•اليك الازرار الخاصه ب الاشتراك الاجباري لسورس كينج فقط اضغط على الامر الذي تريد تنفيذه', 'md', false, false, false, false, reply_markup)
+return bot.sendText(msg_chat_id,msg_id,'•اهلا بك مجددا عزيزي المطور \n•اليك الازرار الخاصه ب الاشتراك الاجباري لسورس  ميدو فقط اضغط على الامر الذي تريد تنفيذه', 'md', false, false, false, false, reply_markup)
 end
 if text == "العام •" and msg.Asasy then
 local reply_markup = bot.replyMarkup{type = 'keyboard',resize = true,is_personal = true,
@@ -31560,7 +31561,7 @@ data = {
 {
 {text = '↫ رجـوع•',type = 'text'},
 },}}
-return bot.sendText(msg_chat_id,msg_id,'•اهلا بك مجددا عزيزي المطور \n•اليك الازرار الخاصه بالعام لسورس كينج فقط اضغط على الامر الذي تريد تنفيذه', 'md', false, false, false, false, reply_markup)
+return bot.sendText(msg_chat_id,msg_id,'•اهلا بك مجددا عزيزي المطور \n•اليك الازرار الخاصه بالعام لسورس  ميدو فقط اضغط على الامر الذي تريد تنفيذه', 'md', false, false, false, false, reply_markup)
 end
 if text == "البوت •" and msg.Asasy then
 local reply_markup = bot.replyMarkup{type = 'keyboard',resize = true,is_personal = true,
@@ -31580,7 +31581,7 @@ data = {
 {
 {text = '↫ رجـوع•',type = 'text'},
 },}}
-return bot.sendText(msg_chat_id,msg_id,'•اهلا بك مجددا عزيزي المطور \n•اليك الازرار الخاصه بسورس كينج فقط اضغط على الامر الذي تريد تنفيذه', 'md', false, false, false, false, reply_markup)
+return bot.sendText(msg_chat_id,msg_id,'•اهلا بك مجددا عزيزي المطور \n•اليك الازرار الخاصه بسورس  ميدو فقط اضغط على الامر الذي تريد تنفيذه', 'md', false, false, false, false, reply_markup)
 end
 if text == "السورس •" and msg.Asasy then
 local reply_markup = bot.replyMarkup{type = 'keyboard',resize = true,is_personal = true,
@@ -31600,7 +31601,7 @@ data = {
 {
 {text = '↫ رجـوع•',type = 'text'},
 },}}
-return bot.sendText(msg_chat_id,msg_id,'•اهلا بك مجددا عزيزي المطور \n•اليك الازرار الخاصه ببوتك المثبت علئ لسورس كينج فقط اضغط على الامر الذي تريد تنفيذه', 'md', false, false, false, false, reply_markup)
+return bot.sendText(msg_chat_id,msg_id,'•اهلا بك مجددا عزيزي المطور \n•اليك الازرار الخاصه ببوتك المثبت علئ لسورس  ميدو فقط اضغط على الامر الذي تريد تنفيذه', 'md', false, false, false, false, reply_markup)
 end
 if text == '/keb' then
 Redis:sadd(Saidi..'Saidi:Num:User:Pv',msg.sender_id.user_id)
@@ -31846,23 +31847,23 @@ https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. ms
 end
 end
 if text == 'الس4ورس' or text == '4t4' or text == '44' or text == 'سورس 😎💞' then
-photo = "https://t.me/VC_NE/237"
+photo = "https://t.me/TGe_R/237"
 local T =[[
-𖥔︙[𝑊𝐸𝐿𝐶𝑂𝑀𝐸 𝑇𝑂 𝑆𝑂𝑈𝑅𝐶𝐸 𝑲𝒊𝒏𝑮](t.me/B_9_O )
+𖥔︙[𝑊𝐸𝐿𝐶𝑂𝑀𝐸 𝑇𝑂 𝑆𝑂𝑈𝑅𝐶𝐸𝑇𝐼𝐺𝐸𝑅](t.me/TGe_R )
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '• مبرمج السورس •', url = 't.me/TR_E2S_ON_MY_MOoN '},{text = '• مطور السورس •', url = 't.me/'..chdevolper..' '},
+{text = '• مبرمج السورس •', url = 't.me/U_Y_3_M '},{text = '• مطور السورس •', url = 't.me/'..chdevolper..' '},
 },
 {
-{text = '• تنصيب بوت مدفوع •', url = 't.me/TR_E2S_ON_MY_MOoN'},
+{text = '• تنصيب بوت مدفوع •', url = 't.me/TGe_R'},
 },
 {
-{text = '• قناة التحديثات •', url = 't.me/VALORAANTT '},{text = '• قناة السورس •', url = 't.me/'..chsource..' '},
+{text = '• قناة التحديثات •', url = 't.me/TGe_R '},{text = '• قناة السورس •', url = 't.me/'..chsource..' '},
 },
 {
-{text = '• 𝑺𝒐𝑼𝒓𝑪𝒆 𝑲𝒊𝒏𝑮 •', url = 't.me/VALORAANTT '},
+{text = '• 𝙎𝙤𝙐𝙧𝘾𝙚 𝙏𝙞𝙂𝙚𝙍 •', url = 't.me/TGe_R '},
 },
 }
 local msgg = msg.id/2097152/0.5
@@ -31871,12 +31872,12 @@ end
 if text == 'fuck' or text == 'shit ' or text == '0102 ' or text == 'لتنصيب بوت 🦋💙' then
 photo = "https://t.me/x_x_m_mm/10"
 local T =[[
-𖥔︙[لتنصيب بوت ](t.me/NL_IBOT )
+𖥔︙[لتنصيب بوت ](t.me/TGe_Rbot )
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '• اضغط لتنصيب بوت •', url = 't.me/NL_IBOT'},
+{text = '• اضغط لتنصيب بوت •', url = 't.me/TGe_Rbot'},
 },
 }
 local msgg = msg.id/2097152/0.5
@@ -31887,7 +31888,7 @@ Text = [[
 𖥔 [قناة السورس]
 ]]
 keyboard = {} 
-keyboard.inline_keyboard = {{{text='• قناة السورس •',url="t.me/VC_NE"}}}
+keyboard.inline_keyboard = {{{text='• قناة السورس •',url="t.me/TGe_R"}}}
 local msg_id = msg_id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token..'/sendPhoto?chat_id=' .. msg_chat_id .. '&photo=https://t.me/'..chsource..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 return false
@@ -31900,7 +31901,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '• قناة السورس •', url = "t.me/VC_NE"}, 
+{text = '• قناة السورس •', url = "t.me/TGe_R"}, 
 },
 }
 }
@@ -31934,11 +31935,11 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '• قناة السورس •', url = "t.me/VC_NE"}, 
+{text = '• قناة السورس •', url = "t.me/TGe_R"}, 
 },
 }
 }
-return bot.sendText(msg_chat_id,msg_id,'* 𖥔 اصدار سورس كينج {3×lua}*', 'md', false, false, false, false, reply_markup)
+return bot.sendText(msg_chat_id,msg_id,'* 𖥔 اصدار سورس  ميدو {3×lua}*', 'md', false, false, false, false, reply_markup)
 end
 if text == 'تنظيف المشتركين' then
 if not msg.Asasy then 
@@ -32131,15 +32132,15 @@ return send(msg.chat_id,msg.id,'*\n𖥔  عليك الاشتراك في قناة
 end
 Redis:setex(Saidi.."Broadcasting:Users" .. msg_chat_id .. ":" .. msg.sender_id.user_id, 600, true) 
 send(msg_chat_id,msg_id,[[*
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
 , حسنا ارسل الان الاذاعه ،
 , ملصق ، متحركه ، صوره ،
 , فيديو بصمه ، الفيديو ، ملف ،
 , بصمه ، صوت ، رساله ،
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
 , ليتم نشرها للمشتركين ،
 , للخروج ارسل ( الغاء ) ،
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
 *]],"md",true)  
 return false
 end
@@ -32158,15 +32159,15 @@ return send(msg.chat_id,msg.id,'*\n𖥔  عليك الاشتراك في قناة
 end
 Redis:setex(Saidi.."Broadcasting:Groups" .. msg_chat_id .. ":" .. msg.sender_id.user_id, 600, true) 
 send(msg_chat_id,msg_id,[[*
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
 , حسنا ارسل الان الاذاعه ،
 , ملصق ، متحركه ، صوره ،
 , فيديو بصمه ، الفيديو ، ملف ،
 , بصمه ، صوت ، رساله ،
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
 , ليتم نشرها للجروبات ،
 , للخروج ارسل ( الغاء ) ،
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
 *]],"md",true)  
 return false
 end
@@ -32185,15 +32186,15 @@ return send(msg.chat_id,msg.id,'*\n𖥔  عليك الاشتراك في قناة
 end
 Redis:setex(Saidi.."Broadcasting:Groups:Pin" .. msg_chat_id .. ":" .. msg.sender_id.user_id, 600, true) 
 send(msg_chat_id,msg_id,[[*
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
 , حسنا ارسل الان الاذاعه ،
 , ملصق ، متحركه ، صوره ،
 , فيديو بصمه ، الفيديو ، ملف ،
 , بصمه ، صوت ، رساله ،
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
 , ليتم نشرها للجروبات ،
 , للخروج ارسل ( الغاء ) ،
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
 *]],"md",true)  
 return false
 end
@@ -32245,7 +32246,7 @@ local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = Redis:get(
 return send(msg.chat_id,msg.id,'*\n 𖥔 عليك الاشتراك في قناة البوت لأستخدام الاوامر*',"md",false, false, false, false, reply_markup)
 end
 local list = Redis:smembers(Saidi.."List:Rd:Sudo")
-text = "\n 𖥔 قائمة الردود العامه ↑↓\n━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━\n"
+text = "\n 𖥔 قائمة الردود العامه ↑↓\n ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～\n"
 for k,v in pairs(list) do
 if Redis:get(Saidi.."Add:Rd:Sudo:Gif"..v) then
 db = "متحركه 🎭"
@@ -32433,7 +32434,7 @@ local Info_Members = Redis:smembers(Saidi.."BanAll:Groups")
 if #Info_Members == 0 then
 return send(msg_chat_id,msg_id," 𖥔 لا يوجد محظورين عام حاليا , ","md",true)  
 end
-ListMembers = '\n* 𖥔 قائمه المحظورين عام  \n  ━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━ *\n'
+ListMembers = '\n* 𖥔 قائمه المحظورين عام  \n   ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～ *\n'
 for k, v in pairs(Info_Members) do
 local UserInfo = bot.getUser(v)
 var(v)
@@ -32464,7 +32465,7 @@ local Info_Members = Redis:smembers(Saidi.."Dev:Groups")
 if #Info_Members == 0 then
 return send(msg_chat_id,msg_id," 𖥔 لا يوجد مطورين حاليا , ","md",true)  
 end
-ListMembers = '\n* 𖥔 قائمه مطورين البوت \n  ━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━ *\n'
+ListMembers = '\n* 𖥔 قائمه مطورين البوت \n   ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～ *\n'
 for k, v in pairs(Info_Members) do
 local UserInfo = bot.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -32494,7 +32495,7 @@ local Info_Members = Redis:smembers(Saidi.."Devss:Groups")
 if #Info_Members == 0 then
 return send(msg_chat_id,msg_id," 𖥔 لا يوجد مطورين حاليا , ","md",true)  
 end
-ListMembers = '\n* 𖥔 قائمه مطورين البوت \n  ━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━ *\n'
+ListMembers = '\n* 𖥔 قائمه مطورين البوت \n   ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～ *\n'
 for k, v in pairs(Info_Members) do
 local UserInfo = bot.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -32643,7 +32644,7 @@ Redis:sadd(Saidi.."ChekBotAdd",chat_id)
 local txt = '𖥔 تم تفعيل الجروب ['..Get_Chat.title..']('..Info_Chats.invite_link.invite_link..') تلقائياً\n𖥔 بواسطة 「 ['..UserInfo.first_name..'](tg://user?id='..who_promot..')⁪⁬‌ 」\n'
 local reply_markup1 = bot.replyMarkup{
 type = 'inline',
-data = {{{text = '• قناة السورس •', url = "t.me/VC_NE"}, },}}
+data = {{{text = '• قناة السورس •', url = "t.me/TGe_R"}, },}}
 return send(chat_id, 0 , txt, 'md', true , false, false, false, reply_markup1)
 end ---end done active
 --code end
@@ -32803,7 +32804,7 @@ return false
 end
 if Redis:get(Saidi.."Lock:edit"..data.chat_id) then
 if #monsha ~= 0 then 
-local ListMembers = '\n* 𖥔 تاك للمالكين  \n  ━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━ *\n'
+local ListMembers = '\n* 𖥔 تاك للمالكين  \n   ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～ *\n'
 for k, v in pairs(monsha) do
 local UserInfo = bot.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -33362,7 +33363,7 @@ local UserId = Text:match('(%d+)/nsnsks')
 if tonumber(IdUser) == tonumber(UserId) then
 local bain = bot.getUser(IdUser)
 local txxt = [[*
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
 
 𖥔 مرحبا بك هذه اوامر لعبة البنك كالاتي
 
@@ -33394,7 +33395,7 @@ local txxt = [[*
 
 𖥔 تسديد القرض -> بتسدد القرض اذا عليك 
 
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
 *]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -33417,7 +33418,7 @@ local UserId = Text:match('(%d+)/nsnsbbl')
 if tonumber(IdUser) == tonumber(UserId) then
 local bain = bot.getUser(IdUser)
 local txxt = [[*
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
 
 𖥔 انشاء كوبون -> ثم ارسل اي رقم يعجبك
 
@@ -33451,7 +33452,7 @@ local txxt = [[*
 
 𖥔 شراء رتبه -> لكي تشتري رتبه ف المجموعه
 
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
 *]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -33474,7 +33475,7 @@ local UserId = Text:match('(%d+)/fghbdn')
 if tonumber(IdUser) == tonumber(UserId) then
 local bain = bot.getUser(IdUser)
 local txxt = [[*
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
 
 𖥔 marhaban bik hadhih awamir luebat albank kalati
 
@@ -33510,7 +33511,7 @@ local txxt = [[*
 
 𖥔 kubun -> arsul alraqm alati anshat
 
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
 *]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -33533,7 +33534,7 @@ local UserId = Text:match('(%d+)/kanapdm')
 if tonumber(IdUser) == tonumber(UserId) then
 local bain = bot.getUser(IdUser)
 local txxt = [[*
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
 
 𖥔 hisab -> aydi hisaab alshakhs f albank
 
@@ -33563,7 +33564,7 @@ local txxt = [[*
 
 𖥔 shira' rutabih -> likay tashtari ratabah almajmueuh
 
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
 *]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -33600,7 +33601,7 @@ data = {
 {text = 'صلاحيه الكتم والحظر فقط ¥'..(t3 or restrict_members), data = UserId..'/groupNum3//'..replyy}, 
 },
 {
-{text = '• قناة السورس •', url = "t.me/VC_NE"}, 
+{text = '• قناة السورس •', url = "t.me/TGe_R"}, 
 },
 }
 }
@@ -33621,7 +33622,7 @@ data = {
 {text = 'الغاء كتم', data = IdUser..'unmute'..replyy}, 
 },
 {
-{text = '• قناة السورس •', url = "t.me/VC_NE"}, 
+{text = '• قناة السورس •', url = "t.me/TGe_R"}, 
 },
 }
 }
@@ -33639,7 +33640,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '• قناة السورس •', url = "t.me/VC_NE"}, 
+{text = '• قناة السورس •', url = "t.me/TGe_R"}, 
 },
 }
 }
@@ -33662,7 +33663,7 @@ data = {
 {text = 'الغاء حظر', data = IdUser..'unban'..replyy}, 
 },
 {
-{text = '• قناة السورس •', url = "t.me/VC_NE"}, 
+{text = '• قناة السورس •', url = "t.me/TGe_R"}, 
 },
 }
 }
@@ -33681,7 +33682,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '• قناة السورس •', url = "t.me/VC_NE"}, 
+{text = '• قناة السورس •', url = "t.me/TGe_R"}, 
 },
 }
 }
@@ -33702,7 +33703,7 @@ data = {
 {text = 'الغاء تقييد', data = IdUser..'unkid'..replyy}, 
 },
 {
-{text = '• قناة السورس •', url = "t.me/VC_NE"}, 
+{text = '• قناة السورس •', url = "t.me/TGe_R"}, 
 },
 }
 }
@@ -33720,7 +33721,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '• قناة السورس •', url = "t.me/VC_NE"}, 
+{text = '• قناة السورس •', url = "t.me/TGe_R"}, 
 },
 }
 }
@@ -33733,7 +33734,7 @@ local UserId = Text:match('(%d+)/dejgm')
 if tonumber(IdUser) == tonumber(UserId) then
 local bain = bot.getUser(IdUser)
 local txxt = [[*
-𖥔 مرحبا بك في الالعاب المتطورة الخاص بسورس كينج
+𖥔 مرحبا بك في الالعاب المتطورة الخاص بسورس  ميدو
 𖥔 اختر اللعبه ثم اختار المحادثة التي تريد اللعب بها
 *]]
 keyboard = {} 
@@ -33814,7 +33815,7 @@ keyboard.inline_keyboard = {
 {text = 'SmartUpShark', url="https://t.me/gamee?game=SmartUpShark"},{text = 'SpikyFish3', url="https://t.me/gamee?game=SpikyFish3"}, 
 },
 {
-{text = '･ 𓆩𝑲𝒊𝒏𝑮𓆪 ･', callback_data=IdUser.."/backgames"},
+{text = '･ 𓆩𝑴𝑬𝑬𝑫𝑶𓆪 ･', callback_data=IdUser.."/backgames"},
 },
 {
 {text = bain.first_name, url = "https://t.me/"..bain.username..""},
@@ -33830,7 +33831,7 @@ if tonumber(IdUser) == tonumber(UserId) then
 local bain = bot.getUser(IdUser)
 local txxt = [[*
  𖥔 قائمه الالعاب البوت
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 لعبة المختلف -› المختلف
  𖥔 لعبة الامثله -› امثله
  𖥔 لعبة العكس -› العكس
@@ -33844,7 +33845,7 @@ local txxt = [[*
  𖥔 لعبة السمايلات -› سمايلات
  𖥔 لعبة الاسئلة -› كت تويت
  𖥔 لعبة الاعلام والدول -› اعلام
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 نقاطي -› لعرض عدد الارباح
  𖥔 بيع نقاطي〘 العدد 〙
  𖥔 لبيع كل نقطه مقابل〘 50 〙رساله
@@ -33852,7 +33853,7 @@ local txxt = [[*
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '･ 𓆩𝑲𝒊𝒏𝑮𓆪 ･', callback_data=IdUser.."/backgames"},
+{text = '･ 𓆩𝑴𝑬𝑬𝑫𝑶𓆪 ･', callback_data=IdUser.."/backgames"},
 },
 {
 {text = bain.first_name, url = "https://t.me/"..bain.username..""},
@@ -33867,7 +33868,7 @@ local UserId = Text:match('(%d+)/bank')
 if tonumber(IdUser) == tonumber(UserId) then
 local bain = bot.getUser(IdUser)
 local txxt = [[*
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
     
 𖥔 مرحبا بك هذه اوامر لعبه البنك 
     
@@ -33919,12 +33920,12 @@ local txxt = [[*
     
  𖥔 شراء رتبه ~ لكي تشتري رتبه ف المجموعه
     
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
 *]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '･ 𓆩𝑲𝒊𝒏𝑮𓆪 ･', callback_data=IdUser.."/backgames"},
+{text = '･ 𓆩𝑴𝑬𝑬𝑫𝑶𓆪 ･', callback_data=IdUser.."/backgames"},
 },
 {
 {text = bain.first_name, url = "https://t.me/"..bain.username..""},
@@ -33939,8 +33940,8 @@ local UserId = Text:match('(%d+)/backgames')
 if tonumber(IdUser) == tonumber(UserId) then
 local bain = bot.getUser(IdUser)
 local txxt = [[*
- 𖥔 اليك قسم الالعاب من سورس كينج
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ 𖥔 اليك قسم الالعاب من سورس  ميدو
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
 *]]
  keyboard = {} 
 keyboard.inline_keyboard = {
@@ -33954,7 +33955,7 @@ keyboard.inline_keyboard = {
 {text = '𖥔 اوامر لعبة البنك 𖥔', callback_data=IdUser.."/bank"},
 },
 {
-{text  = '• قناة السورس •', url = "t.me/VC_NE"}, 
+{text  = '• قناة السورس •', url = "t.me/TGe_R"}, 
 },
 }
 local mm = Msg_id/2097152/0.5
@@ -34077,7 +34078,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '･ 𓆩𝑲𝒊𝒏𝑮𓆪 ･', data = IdUser..'/xnxxxxx'}, 
+{text = '･ 𓆩𝑴𝑬𝑬𝑫𝑶𓆪 ･', data = IdUser..'/xnxxxxx'}, 
 },
 }
 }
@@ -34116,7 +34117,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '･ 𓆩𝑲𝒊𝒏𝑮𓆪 ･', data = IdUser..'/secondary'}, 
+{text = '･ 𓆩𝑴𝑬𝑬𝑫𝑶𓆪 ･', data = IdUser..'/secondary'}, 
 },
 }
 }
@@ -34153,7 +34154,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '• قناة السورس •', url = "t.me/VC_NE"}, 
+{text = '• قناة السورس •', url = "t.me/TGe_R"}, 
 },
 }
 }
@@ -34176,14 +34177,14 @@ if Redis:get(Saidi..'Set:array'..IdUser..':'..ChatId) == 'true1' then
 Redis:del(Saidi..'Set:array'..IdUser..':'..ChatId)
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '• قناة السورس •',url="https://t.me/VC_NE"}},
+{{text = '• قناة السورس •',url="https://t.me/TGe_R"}},
 }
 local msg_idd = Msg_id/2097152/0.5
 return https.request("https://api.telegram.org/bot"..Token..'/editMessageText?chat_id='..data.id..'&text='..URL.escape(" * 𖥔 تم حفظ الردود بنجاح*")..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 else
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '• قناة السورس •',url="https://t.me/VC_NE"}},
+{{text = '• قناة السورس •',url="https://t.me/TGe_R"}},
 }
 return https.request("https://api.telegram.org/bot"..Token..'/editMessageText?chat_id='..data.id..'&text='..URL.escape(" * 𖥔 تم تنفيذ الامر سابقا*")..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -34195,7 +34196,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '• 𝑺𝒐𝑼𝒓𝑪𝒆 𝑲𝒊𝒏𝑮 •', url = 'https://t.me/VC_NE'}, 
+{text = '• 𝙎𝙤𝙐𝙧𝘾𝙚 𝙏𝙞𝙂𝙚𝙍 •', url = 'https://t.me/TGe_R'}, 
 },
 }
 }
@@ -34212,7 +34213,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '• 𝑺𝒐𝑼𝒓𝑪𝒆 𝑲𝒊𝒏𝑮 •', url = 'https://t.me/VC_NE'}, 
+{text = '• 𝙎𝙤𝙐𝙧𝘾𝙚 𝙏𝙞𝙂𝙚𝙍 •', url = 'https://t.me/TGe_R'}, 
 },
 }
 }
@@ -34445,7 +34446,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = inline_anubis
 }
-edit(ChatId, Msg_id, "* 𖥔 لقد اخترت ☁️*\n━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━\n "..zk, "md",true,false,reply_markup)
+edit(ChatId, Msg_id, "* 𖥔 لقد اخترت ☁️*\n ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～\n "..zk, "md",true,false,reply_markup)
 end
 end
 if Text and Text:match('(.*)/bz(.*)') then
@@ -34460,7 +34461,7 @@ local zkrf = JSON.decode(api)
 local zk = zkrf['anubis'][z_save]
 local zk_list = Redis:smembers(Saidi.."zk_list:")
 local zk_anubis = zk_list[z_num]:gsub("###",zk)
-edit(ChatId, Msg_id, "* 𖥔 لقد اخترت ☁️*\n━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━\n `"..zk_anubis.."`", "md",false)
+edit(ChatId, Msg_id, "* 𖥔 لقد اخترت ☁️*\n ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～\n `"..zk_anubis.."`", "md",false)
 Redis:del(Saidi..ChatId..IdUser.."zkrf:text")
 Redis:del(Saidi..ChatId..IdUser.."zkrf:num")
 end
@@ -34504,7 +34505,7 @@ if tonumber(UserId) == tonumber(IdUser) then
 local api = https.request("https://ayad-12.xyz/anubis/zkhrfa.php?text="..URL.escape(z_text))
 local zkrf = JSON.decode(api)
 local zk = zkrf['anubis'][z_save]
-edit(ChatId, Msg_id, "*تم الزخرفه بالايموجي 🧸♥*\n\n▷ `"..zk.." ¦✨❤️` \n\n▷ `"..zk.." “̯ 🐼💗`\n\n▷ `"..zk.." 🦋“`\n\n▷ `"..zk.."ّ ❥̚͢₎ 🐣`\n\n▷ `"..zk.." ℡ ̇ ✨🐯⇣✦`\n\n▷ `"..zk.." 😴🌸✿⇣`\n\n▷ `"..zk.."𖥔 🙊💙`\n\n▷ `"..zk.." ❥┊⁽ ℡🦁🌸`\n\n▷ `"..zk.."𖥔 💚“`\n\n▷ `"..zk.." ⚡️♛ֆ₎`\n\n▷ `"..zk.." ⁞♩⁽💎🌩₎⇣✿`\n\n▷ `"..zk.." 〄💖‘`\n\n*━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━*\n\n* أضغط علي الاسم لا يتم النسخ 𖥔 *", "md",false)
+edit(ChatId, Msg_id, "*تم الزخرفه بالايموجي 🧸♥*\n\n▷ `"..zk.." ¦✨❤️` \n\n▷ `"..zk.." “̯ 🐼💗`\n\n▷ `"..zk.." 🦋“`\n\n▷ `"..zk.."ّ ❥̚͢₎ 🐣`\n\n▷ `"..zk.." ℡ ̇ ✨🐯⇣✦`\n\n▷ `"..zk.." 😴🌸✿⇣`\n\n▷ `"..zk.."𖥔 🙊💙`\n\n▷ `"..zk.." ❥┊⁽ ℡🦁🌸`\n\n▷ `"..zk.."𖥔 💚“`\n\n▷ `"..zk.." ⚡️♛ֆ₎`\n\n▷ `"..zk.." ⁞♩⁽💎🌩₎⇣✿`\n\n▷ `"..zk.." 〄💖‘`\n\n* ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～*\n\n* أضغط علي الاسم لا يتم النسخ 𖥔 *", "md",false)
 Redis:del(Saidi..ChatId..IdUser.."zkrf:text")
 Redis:del(Saidi..ChatId..IdUser.."zkrf:num")
 end
@@ -34524,7 +34525,7 @@ Text = " 𖥔 تم الغاء حفظ قناتك"
 local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
-{{text='• قناة السورس •',url="t.me/VC_NE"}},
+{{text='• قناة السورس •',url="t.me/TGe_R"}},
 }}
 bot.editMessageText(ChatId,msg_id,Text, 'md', true, false, reply_markup)
 return false
@@ -34537,7 +34538,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {{text="• الغاء •",data="/CancelChannelVip:"..IdUser}},
-{{text='• قناة السورس •',url="t.me/VC_NE"}},
+{{text='• قناة السورس •',url="t.me/TGe_R"}},
 }}
 bot.editMessageText(ChatId,msg_id,Text, 'md', true, false, reply_markup)
 return false
@@ -34556,7 +34557,7 @@ type = 'inline',
 data = {
 {{text="• تغيير قناتي •",data="/ChangeChannelVip:"..IdUser},{text="• حذف قناتي •",data="/DelChannelVip:"..IdUser}},
 {{text="• اخفاء •",data="/HideChannelVip:"..IdUser}},
-{{text='• قناة السورس •',url="t.me/VC_NE"}},
+{{text='• قناة السورس •',url="t.me/TGe_R"}},
 }}
 bot.editMessageText(ChatId,msg_id,text, 'md', true, false, reply_markup)
 return false   
@@ -34570,7 +34571,7 @@ type = 'inline',
 data = {
 {{text="• وضع قناتي •",data="/ChangeChannelVip:"..IdUser}},
 {{text="• اخفاء •",data="/HideChannelVip:"..IdUser}},
-{{text='• قناة السورس •',url="t.me/VC_NE"}},
+{{text='• قناة السورس •',url="t.me/TGe_R"}},
 }}
 bot.editMessageText(ChatId,msg_id,Text, 'md', true, false, reply_markup)
 return false
@@ -34628,7 +34629,7 @@ end
 if Text and Text:match('(%d+)/Backcinema') then
 local UserId = Text:match('(%d+)/Backcinema')
 if tonumber(IdUser) == tonumber(UserId) then
-au ={type = "photo",media = "https://t.me/S_a_i_d_i/1188",caption = '*اليك قائمة الافلام من سورس كينج 𖥔*\n',parse_mode = "Markdown"}     
+au ={type = "photo",media = "https://t.me/S_a_i_d_i/1188",caption = '*اليك قائمة الافلام من سورس  ميدو 𖥔*\n',parse_mode = "Markdown"}     
 local bain = bot.getUser(IdUser)
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -34649,7 +34650,7 @@ end
 if Text and Text:match('(%d+)/Cinema1') then
 local UserId = Text:match('(%d+)/Cinema1')
 if tonumber(IdUser) == tonumber(UserId) then
-au ={type = "photo",media = "https://t.me/VC_NE/1188",caption = '*𖥔 اليك قائمة الافلام المصريه 🇪🇬*\n',parse_mode = "Markdown"}     
+au ={type = "photo",media = "https://t.me/TGe_R/1188",caption = '*𖥔 اليك قائمة الافلام المصريه 🇪🇬*\n',parse_mode = "Markdown"}     
 local bain = bot.getUser(IdUser)
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -34657,7 +34658,7 @@ keyboard.inline_keyboard = {
 {text = 'غبي منه فيه', callback_data=IdUser.."/Cinem1"},{text = 'اللمبي 8 جيجا', callback_data=IdUser.."/Cinem2"},
 },
 {
-{text = '30 يوم في العز', callback_data=IdUser.."/Cinem3"},{text = 'واحد كينج', callback_data=IdUser.."/Cinem4"},
+{text = '30 يوم في العز', callback_data=IdUser.."/Cinem3"},{text = 'واحد  ميدو', callback_data=IdUser.."/Cinem4"},
 },
 {
 {text = 'لف ودوران', callback_data=IdUser.."/Cinem5"},{text = 'الداده دودي', callback_data=IdUser.."/Cinem6"},
@@ -34682,7 +34683,7 @@ end
 if Text and Text:match('(%d+)/Cinema2') then
 local UserId = Text:match('(%d+)/Cinema2')
 if tonumber(IdUser) == tonumber(UserId) then
-au ={type = "photo",media = "https://t.me/VC_NE/1188",caption = '* 𖥔 اليك قائمة الافلام الاجنبيه 🇳🇿*\n',parse_mode = "Markdown"}     
+au ={type = "photo",media = "https://t.me/TGe_R/1188",caption = '* 𖥔 اليك قائمة الافلام الاجنبيه 🇳🇿*\n',parse_mode = "Markdown"}     
 local bain = bot.getUser(IdUser)
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -34709,7 +34710,7 @@ end
 if Text and Text:match('(%d+)/Cinema3') then
 local UserId = Text:match('(%d+)/Cinema3')
 if tonumber(IdUser) == tonumber(UserId) then
-au ={type = "photo",media = "https://t.me/VC_NE/1188",caption = '* 𖥔 اليك قائمة افلام كرتون 🧸*\n',parse_mode = "Markdown"}     
+au ={type = "photo",media = "https://t.me/TGe_R/1188",caption = '* 𖥔 اليك قائمة افلام كرتون 🧸*\n',parse_mode = "Markdown"}     
 local bain = bot.getUser(IdUser)
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -34736,7 +34737,7 @@ end
 if Text and Text:match('(%d+)/Cinema4') then
 local UserId = Text:match('(%d+)/Cinema4')
 if tonumber(IdUser) == tonumber(UserId) then
-au ={type = "photo",media = "https://t.me/VC_NE/1188",caption = '* 𖥔 اليك قائمة مسرحية 🎬*\n',parse_mode = "Markdown"}     
+au ={type = "photo",media = "https://t.me/TGe_R/1188",caption = '* 𖥔 اليك قائمة مسرحية 🎬*\n',parse_mode = "Markdown"}     
 local bain = bot.getUser(IdUser)
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -34768,7 +34769,7 @@ local bain = bot.getUser(IdUser)
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '･ 𓆩𝑲𝒊𝒏𝑮𓆪 ･', callback_data=IdUser.."/Cinema1"},
+{text = '･ 𓆩𝑴𝑬𝑬𝑫𝑶𓆪 ･', callback_data=IdUser.."/Cinema1"},
 },
 {
 {text = bain.first_name, url = "https://t.me/"..bain.username..""},
@@ -34786,7 +34787,7 @@ local bain = bot.getUser(IdUser)
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '･ 𓆩𝑲𝒊𝒏𝑮𓆪 ･', callback_data=IdUser.."/Cinema1"},
+{text = '･ 𓆩𝑴𝑬𝑬𝑫𝑶𓆪 ･', callback_data=IdUser.."/Cinema1"},
 },
 {
 {text = bain.first_name, url = "https://t.me/"..bain.username..""},
@@ -34804,7 +34805,7 @@ local bain = bot.getUser(IdUser)
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '･ 𓆩𝑲𝒊𝒏𝑮𓆪 ･', callback_data=IdUser.."/Cinema1"},
+{text = '･ 𓆩𝑴𝑬𝑬𝑫𝑶𓆪 ･', callback_data=IdUser.."/Cinema1"},
 },
 {
 {text = bain.first_name, url = "https://t.me/"..bain.username..""},
@@ -34822,7 +34823,7 @@ local bain = bot.getUser(IdUser)
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '･ 𓆩𝑲𝒊𝒏𝑮𓆪 ･', callback_data=IdUser.."/Cinema1"},
+{text = '･ 𓆩𝑴𝑬𝑬𝑫𝑶𓆪 ･', callback_data=IdUser.."/Cinema1"},
 },
 {
 {text = bain.first_name, url = "https://t.me/"..bain.username..""},
@@ -34840,7 +34841,7 @@ local bain = bot.getUser(IdUser)
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '･ 𓆩𝑲𝒊𝒏𝑮𓆪 ･', callback_data=IdUser.."/Cinema1"},
+{text = '･ 𓆩𝑴𝑬𝑬𝑫𝑶𓆪 ･', callback_data=IdUser.."/Cinema1"},
 },
 {
 {text = bain.first_name, url = "https://t.me/"..bain.username..""},
@@ -34858,7 +34859,7 @@ local bain = bot.getUser(IdUser)
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '･ 𓆩𝑲𝒊𝒏𝑮𓆪 ･', callback_data=IdUser.."/Cinema1"},
+{text = '･ 𓆩𝑴𝑬𝑬𝑫𝑶𓆪 ･', callback_data=IdUser.."/Cinema1"},
 },
 {
 {text = bain.first_name, url = "https://t.me/"..bain.username..""},
@@ -34876,7 +34877,7 @@ local bain = bot.getUser(IdUser)
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '･ 𓆩𝑲𝒊𝒏𝑮𓆪 ･', callback_data=IdUser.."/Cinema1"},
+{text = '･ 𓆩𝑴𝑬𝑬𝑫𝑶𓆪 ･', callback_data=IdUser.."/Cinema1"},
 },
 {
 {text = bain.first_name, url = "https://t.me/"..bain.username..""},
@@ -34894,7 +34895,7 @@ local bain = bot.getUser(IdUser)
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '･ 𓆩𝑲𝒊𝒏𝑮𓆪 ･', callback_data=IdUser.."/Cinema1"},
+{text = '･ 𓆩𝑴𝑬𝑬𝑫𝑶𓆪 ･', callback_data=IdUser.."/Cinema1"},
 },
 {
 {text = bain.first_name, url = "https://t.me/"..bain.username..""},
@@ -34912,7 +34913,7 @@ local bain = bot.getUser(IdUser)
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '･ 𓆩𝑲𝒊𝒏𝑮𓆪 ･', callback_data=IdUser.."/Cinema1"},
+{text = '･ 𓆩𝑴𝑬𝑬𝑫𝑶𓆪 ･', callback_data=IdUser.."/Cinema1"},
 },
 {
 {text = bain.first_name, url = "https://t.me/"..bain.username..""},
@@ -34930,7 +34931,7 @@ local bain = bot.getUser(IdUser)
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '･ 𓆩𝑲𝒊𝒏𝑮𓆪 ･', callback_data=IdUser.."/Cinema1"},
+{text = '･ 𓆩𝑴𝑬𝑬𝑫𝑶𓆪 ･', callback_data=IdUser.."/Cinema1"},
 },
 {
 {text = bain.first_name, url = "https://t.me/"..bain.username..""},
@@ -34948,7 +34949,7 @@ local bain = bot.getUser(IdUser)
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '･ 𓆩𝑲𝒊𝒏𝑮𓆪 ･', callback_data=IdUser.."/Cinema2"},
+{text = '･ 𓆩𝑴𝑬𝑬𝑫𝑶𓆪 ･', callback_data=IdUser.."/Cinema2"},
 },
 {
 {text = bain.first_name, url = "https://t.me/"..bain.username..""},
@@ -34966,7 +34967,7 @@ local bain = bot.getUser(IdUser)
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '･ 𓆩𝑲𝒊𝒏𝑮𓆪 ･', callback_data=IdUser.."/Cinema2"},
+{text = '･ 𓆩𝑴𝑬𝑬𝑫𝑶𓆪 ･', callback_data=IdUser.."/Cinema2"},
 },
 {
 {text = bain.first_name, url = "https://t.me/"..bain.username..""},
@@ -34984,7 +34985,7 @@ local bain = bot.getUser(IdUser)
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '･ 𓆩𝑲𝒊𝒏𝑮𓆪 ･', callback_data=IdUser.."/Cinema2"},
+{text = '･ 𓆩𝑴𝑬𝑬𝑫𝑶𓆪 ･', callback_data=IdUser.."/Cinema2"},
 },
 {
 {text = bain.first_name, url = "https://t.me/"..bain.username..""},
@@ -35002,7 +35003,7 @@ local bain = bot.getUser(IdUser)
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '･ 𓆩𝑲𝒊𝒏𝑮𓆪 ･', callback_data=IdUser.."/Cinema2"},
+{text = '･ 𓆩𝑴𝑬𝑬𝑫𝑶𓆪 ･', callback_data=IdUser.."/Cinema2"},
 },
 {
 {text = bain.first_name, url = "https://t.me/"..bain.username..""},
@@ -35020,7 +35021,7 @@ local bain = bot.getUser(IdUser)
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '･ 𓆩𝑲𝒊𝒏𝑮𓆪 ･', callback_data=IdUser.."/Cinema2"},
+{text = '･ 𓆩𝑴𝑬𝑬𝑫𝑶𓆪 ･', callback_data=IdUser.."/Cinema2"},
 },
 {
 {text = bain.first_name, url = "https://t.me/"..bain.username..""},
@@ -35038,7 +35039,7 @@ local bain = bot.getUser(IdUser)
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '･ 𓆩𝑲𝒊𝒏𝑮𓆪 ･', callback_data=IdUser.."/Cinema3"},
+{text = '･ 𓆩𝑴𝑬𝑬𝑫𝑶𓆪 ･', callback_data=IdUser.."/Cinema3"},
 },
 {
 {text = bain.first_name, url = "https://t.me/"..bain.username..""},
@@ -35056,7 +35057,7 @@ local bain = bot.getUser(IdUser)
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '･ 𓆩𝑲𝒊𝒏𝑮𓆪 ･', callback_data=IdUser.."/Cinema3"},
+{text = '･ 𓆩𝑴𝑬𝑬𝑫𝑶𓆪 ･', callback_data=IdUser.."/Cinema3"},
 },
 {
 {text = bain.first_name, url = "https://t.me/"..bain.username..""},
@@ -35074,7 +35075,7 @@ local bain = bot.getUser(IdUser)
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '･ 𓆩𝑲𝒊𝒏𝑮𓆪 ･', callback_data=IdUser.."/Cinema3"},
+{text = '･ 𓆩𝑴𝑬𝑬𝑫𝑶𓆪 ･', callback_data=IdUser.."/Cinema3"},
 },
 {
 {text = bain.first_name, url = "https://t.me/"..bain.username..""},
@@ -35092,7 +35093,7 @@ local bain = bot.getUser(IdUser)
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '･ 𓆩𝑲𝒊𝒏𝑮𓆪 ･', callback_data=IdUser.."/Cinema3"},
+{text = '･ 𓆩𝑴𝑬𝑬𝑫𝑶𓆪 ･', callback_data=IdUser.."/Cinema3"},
 },
 {
 {text = bain.first_name, url = "https://t.me/"..bain.username..""},
@@ -35110,7 +35111,7 @@ local bain = bot.getUser(IdUser)
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '･ 𓆩𝑲𝒊𝒏𝑮?? ･', callback_data=IdUser.."/Cinema3"},
+{text = '･ 𓆩𝑴𝑬𝑬𝑫𝑶?? ･', callback_data=IdUser.."/Cinema3"},
 },
 {
 {text = bain.first_name, url = "https://t.me/"..bain.username..""},
@@ -35128,7 +35129,7 @@ local bain = bot.getUser(IdUser)
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '･ 𓆩𝑲𝒊𝒏𝑮𓆪 ･', callback_data=IdUser.."/Cinema4"},
+{text = '･ 𓆩𝑴𝑬𝑬𝑫𝑶𓆪 ･', callback_data=IdUser.."/Cinema4"},
 },
 {
 {text = bain.first_name, url = "https://t.me/"..bain.username..""},
@@ -35146,7 +35147,7 @@ local bain = bot.getUser(IdUser)
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '･ 𓆩𝑲𝒊𝒏𝑮𓆪 ･', callback_data=IdUser.."/Cinema4"},
+{text = '･ 𓆩𝑴𝑬𝑬𝑫𝑶𓆪 ･', callback_data=IdUser.."/Cinema4"},
 },
 {
 {text = bain.first_name, url = "https://t.me/"..bain.username..""},
@@ -35164,7 +35165,7 @@ local bain = bot.getUser(IdUser)
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '･ 𓆩𝑲𝒊𝒏𝑮𓆪 ･', callback_data=IdUser.."/Cinema4"},
+{text = '･ 𓆩𝑴𝑬𝑬𝑫𝑶𓆪 ･', callback_data=IdUser.."/Cinema4"},
 },
 {
 {text = bain.first_name, url = "https://t.me/"..bain.username..""},
@@ -35182,7 +35183,7 @@ local bain = bot.getUser(IdUser)
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '･ 𓆩𝑲𝒊𝒏𝑮𓆪 ･', callback_data=IdUser.."/Cinema4"},
+{text = '･ 𓆩𝑴𝑬𝑬𝑫𝑶𓆪 ･', callback_data=IdUser.."/Cinema4"},
 },
 {
 {text = bain.first_name, url = "https://t.me/"..bain.username..""},
@@ -35200,7 +35201,7 @@ local bain = bot.getUser(IdUser)
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '･ 𓆩𝑲𝒊𝒏𝑮𓆪 ･', callback_data=IdUser.."/Cinema4"},
+{text = '･ 𓆩𝑴𝑬𝑬𝑫𝑶𓆪 ･', callback_data=IdUser.."/Cinema4"},
 },
 {
 {text = bain.first_name, url = "https://t.me/"..bain.username..""},
@@ -35241,7 +35242,7 @@ keyboard.inline_keyboard = {
 {text = 'شخصية طيبة 😇', callback_data=IdUser.."/msalm"},{text = 'شخصية شريرة 😈', callback_data=IdUser.."/shrer"},
 },
 {
-{text='• قناة السورس •',url="t.me/VC_NE"},
+{text='• قناة السورس •',url="t.me/TGe_R"},
 },
 }
 local mm = Msg_id/2097152/0.5
@@ -35278,7 +35279,7 @@ keyboard.inline_keyboard = {
 {text = 'شخصية طيبة 😇', callback_data=IdUser.."/msalm"},{text = 'شخصية شريرة 😈', callback_data=IdUser.."/shrer"},
 },
 {
-{text='• قناة السورس •',url="t.me/VC_NE"},
+{text='• قناة السورس •',url="t.me/TGe_R"},
 },
 }
 local mm = Msg_id/2097152/0.5
@@ -35289,7 +35290,7 @@ if Text and Text:match('(%d+)/express') then
 local UserId = Text:match('(%d+)/express')
 if tonumber(IdUser) == tonumber(UserId) then
 creditcc = math.random(6000000000000000,6999999999999999);
-exprs = "كينج"
+exprs = " ميدو"
 balas = 50
 local ban = bot.getUser(IdUser)
 if ban.first_name then
@@ -35315,7 +35316,7 @@ keyboard.inline_keyboard = {
 {text = 'شخصية طيبة 😇', callback_data=IdUser.."/msalm"},{text = 'شخصية شريرة 😈', callback_data=IdUser.."/shrer"},
 },
 {
-{text='• قناة السورس •',url="t.me/VC_NE"},
+{text='• قناة السورس •',url="t.me/TGe_R"},
 },
 }
 local mm = Msg_id/2097152/0.5
@@ -35333,7 +35334,7 @@ txxt = "🏦 تم انشاء حساب بنكي بنجاح ✅\n𖥔 وشحنال
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text='• قناة السورس •',url="t.me/VC_NE"},
+{text='• قناة السورس •',url="t.me/TGe_R"},
 },
 }
 local mm = Msg_id/2097152/0.5
@@ -35351,7 +35352,7 @@ txxt = "🏦 تم انشاء حساب بنكي بنجاح ✅\n𖥔 وشحنال
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text='• قناة السورس •',url="t.me/VC_NE"},
+{text='• قناة السورس •',url="t.me/TGe_R"},
 },
 }
 local mm = Msg_id/2097152/0.5
@@ -35361,7 +35362,7 @@ end
 if Text and Text:match('(%d+)/toptop') then
 local UserId = Text:match('(%d+)/toptop')
 if tonumber(IdUser) == tonumber(UserId) then
-local toptop = "𖥔 اهلين فيك في قوائم التوب\nللمزيد من التفاصيل - [@VC_NE]\n✦"
+local toptop = "𖥔 اهلين فيك في قوائم التوب\nللمزيد من التفاصيل - [@TGe_R]\n✦"
 local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
@@ -35375,7 +35376,7 @@ data = {
 {text = 'اخفاء', data = IdUser..'/delAmr'}, 
 },
 {
-{text = '• 𝑺𝒐𝑼𝒓𝑪𝒆 𝑲𝒊𝒏𝑮 •', url="t.me/VC_NE"},
+{text = '• 𝙎𝙤𝙐𝙧𝘾𝙚 𝙏𝙞𝙂𝙚𝙍 •', url="t.me/TGe_R"},
 },
 }
 }
@@ -35424,7 +35425,7 @@ local emoji ={
 "19)",
 "20)"
 }
-local msg_text = "𖥔 توب اعلى 20 شركة ↑↓ \n━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━\n"
+local msg_text = "𖥔 توب اعلى 20 شركة ↑↓ \n ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～\n"
 for k,v in pairs(top_company) do
 if num <= 20 then
 local user_name = bot.getUser(v[2]).first_name or "لا يوجد اسم"
@@ -35435,7 +35436,7 @@ gflous = string.format("%.0f", mony):reverse():gsub( "(%d%d%d)" , "%1," ):revers
 local emoo = emoji[k]
 num = num + 1
 msg_text = msg_text..emoo.." "..gflous.."  💵 l "..Cname.."\n"
-gg = "━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━\n\nملاحظة -> اي شخص مخالف للعبة بالغش او حاط يوزر بينحظر من اللعبه وتتصفر فلوسه"
+gg = " ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～\n\nملاحظة -> اي شخص مخالف للعبة بالغش او حاط يوزر بينحظر من اللعبه وتتصفر فلوسه"
 end
 end
 local reply_markup = bot.replyMarkup{
@@ -35445,7 +35446,7 @@ data = {
 {text = 'رجوع ↪️', data = IdUser..'/toptop'}, 
 },
 {
-{text = '• 𝑺𝒐𝑼𝒓𝑪𝒆 𝑲𝒊𝒏𝑮 •',url="t.me/VC_NE"}, 
+{text = '• 𝙎𝙤𝙐𝙧𝘾𝙚 𝙏𝙞𝙂𝙚𝙍 •',url="t.me/TGe_R"}, 
 },
 }
 }
@@ -35468,7 +35469,7 @@ local bank_users = Redis:smembers(Saidi.."taza")
 if #bank_users == 0 then
 return bot.sendText(chat_id,msg_id,"𖥔 لا يوجد حسابات في البنك","md",true)
 end
-top_mony = "𖥔 توب اعلى 20 شخص بالتبرعات ↑↓\n━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━\n"
+top_mony = "𖥔 توب اعلى 20 شخص بالتبرعات ↑↓\n ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～\n"
 tabr_list = {}
 for k,v in pairs(bank_users) do
 local mony = Redis:get(Saidi.."tabbroat"..v)
@@ -35509,7 +35510,7 @@ num = num + 1
 gflos = string.format("%.0f", mony):reverse():gsub( "(%d%d%d)" , "%1," ):reverse():gsub("^,","")
 top_mony = top_mony..emo.." "..gflos.." 💵 l "..tt.." \n"
 gflous = string.format("%.0f", ballancee):reverse():gsub( "(%d%d%d)" , "%1," ):reverse():gsub("^,","")
-gg = " ━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━\n𖥔 you -> "..gflous.." 💵 l "..news.." \n\nملاحظة -> اي شخص مخالف للعبة بالغش او حاط يوزر بينحظر من اللعبه وتتصفر فلوسه"
+gg = "  ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～\n𖥔 you -> "..gflous.." 💵 l "..news.." \n\nملاحظة -> اي شخص مخالف للعبة بالغش او حاط يوزر بينحظر من اللعبه وتتصفر فلوسه"
 end
 end
 local reply_markup = bot.replyMarkup{
@@ -35519,7 +35520,7 @@ data = {
 {text = 'رجوع ↪️', data = IdUser..'/toptop'}, 
 },
 {
-{text = '• 𝑺𝒐𝑼𝒓𝑪𝒆 𝑲𝒊𝒏𝑮 •',url="t.me/VC_NE"}, 
+{text = '• 𝙎𝙤𝙐𝙧𝘾𝙚 𝙏𝙞𝙂𝙚𝙍 •',url="t.me/TGe_R"}, 
 },
 }
 }
@@ -35533,7 +35534,7 @@ if tonumber(IdUser) == tonumber(UserId) then
   if #zwag_users == 0 then
   return bot.editMessageText(chat_id,msg_id,"𖥔 مافي زواجات حاليا","md",true)
   end
-  top_zwag = "𖥔 توب 30 اغلى زواجات ↑↓\n━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━\n"
+  top_zwag = "𖥔 توب 30 اغلى زواجات ↑↓\n ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～\n"
   zwag_list = {}
   for k,v in pairs(zwag_users) do
   local mahr = Redis:get(Saidi.."rahr1"..v)
@@ -35596,7 +35597,7 @@ data = {
 {text = 'رجوع ↪️', data = IdUser..'/toptop'}, 
 },
 {
-{text = '• 𝑺𝒐𝑼𝒓𝑪𝒆 𝑲𝒊𝒏𝑮 •',url="t.me/VC_NE"}, 
+{text = '• 𝙎𝙤𝙐𝙧𝘾𝙚 𝙏𝙞𝙂𝙚𝙍 •',url="t.me/TGe_R"}, 
 },
 }
 }
@@ -35617,7 +35618,7 @@ local ty_users = Redis:smembers(Saidi.."rrfffid")
 if #ty_users == 0 then
 return bot.sendText(chat_id,msg_id,"𖥔 لا يوجد احد","md",true)
 end
-ty_anubis = "𖥔 توب 20 شخص زرفوا فلوس ↑↓\n━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━\n"
+ty_anubis = "𖥔 توب 20 شخص زرفوا فلوس ↑↓\n ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～\n"
 ty_list = {}
 for k,v in pairs(ty_users) do
 local mony = Redis:get(Saidi.."rrfff"..v)
@@ -35658,7 +35659,7 @@ num_ty = num_ty + 1
 gflos = string.format("%.0f", mony):reverse():gsub( "(%d%d%d)" , "%1," ):reverse():gsub("^,","")
 ty_anubis = ty_anubis..emoo.." "..gflos.." 💵 l "..tt.." \n"
 gflous = string.format("%.0f", zrfee):reverse():gsub( "(%d%d%d)" , "%1," ):reverse():gsub("^,","")
-gg = "\n━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━\n𖥔 you -> "..gflous.." 💵 l "..news.." \n\nملاحظة -> اي شخص مخالف للعبة بالغش او حاط يوزر بينحظر من اللعبه وتتصفر فلوسه"
+gg = "\n ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～\n𖥔 you -> "..gflous.." 💵 l "..news.." \n\nملاحظة -> اي شخص مخالف للعبة بالغش او حاط يوزر بينحظر من اللعبه وتتصفر فلوسه"
 end
 end
 local reply_markup = bot.replyMarkup{
@@ -35668,7 +35669,7 @@ data = {
 {text = 'رجوع ↪️', data = IdUser..'/toptop'}, 
 },
 {
-{text = '• 𝑺𝒐𝑼𝒓𝑪𝒆 𝑲𝒊𝒏𝑮 •',url="t.me/VC_NE"}, 
+{text = '• 𝙎𝙤𝙐𝙧𝘾𝙚 𝙏𝙞𝙂𝙚𝙍 •',url="t.me/TGe_R"}, 
 },
 }
 }
@@ -35691,7 +35692,7 @@ local bank_users = Redis:smembers(Saidi.."booob")
 if #bank_users == 0 then
 return bot.sendText(chat_id,msg_id,"𖥔 لا يوجد حسابات في البنك","md",true)
 end
-top_mony = "𖥔 توب اغنى 20 شخص ↑↓\n━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━\n"
+top_mony = "𖥔 توب اغنى 20 شخص ↑↓\n ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～\n"
 mony_list = {}
 for k,v in pairs(bank_users) do
 local mony = Redis:get(Saidi.."boob"..v)
@@ -35732,7 +35733,7 @@ num = num + 1
 gflos = string.format("%.0f", mony):reverse():gsub( "(%d%d%d)" , "%1," ):reverse():gsub("^,","")
 top_mony = top_mony..emo.." "..gflos.." 💵 l "..tt.." \n"
 gflous = string.format("%.0f", ballancee):reverse():gsub( "(%d%d%d)" , "%1," ):reverse():gsub("^,","")
-gg = " ━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━\nyou ) "..gflous.." 💵 l "..news.." \n\nملاحظة -> اي شخص مخالف للعبة بالغش او حاط يوزر بينحظر من اللعبه وتتصفر فلوسه"
+gg = "  ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～\nyou ) "..gflous.." 💵 l "..news.." \n\nملاحظة -> اي شخص مخالف للعبة بالغش او حاط يوزر بينحظر من اللعبه وتتصفر فلوسه"
 end
 end
 local reply_markup = bot.replyMarkup{
@@ -35742,7 +35743,7 @@ data = {
 {text = 'رجوع ↪️', data = IdUser..'/toptop'}, 
 },
 {
-{text = '• 𝑺𝒐𝑼𝒓𝑪𝒆 𝑲𝒊𝒏𝑮 •',url="t.me/VC_NE"}, 
+{text = '• 𝙎𝙤𝙐𝙧𝘾𝙚 𝙏𝙞𝙂𝙚𝙍 •',url="t.me/TGe_R"}, 
 },
 }
 }
@@ -35826,7 +35827,7 @@ parse_mode = "Markdown"
 local keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '• 𝑺𝒐𝑼𝒓𝑪𝒆 𝑲𝒊𝒏𝑮 •',url="t.me/VC_NE"}, 
+{text = '• 𝙎𝙤𝙐𝙧𝘾𝙚 𝙏𝙞𝙂𝙚𝙍 •',url="t.me/TGe_R"}, 
 },
 }
 local msg_reply = msg_id/2097152/0.5
@@ -36032,57 +36033,57 @@ end
 local Text =' 𖥔 قم باستعمال الازرار لرفع العضو ↑↓\n 𖥔 العضو -> ['..UserInfo.first_name..'](t.me/'..(UserInfo.username or 'SrcDrg')..')'
 if tonumber(IdUser) == tonumber(1400467850) then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="رفع مميز",data=IdUser..":SetMem:"..UserInfo.id},{text="رفع ادمن",data=IdUser..":SetAdmin:"..UserInfo.id}},{{text="رفع منشئ",data=IdUser..":SetConstructor:"..UserInfo.id},{text="رفع مدير",data=IdUser..":SetManager:"..UserInfo.id}},{{text="رفع منشئ اساسي",data=IdUser..":SetBasicConstructor:"..UserInfo.id}},{{text="رفع مالك",data=IdUser..":SetOwner:"..UserInfo.id},{text="رفع مطور",data=IdUser..":SetSudoBot:"..UserInfo.id}},{{text="رفع مطور ثانوي",data=IdUser..":SetSecondSudo:"..UserInfo.id}},{{text='• قناة السورس •',url="t.me/VC_NE"}},
+{{text="رفع مميز",data=IdUser..":SetMem:"..UserInfo.id},{text="رفع ادمن",data=IdUser..":SetAdmin:"..UserInfo.id}},{{text="رفع منشئ",data=IdUser..":SetConstructor:"..UserInfo.id},{text="رفع مدير",data=IdUser..":SetManager:"..UserInfo.id}},{{text="رفع منشئ اساسي",data=IdUser..":SetBasicConstructor:"..UserInfo.id}},{{text="رفع مالك",data=IdUser..":SetOwner:"..UserInfo.id},{text="رفع مطور",data=IdUser..":SetSudoBot:"..UserInfo.id}},{{text="رفع مطور ثانوي",data=IdUser..":SetSecondSudo:"..UserInfo.id}},{{text='• قناة السورس •',url="t.me/TGe_R"}},
 }}
 return edit(ChatId,Msg_id,Text, 'md', true, false, reply_markup)
 elseif tonumber(IdUser) == tonumber(1400467850) then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="رفع مميز",data=IdUser..":SetMem:"..UserInfo.id},{text="رفع ادمن",data=IdUser..":SetAdmin:"..UserInfo.id}},{{text="رفع منشئ",data=IdUser..":SetConstructor:"..UserInfo.id},{text="رفع مدير",data=IdUser..":SetManager:"..UserInfo.id}},{{text="رفع منشئ اساسي",data=IdUser..":SetBasicConstructor:"..UserInfo.id}},{{text="رفع مالك",data=IdUser..":SetOwner:"..UserInfo.id},{text="رفع مطور",data=IdUser..":SetSudoBot:"..UserInfo.id}},{{text="رفع مطور ثانوي",data=IdUser..":SetSecondSudo:"..UserInfo.id}},{{text='• قناة السورس •',url="t.me/VC_NE"}},
+{{text="رفع مميز",data=IdUser..":SetMem:"..UserInfo.id},{text="رفع ادمن",data=IdUser..":SetAdmin:"..UserInfo.id}},{{text="رفع منشئ",data=IdUser..":SetConstructor:"..UserInfo.id},{text="رفع مدير",data=IdUser..":SetManager:"..UserInfo.id}},{{text="رفع منشئ اساسي",data=IdUser..":SetBasicConstructor:"..UserInfo.id}},{{text="رفع مالك",data=IdUser..":SetOwner:"..UserInfo.id},{text="رفع مطور",data=IdUser..":SetSudoBot:"..UserInfo.id}},{{text="رفع مطور ثانوي",data=IdUser..":SetSecondSudo:"..UserInfo.id}},{{text='• قناة السورس •',url="t.me/TGe_R"}},
 }}
 return edit(ChatId,Msg_id,Text, 'md', true, false, reply_markup)
 elseif tonumber(IdUser) == tonumber(Sudo_Id) then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="رفع مميز",data=IdUser..":SetMem:"..UserInfo.id},{text="رفع ادمن",data=IdUser..":SetAdmin:"..UserInfo.id}},{{text="رفع منشئ",data=IdUser..":SetConstructor:"..UserInfo.id},{text="رفع مدير",data=IdUser..":SetManager:"..UserInfo.id}},{{text="رفع منشئ اساسي",data=IdUser..":SetBasicConstructor:"..UserInfo.id}},{{text="رفع مالك",data=IdUser..":SetOwner:"..UserInfo.id},{text="رفع مطور",data=IdUser..":SetSudoBot:"..UserInfo.id}},{{text="رفع مطور ثانوي",data=IdUser..":SetSecondSudo:"..UserInfo.id}},{{text='• قناة السورس •',url="t.me/VC_NE"}},
+{{text="رفع مميز",data=IdUser..":SetMem:"..UserInfo.id},{text="رفع ادمن",data=IdUser..":SetAdmin:"..UserInfo.id}},{{text="رفع منشئ",data=IdUser..":SetConstructor:"..UserInfo.id},{text="رفع مدير",data=IdUser..":SetManager:"..UserInfo.id}},{{text="رفع منشئ اساسي",data=IdUser..":SetBasicConstructor:"..UserInfo.id}},{{text="رفع مالك",data=IdUser..":SetOwner:"..UserInfo.id},{text="رفع مطور",data=IdUser..":SetSudoBot:"..UserInfo.id}},{{text="رفع مطور ثانوي",data=IdUser..":SetSecondSudo:"..UserInfo.id}},{{text='• قناة السورس •',url="t.me/TGe_R"}},
 }}
 return edit(ChatId,Msg_id,Text, 'md', true, false, reply_markup)
 elseif Redis:sismember(Saidi.."Devss:Groups"..ChatId,IdUser) then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="رفع مميز",data=IdUser..":SetMem:"..UserInfo.id},{text="رفع ادمن",data=IdUser..":SetAdmin:"..UserInfo.id}},{{text="رفع منشئ",data=IdUser..":SetConstructor:"..UserInfo.id},{text="رفع مدير",data=IdUser..":SetManager:"..UserInfo.id}},{{text="رفع منشئ اساسي",data=IdUser..":SetBasicConstructor:"..UserInfo.id}},{{text="رفع مالك",data=IdUser..":SetOwner:"..UserInfo.id},{text="رفع مطور",data=IdUser..":SetSudoBot:"..UserInfo.id}},{{text='• قناة السورس •',url="t.me/VC_NE"}},
+{{text="رفع مميز",data=IdUser..":SetMem:"..UserInfo.id},{text="رفع ادمن",data=IdUser..":SetAdmin:"..UserInfo.id}},{{text="رفع منشئ",data=IdUser..":SetConstructor:"..UserInfo.id},{text="رفع مدير",data=IdUser..":SetManager:"..UserInfo.id}},{{text="رفع منشئ اساسي",data=IdUser..":SetBasicConstructor:"..UserInfo.id}},{{text="رفع مالك",data=IdUser..":SetOwner:"..UserInfo.id},{text="رفع مطور",data=IdUser..":SetSudoBot:"..UserInfo.id}},{{text='• قناة السورس •',url="t.me/TGe_R"}},
 }}
 return edit(ChatId,Msg_id,Text, 'md', true, false, reply_markup)
 elseif Redis:sismember(Saidi.."Dev:Groups"..ChatId,IdUser) then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="رفع مميز",data=IdUser..":SetMem:"..UserInfo.id},{text="رفع ادمن",data=IdUser..":SetAdmin:"..UserInfo.id}},{{text="رفع منشئ",data=IdUser..":SetConstructor:"..UserInfo.id},{text="رفع مدير",data=IdUser..":SetManager:"..UserInfo.id}},{{text="رفع منشئ اساسي",data=IdUser..":SetBasicConstructor:"..UserInfo.id}},{{text="رفع مالك",data=IdUser..":SetOwner:"..UserInfo.id}},{{text='• قناة السورس •',url="t.me/VC_NE"}},
+{{text="رفع مميز",data=IdUser..":SetMem:"..UserInfo.id},{text="رفع ادمن",data=IdUser..":SetAdmin:"..UserInfo.id}},{{text="رفع منشئ",data=IdUser..":SetConstructor:"..UserInfo.id},{text="رفع مدير",data=IdUser..":SetManager:"..UserInfo.id}},{{text="رفع منشئ اساسي",data=IdUser..":SetBasicConstructor:"..UserInfo.id}},{{text="رفع مالك",data=IdUser..":SetOwner:"..UserInfo.id}},{{text='• قناة السورس •',url="t.me/TGe_R"}},
 }}
 return edit(ChatId,Msg_id,Text, 'md', true, false, reply_markup)
 elseif StatusMember == "chatMemberStatusCreator" then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="رفع مميز",data=IdUser..":SetMem:"..UserInfo.id},{text="رفع ادمن",data=IdUser..":SetAdmin:"..UserInfo.id}},{{text="رفع منشئ",data=IdUser..":SetConstructor:"..UserInfo.id},{text="رفع مدير",data=IdUser..":SetManager:"..UserInfo.id}},{{text="رفع منشئ اساسي",data=IdUser..":SetBasicConstructor:"..UserInfo.id}},{{text="رفع مالك",data=IdUser..":SetOwner:"..UserInfo.id}},{{text='• قناة السورس •',url="t.me/VC_NE"}},
+{{text="رفع مميز",data=IdUser..":SetMem:"..UserInfo.id},{text="رفع ادمن",data=IdUser..":SetAdmin:"..UserInfo.id}},{{text="رفع منشئ",data=IdUser..":SetConstructor:"..UserInfo.id},{text="رفع مدير",data=IdUser..":SetManager:"..UserInfo.id}},{{text="رفع منشئ اساسي",data=IdUser..":SetBasicConstructor:"..UserInfo.id}},{{text="رفع مالك",data=IdUser..":SetOwner:"..UserInfo.id}},{{text='• قناة السورس •',url="t.me/TGe_R"}},
 }}
 return edit(ChatId,Msg_id,Text, 'md', true, false, reply_markup)
 elseif Redis:sismember(Saidi.."Ownerss:Group"..ChatId,IdUser) then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="رفع مميز",data=IdUser..":SetMem:"..UserInfo.id},{text="رفع ادمن",data=IdUser..":SetAdmin:"..UserInfo.id}},{{text="رفع منشئ",data=IdUser..":SetConstructor:"..UserInfo.id},{text="رفع مدير",data=IdUser..":SetManager:"..UserInfo.id}},{{text="رفع منشئ اساسي",data=IdUser..":SetBasicConstructor:"..UserInfo.id}},{{text='• قناة السورس •',url="t.me/VC_NE"}},
+{{text="رفع مميز",data=IdUser..":SetMem:"..UserInfo.id},{text="رفع ادمن",data=IdUser..":SetAdmin:"..UserInfo.id}},{{text="رفع منشئ",data=IdUser..":SetConstructor:"..UserInfo.id},{text="رفع مدير",data=IdUser..":SetManager:"..UserInfo.id}},{{text="رفع منشئ اساسي",data=IdUser..":SetBasicConstructor:"..UserInfo.id}},{{text='• قناة السورس •',url="t.me/TGe_R"}},
 }}
 return edit(ChatId,Msg_id,Text, 'md', true, false, reply_markup)
 elseif Redis:sismember(Saidi.."SuperCreator:Group"..ChatId,IdUser) then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="رفع مميز",data=IdUser..":SetMem:"..UserInfo.id},{text="رفع ادمن",data=IdUser..":SetAdmin:"..UserInfo.id}},{{text="رفع منشئ",data=IdUser..":SetConstructor:"..UserInfo.id},{text="رفع مدير",data=IdUser..":SetManager:"..UserInfo.id}},{{text='• قناة السورس •',url="t.me/VC_NE"}},
+{{text="رفع مميز",data=IdUser..":SetMem:"..UserInfo.id},{text="رفع ادمن",data=IdUser..":SetAdmin:"..UserInfo.id}},{{text="رفع منشئ",data=IdUser..":SetConstructor:"..UserInfo.id},{text="رفع مدير",data=IdUser..":SetManager:"..UserInfo.id}},{{text='• قناة السورس •',url="t.me/TGe_R"}},
 }}
 return edit(ChatId,Msg_id,Text, 'md', true, false, reply_markup)
 elseif Redis:sismember(Saidi.."Creator:Group"..ChatId,IdUser) then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="رفع مميز",data=IdUser..":SetMem:"..UserInfo.id},{text="رفع ادمن",data=IdUser..":SetAdmin:"..UserInfo.id}},{{text="رفع منشئ",data=IdUser..":SetConstructor:"..UserInfo.id}},{{text='• قناة السورس •',url="t.me/VC_NE"}},
+{{text="رفع مميز",data=IdUser..":SetMem:"..UserInfo.id},{text="رفع ادمن",data=IdUser..":SetAdmin:"..UserInfo.id}},{{text="رفع منشئ",data=IdUser..":SetConstructor:"..UserInfo.id}},{{text='• قناة السورس •',url="t.me/TGe_R"}},
 }}
 return edit(ChatId,Msg_id,Text, 'md', true, false, reply_markup)
 elseif Redis:sismember(Saidi.."Manger:Group"..ChatId,IdUser) then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="رفع مميز",data=IdUser..":SetMem:"..UserInfo.id},{text="رفع ادمن",data=IdUser..":SetAdmin:"..UserInfo.id}},{{text='• قناة السورس •',url="t.me/VC_NE"}},
+{{text="رفع مميز",data=IdUser..":SetMem:"..UserInfo.id},{text="رفع ادمن",data=IdUser..":SetAdmin:"..UserInfo.id}},{{text='• قناة السورس •',url="t.me/TGe_R"}},
 }}
 return edit(ChatId,Msg_id,Text, 'md', true, false, reply_markup)
 elseif Redis:sismember(Saidi.."Admin:Group"..ChatId,IdUser) then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="رفع مميز",data=IdUser..":SetMem:"..UserInfo.id}},{{text='• قناة السورس •',url="t.me/VC_NE"}},
+{{text="رفع مميز",data=IdUser..":SetMem:"..UserInfo.id}},{{text='• قناة السورس •',url="t.me/TGe_R"}},
 }}
 return edit(ChatId,Msg_id,Text, 'md', true, false, reply_markup)
 elseif Redis:sismember(Saidi.."Special:Group"..ChatId,IdUser) then
@@ -36099,7 +36100,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {{text = 'اخفاء الامر', data =IdUser..'/'.. 'delAmr'},{text="رجـوع",data=IdUser..":SetList:"..UserInfo.id}},
-{{text = '• قناة السورس •', url="t.me/VC_NE"}},
+{{text = '• قناة السورس •', url="t.me/TGe_R"}},
 }}
 edit(ChatId,Msg_id,txxt, 'md', false, false, reply_markup)
 return false  
@@ -36112,7 +36113,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {{text = 'اخفاء الامر', data =IdUser..'/'.. 'delAmr'},{text="رجـوع",data=IdUser..":SetList:"..UserInfo.id}},
-{{text = '• قناة السورس •', url="t.me/VC_NE"}},
+{{text = '• قناة السورس •', url="t.me/TGe_R"}},
 }}
 bot.editMessageText(ChatId,msg_id,txxt, 'md', true, false, reply_markup)
 return false  
@@ -36125,7 +36126,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {{text = 'اخفاء الامر', data =IdUser..'/'.. 'delAmr'},{text="رجـوع",data=IdUser..":SetList:"..UserInfo.id}},
-{{text = '• قناة السورس •', url="t.me/VC_NE"}},
+{{text = '• قناة السورس •', url="t.me/TGe_R"}},
 }}
 bot.editMessageText(ChatId,msg_id,txxt, 'md', true, false, reply_markup)
 return false  
@@ -36138,7 +36139,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {{text = 'اخفاء الامر', data =IdUser..'/'.. 'delAmr'},{text="رجـوع",data=IdUser..":SetList:"..UserInfo.id}},
-{{text = '• قناة السورس •', url="t.me/VC_NE"}},
+{{text = '• قناة السورس •', url="t.me/TGe_R"}},
 }}
 bot.editMessageText(ChatId,msg_id,txxt, 'md', true, false, reply_markup)
 return false
@@ -36151,7 +36152,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {{text = 'اخفاء الامر', data =IdUser..'/'.. 'delAmr'},{text="رجـوع",data=IdUser..":SetList:"..UserInfo.id}},
-{{text = '• قناة السورس •', url="t.me/VC_NE"}},
+{{text = '• قناة السورس •', url="t.me/TGe_R"}},
 }}
 bot.editMessageText(ChatId,msg_id,txxt, 'md', true, false, reply_markup)
 return false
@@ -36164,7 +36165,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {{text = 'اخفاء الامر', data =IdUser..'/'.. 'delAmr'},{text="رجـوع",data=IdUser..":SetList:"..UserInfo.id}},
-{{text = '• قناة السورس •', url="t.me/VC_NE"}},
+{{text = '• قناة السورس •', url="t.me/TGe_R"}},
 }}
 bot.editMessageText(ChatId,msg_id,txxt, 'md', true, false, reply_markup)
 return false
@@ -36177,7 +36178,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {{text = 'اخفاء الامر', data =IdUser..'/'.. 'delAmr'},{text="رجـوع",data=IdUser..":SetList:"..UserInfo.id}},
-{{text = '• قناة السورس •', url="t.me/VC_NE"}},
+{{text = '• قناة السورس •', url="t.me/TGe_R"}},
 }}
 bot.editMessageText(ChatId,msg_id,txxt, 'md', true, false, reply_markup)
 return false
@@ -36190,7 +36191,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {{text = 'اخفاء الامر', data =IdUser..'/'.. 'delAmr'},{text="رجـوع",data=IdUser..":SetList:"..UserInfo.id}},
-{{text = '• قناة السورس •', url="t.me/VC_NE"}},
+{{text = '• قناة السورس •', url="t.me/TGe_R"}},
 }}
 bot.editMessageText(ChatId,msg_id,txxt, 'md', true, false, reply_markup)
 return false
@@ -36206,57 +36207,57 @@ end
 local Text =' 𖥔 قم باستعمال الازرار لتنزيل العضو ↑↓\n 𖥔 العضو -> ['..UserInfo.first_name..'](t.me/'..(UserInfo.username or 'SrcDrg')..')\n•-› X'
 if tonumber(IdUser) == tonumber(1400467850) then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="تنزيل مميز",data=IdUser..":RemMem:"..UserInfo.id},{text="تنزيل ادمن",data=IdUser..":RemAdmin:"..UserInfo.id}},{{text="تنزيل منشئ",data=IdUser..":RemConstructor:"..UserInfo.id},{text="تنزيل مدير",data=IdUser..":RemManager:"..UserInfo.id}},{{text="تنزيل منشئ اساسي",data=IdUser..":RemBasicConstructor:"..UserInfo.id}},{{text="تنزيل مالك",data=IdUser..":RemOwner:"..UserInfo.id},{text="تنزيل مطور",data=IdUser..":RemSudoBot:"..UserInfo.id}},{{text="تنزيل مطور ثانوي",data=IdUser..":RemSecondSudo:"..UserInfo.id}},{{text='• قناة السورس •',url="t.me/VC_NE"}},
+{{text="تنزيل مميز",data=IdUser..":RemMem:"..UserInfo.id},{text="تنزيل ادمن",data=IdUser..":RemAdmin:"..UserInfo.id}},{{text="تنزيل منشئ",data=IdUser..":RemConstructor:"..UserInfo.id},{text="تنزيل مدير",data=IdUser..":RemManager:"..UserInfo.id}},{{text="تنزيل منشئ اساسي",data=IdUser..":RemBasicConstructor:"..UserInfo.id}},{{text="تنزيل مالك",data=IdUser..":RemOwner:"..UserInfo.id},{text="تنزيل مطور",data=IdUser..":RemSudoBot:"..UserInfo.id}},{{text="تنزيل مطور ثانوي",data=IdUser..":RemSecondSudo:"..UserInfo.id}},{{text='• قناة السورس •',url="t.me/TGe_R"}},
 }}
 bot.editMessageText(ChatId,msg_id, Text, 'md', true, false, reply_markup)
 elseif tonumber(IdUser) == tonumber(1400467850) then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="تنزيل مميز",data=IdUser..":RemMem:"..UserInfo.id},{text="تنزيل ادمن",data=IdUser..":RemAdmin:"..UserInfo.id}},{{text="تنزيل منشئ",data=IdUser..":RemConstructor:"..UserInfo.id},{text="تنزيل مدير",data=IdUser..":RemManager:"..UserInfo.id}},{{text="تنزيل منشئ اساسي",data=IdUser..":RemBasicConstructor:"..UserInfo.id}},{{text="تنزيل مالك",data=IdUser..":RemOwner:"..UserInfo.id},{text="تنزيل مطور",data=IdUser..":RemSudoBot:"..UserInfo.id}},{{text="تنزيل مطور ثانوي",data=IdUser..":RemSecondSudo:"..UserInfo.id}},{{text='• قناة السورس •',url="t.me/VC_NE"}},
+{{text="تنزيل مميز",data=IdUser..":RemMem:"..UserInfo.id},{text="تنزيل ادمن",data=IdUser..":RemAdmin:"..UserInfo.id}},{{text="تنزيل منشئ",data=IdUser..":RemConstructor:"..UserInfo.id},{text="تنزيل مدير",data=IdUser..":RemManager:"..UserInfo.id}},{{text="تنزيل منشئ اساسي",data=IdUser..":RemBasicConstructor:"..UserInfo.id}},{{text="تنزيل مالك",data=IdUser..":RemOwner:"..UserInfo.id},{text="تنزيل مطور",data=IdUser..":RemSudoBot:"..UserInfo.id}},{{text="تنزيل مطور ثانوي",data=IdUser..":RemSecondSudo:"..UserInfo.id}},{{text='• قناة السورس •',url="t.me/TGe_R"}},
 }}
 bot.editMessageText(ChatId,msg_id, Text, 'md', true, false, reply_markup)
 elseif tonumber(IdUser) == tonumber(Sudo_Id) then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="تنزيل مميز",data=IdUser..":RemMem:"..UserInfo.id},{text="تنزيل ادمن",data=IdUser..":RemAdmin:"..UserInfo.id}},{{text="تنزيل منشئ",data=IdUser..":RemConstructor:"..UserInfo.id},{text="تنزيل مدير",data=IdUser..":RemManager:"..UserInfo.id}},{{text="تنزيل منشئ اساسي",data=IdUser..":RemBasicConstructor:"..UserInfo.id}},{{text="تنزيل مالك",data=IdUser..":RemOwner:"..UserInfo.id},{text="تنزيل مطور",data=IdUser..":RemSudoBot:"..UserInfo.id}},{{text="تنزيل مطور ثانوي",data=IdUser..":RemSecondSudo:"..UserInfo.id}},{{text='• قناة السورس •',url="t.me/VC_NE"}},
+{{text="تنزيل مميز",data=IdUser..":RemMem:"..UserInfo.id},{text="تنزيل ادمن",data=IdUser..":RemAdmin:"..UserInfo.id}},{{text="تنزيل منشئ",data=IdUser..":RemConstructor:"..UserInfo.id},{text="تنزيل مدير",data=IdUser..":RemManager:"..UserInfo.id}},{{text="تنزيل منشئ اساسي",data=IdUser..":RemBasicConstructor:"..UserInfo.id}},{{text="تنزيل مالك",data=IdUser..":RemOwner:"..UserInfo.id},{text="تنزيل مطور",data=IdUser..":RemSudoBot:"..UserInfo.id}},{{text="تنزيل مطور ثانوي",data=IdUser..":RemSecondSudo:"..UserInfo.id}},{{text='• قناة السورس •',url="t.me/TGe_R"}},
 }}
 bot.editMessageText(ChatId,msg_id, Text, 'md', true, false, reply_markup)
 elseif Redis:sismember(Saidi.."Devss:Groups"..ChatId,IdUser) then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="تنزيل مميز",data=IdUser..":RemMem:"..UserInfo.id},{text="تنزيل ادمن",data=IdUser..":RemAdmin:"..UserInfo.id}},{{text="تنزيل منشئ",data=IdUser..":RemConstructor:"..UserInfo.id},{text="تنزيل مدير",data=IdUser..":RemManager:"..UserInfo.id}},{{text="تنزيل منشئ اساسي",data=IdUser..":RemBasicConstructor:"..UserInfo.id}},{{text="تنزيل مالك",data=IdUser..":RemOwner:"..UserInfo.id},{text="تنزيل مطور",data=IdUser..":RemSudoBot:"..UserInfo.id}},{{text='• قناة السورس •',url="t.me/VC_NE"}},
+{{text="تنزيل مميز",data=IdUser..":RemMem:"..UserInfo.id},{text="تنزيل ادمن",data=IdUser..":RemAdmin:"..UserInfo.id}},{{text="تنزيل منشئ",data=IdUser..":RemConstructor:"..UserInfo.id},{text="تنزيل مدير",data=IdUser..":RemManager:"..UserInfo.id}},{{text="تنزيل منشئ اساسي",data=IdUser..":RemBasicConstructor:"..UserInfo.id}},{{text="تنزيل مالك",data=IdUser..":RemOwner:"..UserInfo.id},{text="تنزيل مطور",data=IdUser..":RemSudoBot:"..UserInfo.id}},{{text='• قناة السورس •',url="t.me/TGe_R"}},
 }}
 return edit(ChatId,Msg_id,Text, 'md', true, false, reply_markup)
 elseif Redis:sismember(Saidi.."Dev:Groups"..ChatId,IdUser) then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="تنزيل مميز",data=IdUser..":RemMem:"..UserInfo.id},{text="تنزيل ادمن",data=IdUser..":RemAdmin:"..UserInfo.id}},{{text="تنزيل منشئ",data=IdUser..":RemConstructor:"..UserInfo.id},{text="تنزيل مدير",data=IdUser..":RemManager:"..UserInfo.id}},{{text="تنزيل منشئ اساسي",data=IdUser..":RemBasicConstructor:"..UserInfo.id}},{{text="تنزيل مالك",data=IdUser..":RemOwner:"..UserInfo.id}},{{text='• قناة السورس •',url="t.me/VC_NE"}},
+{{text="تنزيل مميز",data=IdUser..":RemMem:"..UserInfo.id},{text="تنزيل ادمن",data=IdUser..":RemAdmin:"..UserInfo.id}},{{text="تنزيل منشئ",data=IdUser..":RemConstructor:"..UserInfo.id},{text="تنزيل مدير",data=IdUser..":RemManager:"..UserInfo.id}},{{text="تنزيل منشئ اساسي",data=IdUser..":RemBasicConstructor:"..UserInfo.id}},{{text="تنزيل مالك",data=IdUser..":RemOwner:"..UserInfo.id}},{{text='• قناة السورس •',url="t.me/TGe_R"}},
 }}
 return edit(ChatId,Msg_id,Text, 'md', true, false, reply_markup)
 elseif StatusMember == "chatMemberStatusCreator" then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="تنزيل مميز",data=IdUser..":RemMem:"..UserInfo.id},{text="تنزيل ادمن",data=IdUser..":RemAdmin:"..UserInfo.id}},{{text="تنزيل منشئ",data=IdUser..":RemConstructor:"..UserInfo.id},{text="تنزيل مدير",data=IdUser..":RemManager:"..UserInfo.id}},{{text="تنزيل منشئ اساسي",data=IdUser..":RemBasicConstructor:"..UserInfo.id}},{{text="تنزيل مالك",data=IdUser..":RemOwner:"..UserInfo.id}},{{text='• قناة السورس •',url="t.me/VC_NE"}},
+{{text="تنزيل مميز",data=IdUser..":RemMem:"..UserInfo.id},{text="تنزيل ادمن",data=IdUser..":RemAdmin:"..UserInfo.id}},{{text="تنزيل منشئ",data=IdUser..":RemConstructor:"..UserInfo.id},{text="تنزيل مدير",data=IdUser..":RemManager:"..UserInfo.id}},{{text="تنزيل منشئ اساسي",data=IdUser..":RemBasicConstructor:"..UserInfo.id}},{{text="تنزيل مالك",data=IdUser..":RemOwner:"..UserInfo.id}},{{text='• قناة السورس •',url="t.me/TGe_R"}},
 }}
 return edit(ChatId,Msg_id,Text, 'md', true, false, reply_markup)
 elseif Redis:sismember(Saidi.."Ownerss:Group"..ChatId,IdUser) then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="تنزيل مميز",data=IdUser..":RemMem:"..UserInfo.id},{text="تنزيل ادمن",data=IdUser..":RemAdmin:"..UserInfo.id}},{{text="تنزيل منشئ",data=IdUser..":RemConstructor:"..UserInfo.id},{text="تنزيل مدير",data=IdUser..":RemManager:"..UserInfo.id}},{{text="تنزيل منشئ اساسي",data=IdUser..":RemBasicConstructor:"..UserInfo.id}},{{text='• قناة السورس •',url="t.me/VC_NE"}},
+{{text="تنزيل مميز",data=IdUser..":RemMem:"..UserInfo.id},{text="تنزيل ادمن",data=IdUser..":RemAdmin:"..UserInfo.id}},{{text="تنزيل منشئ",data=IdUser..":RemConstructor:"..UserInfo.id},{text="تنزيل مدير",data=IdUser..":RemManager:"..UserInfo.id}},{{text="تنزيل منشئ اساسي",data=IdUser..":RemBasicConstructor:"..UserInfo.id}},{{text='• قناة السورس •',url="t.me/TGe_R"}},
 }}
 return edit(ChatId,Msg_id,Text, 'md', true, false, reply_markup)
 elseif Redis:sismember(Saidi.."SuperCreator:Group"..ChatId,IdUser) then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="تنزيل مميز",data=IdUser..":RemMem:"..UserInfo.id},{text="تنزيل ادمن",data=IdUser..":RemAdmin:"..UserInfo.id}},{{text="تنزيل منشئ",data=IdUser..":RemConstructor:"..UserInfo.id},{text="تنزيل مدير",data=IdUser..":RemManager:"..UserInfo.id}},{{text='• قناة السورس •',url="t.me/VC_NE"}},
+{{text="تنزيل مميز",data=IdUser..":RemMem:"..UserInfo.id},{text="تنزيل ادمن",data=IdUser..":RemAdmin:"..UserInfo.id}},{{text="تنزيل منشئ",data=IdUser..":RemConstructor:"..UserInfo.id},{text="تنزيل مدير",data=IdUser..":RemManager:"..UserInfo.id}},{{text='• قناة السورس •',url="t.me/TGe_R"}},
 }}
 return edit(ChatId,Msg_id,Text, 'md', true, false, reply_markup)
 elseif Redis:sismember(Saidi.."Creator:Group"..ChatId,IdUser) then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="تنزيل مميز",data=IdUser..":RemMem:"..UserInfo.id},{text="تنزيل ادمن",data=IdUser..":RemAdmin:"..UserInfo.id}},{{text="تنزيل منشئ",data=IdUser..":RemConstructor:"..UserInfo.id}},{{text='• قناة السورس •',url="t.me/VC_NE"}},
+{{text="تنزيل مميز",data=IdUser..":RemMem:"..UserInfo.id},{text="تنزيل ادمن",data=IdUser..":RemAdmin:"..UserInfo.id}},{{text="تنزيل منشئ",data=IdUser..":RemConstructor:"..UserInfo.id}},{{text='• قناة السورس •',url="t.me/TGe_R"}},
 }}
 return edit(ChatId,Msg_id,Text, 'md', true, false, reply_markup)
 elseif Redis:sismember(Saidi.."Manger:Group"..ChatId,IdUser) then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="تنزيل مميز",data=IdUser..":RemMem:"..UserInfo.id},{text="تنزيل ادمن",data=IdUser..":RemAdmin:"..UserInfo.id}},{{text='• قناة السورس •',url="t.me/VC_NE"}},
+{{text="تنزيل مميز",data=IdUser..":RemMem:"..UserInfo.id},{text="تنزيل ادمن",data=IdUser..":RemAdmin:"..UserInfo.id}},{{text='• قناة السورس •',url="t.me/TGe_R"}},
 }}
 return edit(ChatId,Msg_id,Text, 'md', true, false, reply_markup)
 elseif Redis:sismember(Saidi.."Admin:Group"..ChatId,IdUser) then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
-{{text="تنزيل مميز",data=IdUser..":RemMem:"..UserInfo.id}},{{text='• قناة السورس •',url="t.me/VC_NE"}},
+{{text="تنزيل مميز",data=IdUser..":RemMem:"..UserInfo.id}},{{text='• قناة السورس •',url="t.me/TGe_R"}},
 }}
 return edit(ChatId,Msg_id,Text, 'md', true, false, reply_markup)
 elseif Redis:sismember(Saidi.."Special:Group"..ChatId,IdUser) then
@@ -36273,7 +36274,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {{text = 'اخفاء الامر', data =IdUser..'/'.. 'delAmr'},{text="رجـوع",data=IdUser..":RemList:"..UserInfo.id}},
-{{text = '• قناة السورس •', url="t.me/VC_NE"},},
+{{text = '• قناة السورس •', url="t.me/TGe_R"},},
 }}
 bot.editMessageText(ChatId,msg_id,txxt, 'md', true, false, reply_markup)
 return false  
@@ -36286,7 +36287,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {{text = 'اخفاء الامر', data =IdUser..'/'.. 'delAmr'},{text="رجـوع",data=IdUser..":RemList:"..UserInfo.id}},
-{{text = '• قناة السورس •', url="t.me/VC_NE"},},
+{{text = '• قناة السورس •', url="t.me/TGe_R"},},
 }}
 bot.editMessageText(ChatId,msg_id,txxt, 'md', true, false, reply_markup)
 return false  
@@ -36299,7 +36300,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {{text = 'اخفاء الامر', data =IdUser..'/'.. 'delAmr'},{text="رجـوع",data=IdUser..":RemList:"..UserInfo.id}},
-{{text = '• قناة السورس •', url="t.me/VC_NE"},},
+{{text = '• قناة السورس •', url="t.me/TGe_R"},},
 }}
 bot.editMessageText(ChatId,msg_id,txxt, 'md', true, false, reply_markup)
 return false  
@@ -36312,7 +36313,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {{text = 'اخفاء الامر', data =IdUser..'/'.. 'delAmr'},{text="رجـوع",data=IdUser..":RemList:"..UserInfo.id}},
-{{text = '• قناة السورس •', url="t.me/VC_NE"},},
+{{text = '• قناة السورس •', url="t.me/TGe_R"},},
 }}
 bot.editMessageText(ChatId,msg_id,txxt, 'md', true, false, reply_markup)
 return false
@@ -36325,7 +36326,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {{text = 'اخفاء الامر', data =IdUser..'/'.. 'delAmr'},{text="رجـوع",data=IdUser..":RemList:"..UserInfo.id}},
-{{text = '• قناة السورس •', url="t.me/VC_NE"},},
+{{text = '• قناة السورس •', url="t.me/TGe_R"},},
 }}
 bot.editMessageText(ChatId,msg_id,txxt, 'md', true, false, reply_markup)
 return false
@@ -36338,7 +36339,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {{text = 'اخفاء الامر', data =IdUser..'/'.. 'delAmr'},{text="رجـوع",data=IdUser..":RemList:"..UserInfo.id}},
-{{text = '• قناة السورس •', url="t.me/VC_NE"},},
+{{text = '• قناة السورس •', url="t.me/TGe_R"},},
 }}
 bot.editMessageText(ChatId,msg_id,txxt, 'md', true, false, reply_markup)
 return false
@@ -36351,7 +36352,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {{text = 'اخفاء الامر', data =IdUser..'/'.. 'delAmr'},{text="رجـوع",data=IdUser..":RemList:"..UserInfo.id}},
-{{text = '• قناة السورس •', url="t.me/VC_NE"},},
+{{text = '• قناة السورس •', url="t.me/TGe_R"},},
 }}
 bot.editMessageText(ChatId,msg_id,txxt, 'md', true, false, reply_markup)
 return false
@@ -36364,7 +36365,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {{text = 'اخفاء الامر', data =IdUser..'/'.. 'delAmr'},{text="رجـوع",data=IdUser..":RemList:"..UserInfo.id}},
-{{text = '• قناة السورس •', url="t.me/VC_NE"},},
+{{text = '• قناة السورس •', url="t.me/TGe_R"},},
 }}
 bot.editMessageText(ChatId,msg_id,txxt, 'md', true, false, reply_markup)
 return false
@@ -36379,7 +36380,7 @@ Thisname = ' ['..ban.first_name..'](tg://user?id='..ban.id..')'
 else
 Thisname = " لا يوجد"
 end
-local Mostafa = (Redis:get(Saidi.."Name:Bot") or "كينج")
+local Mostafa = (Redis:get(Saidi.."Name:Bot") or " ميدو")
 local txxt = '*╗• مرحبا بك يا ->* '..Thisname..'\n*╣• انا روبت حمايه اسمي -> '..Mostafa..'\n╣• اختصاص البوت حماية المجموعات\n╣• لتفعيل البوت عليك اتباع مايلي\n╣• اضف البوت الى مجموعتك\n╣• ارفعه ادمن مشرف\n╣• ارسل كلمة تفعيل ليتم تفعيل المجموعه\n╣• اضغط هنا لاظهار الكيب الازرار -›〘 /Jeka 〙\n*'
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -36406,7 +36407,7 @@ Thisname = ' ['..ban.first_name..'](tg://user?id='..ban.id..')'
 else
 Thisname = " لا يوجد"
 end
-local Mostafa = (Redis:get(Saidi.."Name:Bot") or "كينج")
+local Mostafa = (Redis:get(Saidi.."Name:Bot") or " ميدو")
 local txxt = '*╗• مرحبا بك يا ->* '..Thisname..'\n*╣• أنا روبت حمايه اسمي -> '..Mostafa..'\n╣• انا اقوم بحمايه المجموعات\n╣• من السب والشتيمه والاباحه\n╣• ويمكنك استخدامي في اوامر\n╣• آخرى كاللعب والتسليه\n╣• تم التصميم من قبل مطوري\n╝• اختار لغتك للاستخدام الروبوت\n*'
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -36428,7 +36429,7 @@ if Text and Text:match('(%d+)/orders') then
 local UserId = Text:match('(%d+)/orders')
 if tonumber(IdUser) == tonumber(UserId) then
 local txxt = [[*
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 حظر عام -> الغاء العام
  𖥔 اضف -> حذف -> مطور
  𖥔 قائمه العام -> مسح قائمه العام
@@ -36448,12 +36449,12 @@ local txxt = [[*
  𖥔 غادر -> الايدي
  𖥔 اذاعه -> اذاعه بالتوجيه -> اذاعه بالتثبيت
  𖥔 اذاعه خاص -> اذاعه خاص بالتوجيه
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
 *]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '･ 𓆩𝑲𝒊𝒏𝑮𓆪 ･', callback_data=IdUser.."/Arabic1"},
+{text = '･ 𓆩𝑴𝑬𝑬𝑫𝑶𓆪 ･', callback_data=IdUser.."/Arabic1"},
 },
 {
 {text = '• القائمه الرئيسيه •', callback_data=IdUser.."/BackCape"},
@@ -36468,7 +36469,7 @@ local UserId = Text:match('(%d+)/games')
 if tonumber(IdUser) == tonumber(UserId) then
 local txxt = [[*
 𖥔 قائمــه العــاب البــوت ⇧⇩
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 لعبة المختلف -> المختلف
  𖥔 لعبة الامثله -> امثله
  𖥔 لعبة العكس -> العكس
@@ -36486,7 +36487,7 @@ local txxt = [[*
  𖥔 رياضيات -> مسائل رياضيه
  𖥔 انكليزي -> معاني الكلمات
  𖥔 كت تويت ،كت -> اسئله ترفيهيه
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 نقاطي -> لعرض عدد النقاط
  𖥔 بيع نقاطي + { العدد }
 لبيع كل نقطه مقابل {50} رساله
@@ -36500,7 +36501,7 @@ keyboard.inline_keyboard = {
 {text = 'الالعاب الالكترونيه ✨', callback_data=IdUser.."/electronic"},{text = 'الالعاب الاونلاين 💥', callback_data=IdUser.."/online"},
 },
 {
-{text = '･ 𓆩𝑲𝒊𝒏𝑮𓆪 ･', callback_data=IdUser.."/Arabic1"},
+{text = '･ 𓆩𝑴𝑬𝑬𝑫𝑶𓆪 ･', callback_data=IdUser.."/Arabic1"},
 },
 {
 {text = '• القائمه الرئيسيه •', callback_data=IdUser.."/BackCape"},
@@ -36515,7 +36516,7 @@ local UserId = Text:match('(%d+)/bank')
 if tonumber(IdUser) == tonumber(UserId) then
 local txxt = [[*
 • مرحبا بك هذه اوامر لعبه البنك
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 انشاء حساب بنكي -> تفتح حساب وتقدر تحول فلوس مع مزايا اخري
  𖥔 مسح حساب بنكي -> تلغي حسابك البنكي
  𖥔 تحويل -> تطلب رقم حساب الشخص وتحول له فلوس
@@ -36527,12 +36528,12 @@ local txxt = [[*
  𖥔 استثمار -> تستثمر بالمبلغ اللي تريده مع نسبة ربح مضمونه من ١٪؜ الى ١٥٪؜
  𖥔 حظ -> تلعبها بأي مبلغ تكسبه ياتخسره انت وحظك
  𖥔 مضاربه -> تضارب بأي مبلغ تريده والنسبة من ٩٠٪؜ الى ٩٠٪؜ انت وحظك
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
 *]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '･ 𓆩𝑲𝒊𝒏𝑮𓆪 ･', callback_data=IdUser.."/games"},
+{text = '･ 𓆩𝑴𝑬𝑬𝑫𝑶𓆪 ･', callback_data=IdUser.."/games"},
 },
 {
 {text = '• القائمه الثانيه •', callback_data=IdUser.."/bsbdj"},
@@ -36550,7 +36551,7 @@ local UserId = Text:match('(%d+)/bsbdj')
 if tonumber(IdUser) == tonumber(UserId) then
 local txxt = [[*
 • القائمه الثانيه من اوامر لعبة البنك
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 قرض -> تاخذ قرض من البنك
  𖥔 تسديد القرض -> بتسدد القرض اذا عليك
  𖥔 هجوم -> تهجم عالخصم مع زيادة نسبة كل هجوم
@@ -36563,12 +36564,12 @@ local txxt = [[*
  𖥔 خلع -> يخلع زوجك ويرجع له المهر
  𖥔 زواجات -> يطلع اغلى ٣٠ زواجات
  𖥔 ترتيبي -> يطلع ترتيبك باللعبة
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
 *]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '･ 𓆩𝑲𝒊𝒏𝑮𓆪 ･', callback_data=IdUser.."/games"},
+{text = '･ 𓆩𝑴𝑬𝑬𝑫𝑶𓆪 ･', callback_data=IdUser.."/games"},
 },
 {
 {text = '• القائمه الاولى •', callback_data=IdUser.."/bank"},
@@ -36586,55 +36587,55 @@ local UserId = Text:match('(%d+)/entertain')
 if tonumber(IdUser) == tonumber(UserId) then
 local txxt = [[*
 〘 اوامر التسليه 〙
- رفع ⇔ تنزيل + الامر TR_E2S_ON_MY_MOoN
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
- رفع + تنزيل -› متوحد TR_E2S_ON_MY_MOoN
- تاك للمتوحدين TR_E2S_ON_MY_MOoN
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
- رفع + تنزيل -› كلب TR_E2S_ON_MY_MOoN
- تاك للكلاب TR_E2S_ON_MY_MOoN
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
- رفع + تنزيل -› قرد TR_E2S_ON_MY_MOoN
- تاك للقرود TR_E2S_ON_MY_MOoN
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
- رفع + تنزيل -› زوجتي TR_E2S_ON_MY_MOoN
- تاك للزوجات TR_E2S_ON_MY_MOoN
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
- رفع + تنزيل -› قلبي TR_E2S_ON_MY_MOoN
+ رفع ⇔ تنزيل + الامر TGe_R
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
+ رفع + تنزيل -› متوحد TGe_R
+ تاك للمتوحدين TGe_R
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
+ رفع + تنزيل -› كلب TGe_R
+ تاك للكلاب TGe_R
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
+ رفع + تنزيل -› قرد TGe_R
+ تاك للقرود TGe_R
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
+ رفع + تنزيل -› زوجتي TGe_R
+ تاك للزوجات TGe_R
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
+ رفع + تنزيل -› قلبي TGe_R
  تاك لقلبي ??
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
- رفع + تنزيل -› بقره TR_E2S_ON_MY_MOoN
- تاك للبقرات TR_E2S_ON_MY_MOoN
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
- رفع + تنزيل -› ارمله TR_E2S_ON_MY_MOoN
- تاك للارامل TR_E2S_ON_MY_MOoN
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
- رفع + تنزيل -› خول TR_E2S_ON_MY_MOoN
- تاك للخولات TR_E2S_ON_MY_MOoN
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
- رفع + تنزيل -› حمار TR_E2S_ON_MY_MOoN
- تاك للحمير TR_E2S_ON_MY_MOoN
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
- رفع + تنزيل -› مزه TR_E2S_ON_MY_MOoN
- تاك للمزز TR_E2S_ON_MY_MOoN
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
- رفع + تنزيل -› وتكه TR_E2S_ON_MY_MOoN
- تاك للوتكات TR_E2S_ON_MY_MOoN
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
- رفع + تنزيل -› ابني TR_E2S_ON_MY_MOoN
- تاك لولادي TR_E2S_ON_MY_MOoN
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
- رفع + تنزيل -› بنتي TR_E2S_ON_MY_MOoN
- تاك لبناتي TR_E2S_ON_MY_MOoN
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
- رفع + تنزيل -› خاين TR_E2S_ON_MY_MOoN
- تاك للخاينين  TR_E2S_ON_MY_MOoN
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
+ رفع + تنزيل -› بقره TGe_R
+ تاك للبقرات TGe_R
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
+ رفع + تنزيل -› ارمله TGe_R
+ تاك للارامل TGe_R
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
+ رفع + تنزيل -› خول TGe_R
+ تاك للخولات TGe_R
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
+ رفع + تنزيل -› حمار TGe_R
+ تاك للحمير TGe_R
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
+ رفع + تنزيل -› مزه TGe_R
+ تاك للمزز TGe_R
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
+ رفع + تنزيل -› وتكه TGe_R
+ تاك للوتكات TGe_R
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
+ رفع + تنزيل -› ابني TGe_R
+ تاك لولادي TGe_R
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
+ رفع + تنزيل -› بنتي TGe_R
+ تاك لبناتي TGe_R
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
+ رفع + تنزيل -› خاين TGe_R
+ تاك للخاينين  TGe_R
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
 *]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '･ 𓆩𝑲𝒊𝒏𝑮𓆪 ･', callback_data=IdUser.."/games"},
+{text = '･ 𓆩𝑴𝑬𝑬𝑫𝑶𓆪 ･', callback_data=IdUser.."/games"},
 },
 {
 {text = '• القائمه الرئيسيه •', callback_data=IdUser.."/BackCape"},
@@ -36651,7 +36652,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '• 𝑺𝒐𝑼𝒓𝑪𝒆 𝑲𝒊𝒏𝑮 •', url = "https://t.me/VC_NE"}
+{text = '• 𝙎𝙤𝙐𝙧𝘾𝙚 𝙏𝙞𝙂𝙚𝙍 •', url = "https://t.me/TGe_R"}
 },
 }
 }
@@ -36669,7 +36670,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '• 𝑺𝒐𝑼𝒓𝑪𝒆 𝑲𝒊𝒏𝑮 •', url = "https://t.me/VC_NE"}
+{text = '• 𝙎𝙤𝙐𝙧𝘾𝙚 𝙏𝙞𝙂𝙚𝙍 •', url = "https://t.me/TGe_R"}
 },
 }
 }
@@ -36687,17 +36688,17 @@ local bain = bot.getUser(IdUser).first_name
 local Textinggt = {"1", "2️", "3",}
 local Descriptioont = Textinggt[math.random(#Textinggt)]
 if Descriptioont == "1" then
-baniusernamek = 'انت -> ✂️\nكينج -> ✂️\nالنتيجة -> كينج ⚖️ '..bain..'\n𖥔'
+baniusernamek = 'انت -> ✂️\n ميدو -> ✂️\nالنتيجة ->  ميدو ⚖️ '..bain..'\n𖥔'
 elseif Descriptioont == "2" then
-baniusernamek = 'انت -> ✂️\nكينج -> 🪨️\nالنتيجة -> 🏆 كينج 🏆\n𖥔'
+baniusernamek = 'انت -> ✂️\n ميدو -> 🪨️\nالنتيجة -> 🏆  ميدو 🏆\n𖥔'
 else
-baniusernamek = 'انت -> ✂️\nكينج -> 📄️\nالنتيجة -> 🏆 '..bain..' 🏆\n𖥔'
+baniusernamek = 'انت -> ✂️\n ميدو -> 📄️\nالنتيجة -> 🏆 '..bain..' 🏆\n𖥔'
 end
 local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '• 𝑺𝒐𝑼𝒓𝑪𝒆 𝑲𝒊𝒏𝑮 •', url = 't.me/VC_NE'}, 
+{text = '• 𝙎𝙤𝙐𝙧𝘾𝙚 𝙏𝙞𝙂𝙚𝙍 •', url = 't.me/TGe_R'}, 
 },
 }
 }
@@ -36711,17 +36712,17 @@ local bain = bot.getUser(IdUser).first_name
 local Textinggt = {"1", "2️", "3",}
 local Descriptioont = Textinggt[math.random(#Textinggt)]
 if Descriptioont == "1" then
-baniusernamek = 'انت -> 📄️\nكينج -> ✂️\nالنتيجة -> 🏆 كينج 🏆\n𖥔'
+baniusernamek = 'انت -> 📄️\n ميدو -> ✂️\nالنتيجة -> 🏆  ميدو 🏆\n𖥔'
 elseif Descriptioont == "2" then
-baniusernamek = 'انت -> 📄\nكينج -> 🪨️\nالنتيجة -> 🏆 '..bain..' 🏆\n𖥔'
+baniusernamek = 'انت -> 📄\n ميدو -> 🪨️\nالنتيجة -> 🏆 '..bain..' 🏆\n𖥔'
 else
-baniusernamek = 'انت -> 📄️\nكينج -> 📄️\nالنتيجة -> كينج ⚖️ '..bain..'\n𖥔'
+baniusernamek = 'انت -> 📄️\n ميدو -> 📄️\nالنتيجة ->  ميدو ⚖️ '..bain..'\n𖥔'
 end
 local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '• 𝑺𝒐𝑼𝒓𝑪𝒆 𝑲𝒊𝒏𝑮 •', url = 't.me/VC_NE'}, 
+{text = '• 𝙎𝙤𝙐𝙧𝘾𝙚 𝙏𝙞𝙂𝙚𝙍 •', url = 't.me/TGe_R'}, 
 },
 }
 }
@@ -36735,17 +36736,17 @@ local bain = bot.getUser(IdUser).first_name
 local Textinggt = {"1", "2️", "3",}
 local Descriptioont = Textinggt[math.random(#Textinggt)]
 if Descriptioont == "1" then
-baniusernamek = 'انت -> ??️\nكينج -> ✂️\nالنتيجة -> 🏆 '..bain..' 🏆\n𖥔'
+baniusernamek = 'انت -> ??️\n ميدو -> ✂️\nالنتيجة -> 🏆 '..bain..' 🏆\n𖥔'
 elseif Descriptioont == "2" then
-baniusernamek = 'انت -> 🪨️\nكينج -> 🪨️\nالنتيجة -> كينج ⚖️ '..bain..'\n𖥔'
+baniusernamek = 'انت -> 🪨️\n ميدو -> 🪨️\nالنتيجة ->  ميدو ⚖️ '..bain..'\n𖥔'
 else
-baniusernamek = 'انت -> 🪨️\nكينج -> 📄️\nالنتيجة -> 🏆 كينج 🏆\n𖥔'
+baniusernamek = 'انت -> 🪨️\n ميدو -> 📄️\nالنتيجة -> 🏆  ميدو 🏆\n𖥔'
 end
 local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '• 𝑺𝒐𝑼𝒓𝑪𝒆 𝑲𝒊𝒏𝑮 •', url = 't.me/VC_NE'}, 
+{text = '• 𝙎𝙤𝙐𝙧𝘾𝙚 𝙏𝙞𝙂𝙚𝙍 •', url = 't.me/TGe_R'}, 
 },
 }
 }
@@ -36858,29 +36859,29 @@ data = {
 {text = 'القائمه الرئيسيه ⚙️', data = IdUser..'/helpall'},
 },
 {
-{text  = '• قناة السورس •', url = "t.me/VC_NE"}, 
+{text  = '• قناة السورس •', url = "t.me/TGe_R"}, 
 },
 }
 }
 local TextHelp = [[*
  𖥔 اوامر الحمايه كالاتي ...
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 قفل ، فتح -> الامر 
  𖥔 تستطيع قفل حمايه كما يلي ...
  𖥔 -> { بالتقييد ، بالطرد ، بالكتم }
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 الكل ~ الدخول
  𖥔 الروابط ~ المعرف
  𖥔 التاك ~ الشارحه
  𖥔 التعديل ~ تعديل الميديا
  𖥔 المتحركه ~ الملفات
  𖥔 الصور ~ الفيديو 
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 الماركداون ~ البوتات
  𖥔 التكرار ~ الكلايش
  𖥔 السيلفي ~ الملصقات
  𖥔 الانلاين ~  الدردشه
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 التوجيه ~ الاغاني
  𖥔 الصوت ~ الجهات
  𖥔 الاشعارات ~ التثبيت 
@@ -36889,7 +36890,7 @@ local TextHelp = [[*
  𖥔 السب ~ الفارسيه
  𖥔 الإنكليزيه
  𖥔 الشتايم ~ الاباحي
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
 *]]
 edit(ChatId,Msg_id,TextHelp, 'md', true, false, reply_markup)
 end
@@ -36918,51 +36919,51 @@ data = {
 {text = 'القائمه الرئيسيه ⚙️', data = IdUser..'/helpall'},
 },
 {
-{text  = '• قناة السورس •', url = "t.me/VC_NE"}, 
+{text  = '• قناة السورس •', url = "t.me/TGe_R"}, 
 },
 }
 }
 local TextHelp = [[*
  𖥔 اوامر ادمنية الجروب ...
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 رفع، تنزيل -> مميز
  𖥔 المميزين -> مسح المميزين 
  𖥔 رفع الادمنيه
  𖥔 تاك ، تاك للكل ، الجروب
  𖥔 منع ، الغاء منع
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 الاوامر التالية -> {بالرد ، بالمعرف}
  𖥔 حظر ، طرد -> الغاء حظر 
  𖥔 كتم -> الغاء كتم
  𖥔 تقييد -> الغاء تقييد
  𖥔 كشف ، رفع -> القيود
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 عرض القوائم كما يلي ...
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 المنشئين الاساسيين ، المنشئين 
  𖥔 المدراء ، الادمنيه ، المميزين
  𖥔 المشرفين ، المكتومين
  𖥔 قائمه المنع
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 تثبيت ، الغاء تثبيت
  𖥔 الرابط ، الاعدادات ، الحمايه
  𖥔 الترحيب ، القوانين
  𖥔 ضع رتبه  -> { اسم الرتبه } 
  𖥔 تحكم -> {بالرد ، بالمعرف}
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 تفعيل ، تعطيل -> الاوامر التاليه :
  𖥔 الترحيب ، الرابط
  𖥔 ردود البوت ، الالعاب
  𖥔 اطردني ، التسليه
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 مسح -> الاوامر التاليه
  𖥔 القوائم ، قائمه المنع ، المميزين
  𖥔 الرابط ، القوانين ، الصوره
  𖥔 مسح -> { عدد }
  𖥔 مسح -> { بالرد }
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 اوامر الاعضاء والادمنيه 
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 ايدي ، ايدي بالرد ، رسائلي
  𖥔 تفاعلي ، لقبي ، بايو ، ترند
  𖥔 جهاتي ، تعديلاتي ، نقاطي
@@ -37007,13 +37008,13 @@ data = {
 {text = 'القائمه الرئيسيه ⚙️', data = IdUser..'/helpall'},
 },
 {
-{text  = '• قناة السورس •', url = "t.me/VC_NE"}, 
+{text  = '• قناة السورس •', url = "t.me/TGe_R"}, 
 },
 }
 }
 local TextHelp = [[*
  𖥔 اوامر المدراء في الجروب
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 رفع ، تنزيل -> ادمن
  𖥔 الادمنيه -> مسح الادمنيه 
  𖥔 تنزيل الكل -> {بالرد ، بالمعرف}
@@ -37024,22 +37025,22 @@ local TextHelp = [[*
  𖥔 قفل فتح -> ارسال القناة
 ꔹ━━━━━ꔹ𝐒??𝐈𝐃𝐈ꔹ━━━━━ꔹ
  𖥔 لتغيير رد الرتب في البوت
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 تغيير رد -> {اسم الرتبه والنص} 
  𖥔 المطور ، المالك ، المنشئ الاساسي
  𖥔 المنشئ ، المدير ، الادمن
  𖥔 المميز ، العضو
  𖥔 مسح رد -> { اسم الرتبه }
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 وضع الرتب -> { بالرد , بالمعرف}
  𖥔 ضع رتبه -> { اسم الرتبه }
  𖥔 مسح رتبه -> { بالرد ، بالمعرف}
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 وضع ، ضع -> الاوامر التاليه
  𖥔 اسم + اسم الجروب
  𖥔 رابط ، صوره
  𖥔 قوانين ، وصف ،الترحيب 
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 تفعيل ، تعطيل -> الاوامر التاليه :
  𖥔 الايدي ، الايدي بالصوره 
  𖥔 ايدي العضو ، البايو
@@ -37048,11 +37049,11 @@ local TextHelp = [[*
  𖥔 غنيلي ، الصيغ ، قول
  𖥔 تنبيه الاسماء ، الصوتيات 
  𖥔 الصوتيات العامه
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 مسح -> + { الامر } 
  𖥔 المحظورين ، المطرودين
  𖥔 المكتومين -> المقيدين
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 ترتيب الاوامر -> استعاده الاوامر
  𖥔 اضف ، مسح -> { رد }
  𖥔 الردود ، مسح الردود
@@ -37092,13 +37093,13 @@ data = {
 {text = 'القائمه الرئيسيه ⚙️', data = IdUser..'/helpall'},
 },
 {
-{text  = '• قناة السورس •', url = "t.me/VC_NE"}, 
+{text  = '• قناة السورس •', url = "t.me/TGe_R"}, 
 },
 }
 }
 local TextHelp = [[*
  𖥔 اوامر المنشئ الاساسي
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 رفع ، تنزيل ->{ منشئ }
  𖥔 المنشئين ، مسح المنشئين
  𖥔 رفع ، تنزيل ->{ مشرف }
@@ -37106,9 +37107,9 @@ local TextHelp = [[*
  𖥔 صلاحيات الجروب
  𖥔 مسح نقاطه ، رسائله -> {بالرد}
  𖥔 تفعيل ، تعطيل -> منع التصفيه
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 اوامر المنشئ الجروب
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 رفع ، تنزيل -> { مدير }
  𖥔 المدراء ، مسح المدراء
  𖥔 تغيير ، مسح ->{ الايدي }
@@ -37117,7 +37118,7 @@ local TextHelp = [[*
  𖥔 الاوامر المضافه ، مسح الاوامر المضافه
  𖥔 ضع التكرار -> { عدد }
  𖥔 تفعيل الاوامر -> { اوامر اساسيه }
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 تفعيل ، تعطيل -> الاوامر التاليه :
  𖥔 الردود العامه ، الطرد ، الحظر
  𖥔 الرفع ، التاك ، نزلني ، ضع رتبه 
@@ -37151,19 +37152,19 @@ data = {
 {text = 'القائمه الرئيسيه ⚙️', data = IdUser..'/helpall'},
 },
 {
-{text  = '??• قناة السورس •', url = "t.me/VC_NE"}, 
+{text  = '??• قناة السورس •', url = "t.me/TGe_R"}, 
 },
 }
 }
 local TextHelp = [[*
 ︙اوامر مالك الجروب 
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 رفع ، تنزيل ->{ مالك }
  𖥔 المالكين ، مسح المالكين
  𖥔 تنزيل جميع الرتب 
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 اوامر المالكين 
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 رفع ، تنزيل -> { منشئ اساسي }
  𖥔 المنشئين الاساسيين،
  𖥔 مسح المنشئين الاساسيين 
@@ -37195,13 +37196,13 @@ data = {
 {text = 'القائمه الرئيسيه ⚙️', data = IdUser..'/helpall'},
 },
 {
-{text  = '• قناة السورس •', url = "t.me/VC_NE"}, 
+{text  = '• قناة السورس •', url = "t.me/TGe_R"}, 
 },
 }
 }
 local TextHelp = [[*
  𖥔 قائمــه العــاب البــوت
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 لعبة المختلف -> المختلف
  𖥔 لعبة الامثله -> امثله
  𖥔 لعبة العكس -> العكس
@@ -37219,7 +37220,7 @@ local TextHelp = [[*
  𖥔 رياضيات -> مسائل رياضيه 
  𖥔 انكليزي -> معاني الكلمات 
  𖥔 كت تويت،كت  ->  اسئله ترفيهيه
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 نقاطي -> لعرض عدد النقاط 
  𖥔 بيع نقاطي + { العدد } 
 لبيع كل نقطه مقابل {50} رساله
@@ -37251,15 +37252,15 @@ data = {
 {text = 'القائمه الرئيسيه ⚙️', data = IdUser..'/helpall'},
 },
 {
-{text  = '• قناة السورس •', url = "t.me/VC_NE"}, 
+{text  = '• قناة السورس •', url = "t.me/TGe_R"}, 
 },
 }
 }
 local TextHelp = [[*
  𖥔 اوامر التسلية
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 رفع ، تنزيل -> الاوامر التاليه ↓
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 غبي 
  𖥔 مطي
  𖥔 اثول
@@ -37270,30 +37271,30 @@ local TextHelp = [[*
  𖥔 جلب
  𖥔 لوكي
  𖥔 زاحف
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 اوامر التاك 
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 قائمه التاج ~ المـلــوك
  𖥔 المـلـكات ~ الطامسين
  𖥔 الثولان ~  الجــلاب
  𖥔 المطايــه ~  الصخول
  𖥔 اللوكيــه ~  الاغبيـاء
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 اوامر الترفيه 
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 زخرفه + النص
- 𖥔 مثال زخرفه كينج
+ 𖥔 مثال زخرفه  ميدو
  𖥔 احسب + عمرك
  𖥔 مثال احسب 2001/8/5
  𖥔 معني + الاسم 
- 𖥔 مثال معني كينج
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ 𖥔 مثال معني  ميدو
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 نسبه الحب/ الكره
  𖥔 نسبه الرجوله/ الانوثه 
  𖥔 نسبه الذكـــــاء/ الغباء 
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 الاوامــر بالـــرد  ⇣ 
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 زواج ~ طلاك
 
 *]]
@@ -37324,13 +37325,13 @@ data = {
 {text = 'القفل والفتح ⚙️', data = IdUser..'/NoNextSeting'}, {text = 'التعطيل والتفعيل 📢', data = IdUser..'/listallAddorrem'}, 
 },
 {
-{text  = '• قناة السورس •', url = "t.me/VC_NE"}, 
+{text  = '• قناة السورس •', url = "t.me/TGe_R"}, 
 },
 }
 }
 local TextHelp = [[*
  𖥔 اوامــر البــوت الرئيسيـة 
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 { م1 } -> اوامر الحمايه
  𖥔 { م2 } -> اوامر الادمنيه
  𖥔 { م3 } -> اوامر المدراء
@@ -37366,13 +37367,13 @@ data = {
 {text = 'القفل والفتح ⚙️', data = IdUser..'/NoNextSeting'}, {text = 'التعطيل والتفعيل 📢', data = IdUser..'/listallAddorrem'}, 
 },
 {
-{text  = '• قناة السورس •', url = "t.me/VC_NE"}, 
+{text  = '• قناة السورس •', url = "t.me/TGe_R"}, 
 },
 }
 }
 local TextHelp = [[*
  𖥔 اوامر المطور الاساسي 🌀
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 تفعيل  ->  تعطيل
  𖥔 رفع  تنزيل -> مطور اساسي
  𖥔 المطورين الاساسيين
@@ -37383,7 +37384,7 @@ local TextHelp = [[*
  𖥔 رفع  تنزيل -> مطور
  𖥔 المطورين -> مسح المطورين
  𖥔 تغيير المطور الاساسي
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 تفعيل الوضع المدفوع + الايدي 
  𖥔 الغاء الوضع المدفوع + الايدي
  𖥔 حظر جروب + { الايدي }
@@ -37401,7 +37402,7 @@ local TextHelp = [[*
  𖥔 كتم عام ، الغاء كتم عام
  𖥔 المكتومين عام
  𖥔 مسح المكتومين عام
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 تغيير ، مسح ->{ اسم البوت }
  𖥔 ضع صوره للترحيب 
  𖥔 الاحصائيات
@@ -37410,15 +37411,15 @@ local TextHelp = [[*
  𖥔 اذاعه ، اذاعه خاص
  𖥔 اذاعه بالتوجيه ، اذاعه بالتثبيت
  𖥔 اذاعه خاص بالتوجيه
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 تفعيل تعطيل جلب النسخه التلقائيه
  𖥔 جلب نسخه احتياطيه
  𖥔 رفع النسخه الاحتياطيه بالرد
- 𖥔 رفع نسخه  كينج  بالرد
+ 𖥔 رفع نسخه   ميدو  بالرد
  𖥔 جلب نسخه الردود
  𖥔 رفع نسخه الردود بالرد
  𖥔 معلومات التنصيب
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 تعيين ، مسح -> { الايدي عام }
  𖥔 اضف ، مسح -> {رد عام}
  𖥔 اضف ، مسح -> {رد عام متعدد}
@@ -37445,18 +37446,18 @@ local TextHelp = [[*
  𖥔 مسح موسيقى بالرد
  𖥔 قائمة الموسيقى
  𖥔 مسح قائمه الموسيقى
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 تفعيل ، تعطيل -> الاوامر التاليه↓
  𖥔 البوت الخدمي ، المغادرة ، الاذاعه
  𖥔 التواصل ، الاحصائيات
  𖥔 ملف -> { اسم الملف }
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 مسح جميع الملفات 
  𖥔 المتجر ، الملفات
  𖥔 تحديث ، تحديث السورس 
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 اوامر المطور في البوت
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 رفع، تنزيل -> { مالك }
  𖥔 المالكين ، مسح المالكين
  𖥔 تنزيل جميع الرتب
@@ -37473,13 +37474,13 @@ data = {
 {text = 'الحمايه 🛡', data = IdUser..'/bott'}, {text = 'التسليه 𖥔', data = IdUser..'/boot'}, 
 },
 {
-{text  = '• قناة السورس •', url = 't.me/VC_NE '}, 
+{text  = '• قناة السورس •', url = 't.me/TGe_R '}, 
 },
 }
 }
 local TextHelp = [[*
  𖥔 اوامـر الـبـوت عـبـر الازرار ⇧⇩
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
 *]]
 edit(ChatId,Msg_id,TextHelp, 'md', true, false, reply_markup)
 end
@@ -37493,29 +37494,29 @@ data = {
 {text = 'الحمايه 🛡', data = IdUser..'/bott'}, {text = 'التسليه 𖥔', data = IdUser..'/boot'}, 
 },
 {
-{text  = '• قناة السورس •', url = 't.me/VC_NE '}, 
+{text  = '• قناة السورس •', url = 't.me/TGe_R '}, 
 },
 }
 }
 local TextHelp = [[*
  𖥔 اوامـر الـحـمـايـه كـالاتـي ⇧⇩
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 قفل ، فتح -> الامر 
  𖥔 تستطيع قفل حمايه كما يلي ...
  𖥔 -> { بالتقييد ، بالطرد ، بالكتم }
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 الكل ~ الدخول
  𖥔 الروابط ~ المعرف
  𖥔 التاك ~ الشارحه
  𖥔 التعديل ~ تعديل الميديا
  𖥔 المتحركه ~ الملفات
  𖥔 الصور ~ الفيديو 
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 الماركداون ~ البوتات
  𖥔 التكرار ~ الكلايش
  𖥔 السيلفي ~ الملصقات
  𖥔 الانلاين ~  الدردشه
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 التوجيه ~ الاغاني
  𖥔 الصوت ~ الجهات
  𖥔 الاشعارات ~ التثبيت 
@@ -37524,7 +37525,7 @@ local TextHelp = [[*
  𖥔 السب ~ الفارسيه
  𖥔 الإنكليزيه
  𖥔 الشتايم ~ الاباحي
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
 *]]
 edit(ChatId,Msg_id,TextHelp, 'md', true, false, reply_markup)
 end
@@ -37538,13 +37539,13 @@ data = {
 {text = 'الحمايه 🛡', data = IdUser..'/bott'}, {text = 'التسليه 𖥔', data = IdUser..'/boot'}, 
 },
 {
-{text  = '• قناة السورس •', url = 't.me/VC_NE '}, 
+{text  = '• قناة السورس •', url = 't.me/TGe_R '}, 
 },
 }
 }
 local TextHelp = [[*
  𖥔 اوامـر الـتـسـلـيـه كـالاتـي ⇧⇩
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 الامر ، تفعيل ، تعطيل -> { الامر }
  𖥔 غنيلي ، ريمكس ، اغنيه ، شعر
  𖥔 صوره ،  متحركه
@@ -37552,7 +37553,7 @@ local TextHelp = [[*
  𖥔 مسلسل ، فلم
  𖥔 حساب العمر( احسب + تاريخ الميلاد)
  𖥔 معنى اسم + الاسم
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 رفع ، تنزيل -> الاوامر التاليه ↓
  𖥔 غبي
  𖥔 مطي
@@ -37564,30 +37565,30 @@ local TextHelp = [[*
  𖥔 جلب
  𖥔 لوكي
  𖥔 زاحف
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 اوامر التاك
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 قائمه التاج ~ المـلــوك
  𖥔 المـلـكات ~ الطامسين
  𖥔 الثولان ~  الجــلاب
  𖥔 المطايــه ~  الصخول
  𖥔 اللوكيــه ~  الاغبيـاء
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 اوامر الترفيه
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 زخرفه + النص
- 𖥔 مثال زخرفه كينج
+ 𖥔 مثال زخرفه  ميدو
  𖥔 احسب + عمرك
  𖥔 مثال احسب 2001/8/5
  𖥔 معني + الاسم
- 𖥔 مثال معني كينج
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ 𖥔 مثال معني  ميدو
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 نسبه الحب/ الكره
  𖥔 نسبه الرجوله/ الانوثه
  𖥔 نسبه الذكـــــاء/ الغباء
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 الاوامــر بالـــرد  ⇣
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 زواج ~ طلاك
 *]]
 edit(ChatId,Msg_id,TextHelp, 'md', true, false, reply_markup)
@@ -37617,13 +37618,13 @@ data = {
 {text = 'القفل والفتح ⚙️', data = IdUser..'/NoNextSeting'}, {text = 'التعطيل والتفعيل 📢', data = IdUser..'/listallAddorrem'}, 
 },
 {
-{text  = '• قناة السورس •', url = "t.me/VC_NE"}, 
+{text  = '• قناة السورس •', url = "t.me/TGe_R"}, 
 },
 }
 }
 local TextHelp = [[*
  𖥔 اوامـر الـتـسـلـيـه كـالاتـي ⇧⇩
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
  𖥔 الامر ، تفعيل ، تعطيل -> { الامر }
  𖥔 غنيلي ، ريمكس ، اغنيه ، شعر
  𖥔 صوره ،  متحركه
@@ -37631,7 +37632,7 @@ local TextHelp = [[*
  𖥔 مسلسل ، فلم
  𖥔 حساب العمر( احسب + تاريخ الميلاد)
  𖥔 معنى اسم + الاسم
-━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━
+ ●～●～●～●～ 𝙏𝙞𝙂𝙚𝙍 ●～●～●～●～
 *]]
 edit(ChatId,Msg_id,TextHelp, 'md', true, false, reply_markup)
 end
@@ -38625,7 +38626,7 @@ data = {
 {text = 'تعطيل تاك للكل', data = IdUser..'/jkhgc'},{text = 'تفعيل تاك للكل', data = IdUser..'/bjjkob'},
 },
 {
-{text = '• قناة السورس •', url = "t.me/VC_NE"}, 
+{text = '• قناة السورس •', url = "t.me/TGe_R"}, 
 },
 {
 {text = 'اخفاء الامر 🔰 ', data ='/delAmr'}
